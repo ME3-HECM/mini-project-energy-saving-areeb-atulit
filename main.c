@@ -14,22 +14,20 @@
 #define _XTAL_FREQ 64000000 //note intrinsic _delay function is 62.5ns at 64,000,000Hz  
 
 
-
 void main(void) {
-    	//call your initialisation functions to set up the hardware modules
+    
     LATHbits.LATH3=0;   //set initial output state
     TRISHbits.TRISH3=0; //set TRIS value for pin (output)
     LATDbits.LATD7=0;   //set initial output state
     TRISDbits.TRISD7=0; //set TRIS value for pin (output)
-    //call your initialisation functions to set up the hardware modules
+	//call your initialisation functions to set up the hardware modules
     //DAC_init();
     LEDarray_init();
     Timer0_init();
     Comp1_init();
     Interrupts_init();
-    unsigned int lowregister = 0;
-    unsigned int highregister = 0;
     while(1){
       LEDarray_disp_bin(get16bitTMR0val());
            }
     }
+

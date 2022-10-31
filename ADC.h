@@ -2,11 +2,11 @@
 #define _ADC_H
 
 #include <xc.h>
-#include "LEDarray.h"
 
 #define _XTAL_FREQ 64000000
 
 void ADC_init(void);
 unsigned int ADC_getval(void);
+void ADC_lightMeter(int val, int range);
 
 #endif

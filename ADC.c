@@ -1,8 +1,7 @@
 #include <xc.h>
 #include "ADC.h"
-#include<math.h>
-
-
+#include <math.h>
+#include "LEDarray.h"
 /************************************
 / ADC_init_init
 / Function used to initialise ADC module and set it up
@@ -10,8 +9,8 @@
 ************************************/
 void ADC_init(void)
 {
-    TRISFbits.TRISF7=1; // Select pin RA3 as input
-    ANSELFbits.ANSELF7=1; //Ensure analogue circuitry is active (it is by default - watch out for this later in the course!)
+    TRISAbits.TRISA3=1; // Select pin RA3 as input
+    ANSELAbits.ANSELA3=1; //Ensure analogue circuitry is active (it is by default - watch out for this later in the course!)
 
     // Set up the ADC module - check section 32 of the datasheet for more details
     ADREFbits.ADNREF = 0; // Use Vss (0V) as negative reference
@@ -38,19 +37,13 @@ unsigned int ADC_getval(void)
 
     return tmpval; //return this value when the function is called
 }
-
-
-unsigned int ADC_getvallinear(void)
+void ADC_lightMeter(int val, int range)
 {
-    unsigned int tmpval;
-       
-    ADCON0bits.GO = 1; // Start ADC conversion
-
-    while (ADCON0bits.GO); // Wait until conversion done (bit is cleared automatically when done)
-        
-    tmpval = ADRESH; // Get 8 most significant bits of the ADC result - if we wanted the 
-	// full 10bit result we would also need to read the 2 LSBs from ADRESL and combine the result.
-	// An 8bit result is sufficient for our needs here
+    unsigned int LEDintensity = 0; //corresponds to number of bars on led strip to light up
+    int ctr = val*10/range;//scale the brightness value from between max and min to 0-10 scale
     
-    return tmpval; //return this value when the function is called
-}
+    for(;ctr > 0;ctr--)//loop to light up each LED until the highest value LED to be turned on
+        LEDintensity+=pow(2,ctr-1);//update number to light up LEDs until the point determined
+    
+    LEDarray_disp_bin(LEDintensity);
+    }
