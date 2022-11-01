@@ -16,7 +16,7 @@
 
 void main(void) {
     
-    LATHbits.LATH3=0;   //set initial output state
+    LATHbits.LATH3=1;   //set initial output state
     TRISHbits.TRISH3=0; //set TRIS value for pin (output)
     LATDbits.LATD7=0;   //set initial output state
     TRISDbits.TRISD7=0; //set TRIS value for pin (output)
@@ -25,9 +25,9 @@ void main(void) {
     LEDarray_init();
     Timer0_init();
     Comp1_init();
+    Comp1_inithigh();
     Interrupts_init();
     while(1){
-      LEDarray_disp_bin(get16bitTMR0val());
            }
     }
 

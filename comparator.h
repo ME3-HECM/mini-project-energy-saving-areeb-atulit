@@ -7,5 +7,5 @@
 
 void DAC_init(void);
 void Comp1_init(void);
-
+void Comp1_inithigh(void);
 #endif
