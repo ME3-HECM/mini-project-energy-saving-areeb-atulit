@@ -89,3 +89,10 @@ void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
 	// hint: one method is to manipulate the variables separately and then combine them using the bitwise OR operator
 	LEDarray_disp_bin(disp_val);	//display value on LED array
 }
+
+int incrementseconds(int seconds)
+{
+    seconds++;
+    LEDarray_disp_bin(seconds);
+    return seconds;
+}

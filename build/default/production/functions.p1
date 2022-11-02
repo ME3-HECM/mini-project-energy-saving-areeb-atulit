@@ -1,48 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"39652 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39652:     struct {
-[s S1925 :4 `uc 1 :1 `uc 1 :3 `uc 1 ]
-[n S1925 . T0CKPS T0ASYNC T0CS ]
-"39657
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39657:     struct {
-[s S1926 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1926 . T0CKPS0 T0CKPS1 T0CKPS2 T0CKPS3 . T0CS0 T0CS1 T0CS2 ]
-"39667
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39667:     struct {
-[s S1927 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1927 . T0PS0 T0PS1 T0PS2 T0PS3 ]
-"39673
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39673:     struct {
-[s S1928 :4 `uc 1 ]
-[n S1928 . T0PS ]
-"39651
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39651: typedef union {
-[u S1924 `S1925 1 `S1926 1 `S1927 1 `S1928 1 ]
-[n S1924 . . . . . ]
-"39677
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39677: extern volatile T0CON1bits_t T0CON1bits __attribute__((address(0xFD6)));
-[v _T0CON1bits `VS1924 ~T0 @X0 0 e@4054 ]
-"39587
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39587:     struct {
-[s S1922 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1922 . T0OUTPS T016BIT T0OUT . T0EN ]
-"39594
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39594:     struct {
-[s S1923 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1923 . T0OUTPS0 T0OUTPS1 T0OUTPS2 T0OUTPS3 ]
-"39586
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39586: typedef union {
-[u S1921 `S1922 1 `S1923 1 ]
-[n S1921 . . . ]
-"39601
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39601: extern volatile T0CON0bits_t T0CON0bits __attribute__((address(0xFD5)));
-[v _T0CON0bits `VS1921 ~T0 @X0 0 e@4053 ]
-"39327
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39327: extern volatile unsigned char TMR0H __attribute__((address(0xFD4)));
-[v _TMR0H `Vuc ~T0 @X0 0 e@4052 ]
-"39189
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 39189: extern volatile unsigned char TMR0L __attribute__((address(0xFD3)));
-[v _TMR0L `Vuc ~T0 @X0 0 e@4051 ]
+"7 ./LEDarray.h
+[; ;./LEDarray.h: 7: void LEDarray_disp_bin(unsigned int number);
+[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
 "55 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 55: __asm("PPSLOCK equ 0DEFh");
 [; <" PPSLOCK equ 0DEFh ;# ">
@@ -2017,60 +1976,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40928
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 40928: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"7 timers.c
-[; ;timers.c: 7: void Timer0_init(void)
-[v _Timer0_init `(v ~T0 @X0 1 ef ]
-"8
-[; ;timers.c: 8: {
-{
-[e :U _Timer0_init ]
-[f ]
-"9
-[; ;timers.c: 9:     T0CON1bits.T0CS=0b010;
-[e = . . _T0CON1bits 0 2 -> -> 2 `i `uc ]
-"10
-[; ;timers.c: 10:     T0CON1bits.T0ASYNC=1;
-[e = . . _T0CON1bits 0 1 -> -> 1 `i `uc ]
-"11
-[; ;timers.c: 11:     T0CON1bits.T0CKPS=0b1000;
-[e = . . _T0CON1bits 0 0 -> -> 8 `i `uc ]
-"12
-[; ;timers.c: 12:     T0CON0bits.T016BIT=1;
-[e = . . _T0CON0bits 0 1 -> -> 1 `i `uc ]
-"15
-[; ;timers.c: 15:     TMR0H=0b00001011;
-[e = _TMR0H -> -> 11 `i `uc ]
-"16
-[; ;timers.c: 16:     TMR0L=0b11011011;
-[e = _TMR0L -> -> 219 `i `uc ]
+"16 functions.c
+[; ;functions.c: 16: void incrementseconds(int seconds)
+[v _incrementseconds `(v ~T0 @X0 1 ef1`i ]
 "17
-[; ;timers.c: 17:     T0CON0bits.T0EN=1;
-[e = . . _T0CON0bits 0 4 -> -> 1 `i `uc ]
-"18
-[; ;timers.c: 18: }
-[e :UE 2015 ]
-}
-"24
-[; ;timers.c: 24: unsigned int get16bitTMR0val(void)
-[v _get16bitTMR0val `(ui ~T0 @X0 1 ef ]
-"25
-[; ;timers.c: 25: {
+[; ;functions.c: 17: {
 {
-[e :U _get16bitTMR0val ]
+[e :U _incrementseconds ]
+"16
+[; ;functions.c: 16: void incrementseconds(int seconds)
+[v _seconds `i ~T0 @X0 1 r1 ]
+"17
+[; ;functions.c: 17: {
 [f ]
-"26
-[; ;timers.c: 26:  unsigned int a=TMR0L;
-[v _a `ui ~T0 @X0 1 a ]
-[e = _a -> _TMR0L `ui ]
-"27
-[; ;timers.c: 27:     unsigned int b=TMR0H;
-[v _b `ui ~T0 @X0 1 a ]
-[e = _b -> _TMR0H `ui ]
-"29
-[; ;timers.c: 29:     return b;
-[e ) _b ]
-[e $UE 2016  ]
-"30
-[; ;timers.c: 30: }
-[e :UE 2016 ]
+"18
+[; ;functions.c: 18:     seconds++;
+[e ++ _seconds -> 1 `i ]
+"19
+[; ;functions.c: 19:     LEDarray_disp_bin(seconds);
+[e ( _LEDarray_disp_bin (1 -> _seconds `ui ]
+"20
+[; ;functions.c: 20: }
+[e :UE 2015 ]
 }

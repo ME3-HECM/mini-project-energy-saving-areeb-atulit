@@ -7,7 +7,14 @@
 
 
 #include <xc.h>
+#include "LEDarray.h"
+#include "interrupts.h"
+#include "comparator.h"
+#include "timers.h"
+#include "functions.h"
 
-void main(void) {
-    return;
+void incrementseconds(int seconds)
+{
+    seconds++;
+    LEDarray_disp_bin(seconds);
 }
