@@ -2086,6 +2086,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40928
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 40928: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
+"7 ./Global Variables.h
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
+"10
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
+"11
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
 "7 comparator.c
 [; ;comparator.c: 7: void DAC_init(void)
 [v _DAC_init `(v ~T0 @X0 1 ef ]

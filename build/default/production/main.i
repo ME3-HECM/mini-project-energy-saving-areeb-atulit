@@ -24254,6 +24254,29 @@ int incrementseconds(int seconds);
 
 
 
+# 1 "./Functions.h" 1
+
+
+
+
+
+void increment();
+# 5 "./interrupts.h" 2
+
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 6 "./interrupts.h" 2
+
 
 
 
@@ -24287,6 +24310,21 @@ unsigned int get16bitTMR0val(void);
 # 12 "main.c" 2
 
 
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 14 "main.c" 2
+
+
 
 
 
@@ -24297,19 +24335,14 @@ void main(void) {
     LATDbits.LATD7=0;
     TRISDbits.TRISD7=0;
 
-
-    int seconds = 0;
-    int timer = 0;
+    DAC_init();
     LEDarray_init();
     Timer0_init();
     Comp1_init();
     Comp1_inithigh();
     Interrupts_init();
+    int hour = 0;
     while(1){
-        timer = get16bitTMR0val();
-        if (timer == 0b11111111){
-            seconds = incrementseconds(seconds);
-
-    }
+        increment();
     }
     }

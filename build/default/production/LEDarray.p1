@@ -2081,94 +2081,109 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40928
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 40928: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"9 LEDarray.c
-[; ;LEDarray.c: 9: void LEDarray_init(void)
-[v _LEDarray_init `(v ~T0 @X0 1 ef ]
+"7 ./Global Variables.h
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
 "10
-[; ;LEDarray.c: 10: {
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
+"11
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
+"10 LEDarray.c
+[; ;LEDarray.c: 10: void LEDarray_init(void)
+[v _LEDarray_init `(v ~T0 @X0 1 ef ]
+"11
+[; ;LEDarray.c: 11: {
 {
 [e :U _LEDarray_init ]
 [f ]
-"12
-[; ;LEDarray.c: 12:     TRISGbits.TRISG0 = 0;
-[e = . . _TRISGbits 0 0 -> -> 0 `i `uc ]
 "13
-[; ;LEDarray.c: 13:     TRISGbits.TRISG1 = 0;
-[e = . . _TRISGbits 0 1 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 13:     TRISGbits.TRISG0 = 0;
+[e = . . _TRISGbits 0 0 -> -> 0 `i `uc ]
 "14
-[; ;LEDarray.c: 14:     TRISAbits.TRISA2 = 0;
-[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 14:     TRISGbits.TRISG1 = 0;
+[e = . . _TRISGbits 0 1 -> -> 0 `i `uc ]
 "15
-[; ;LEDarray.c: 15:     TRISFbits.TRISF6 = 0;
-[e = . . _TRISFbits 0 6 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 15:     TRISAbits.TRISA2 = 0;
+[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
 "16
-[; ;LEDarray.c: 16:     TRISAbits.TRISA4 = 0;
-[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 16:     TRISFbits.TRISF6 = 0;
+[e = . . _TRISFbits 0 6 -> -> 0 `i `uc ]
 "17
-[; ;LEDarray.c: 17:     TRISAbits.TRISA5 = 0;
-[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 17:     TRISAbits.TRISA4 = 0;
+[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
 "18
-[; ;LEDarray.c: 18:     TRISFbits.TRISF0 = 0;
-[e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 18:     TRISAbits.TRISA5 = 0;
+[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
 "19
-[; ;LEDarray.c: 19:     TRISBbits.TRISB0 = 0;
-[e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 19:     TRISFbits.TRISF0 = 0;
+[e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
 "20
-[; ;LEDarray.c: 20:     TRISBbits.TRISB1 = 0;
+[; ;LEDarray.c: 20:     TRISBbits.TRISB0 = 0;
+[e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
+"21
+[; ;LEDarray.c: 21:     TRISBbits.TRISB1 = 0;
 [e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
-"23
-[; ;LEDarray.c: 23:     LATGbits.LATG0 = 0;
-[e = . . _LATGbits 0 0 -> -> 0 `i `uc ]
 "24
-[; ;LEDarray.c: 24:     LATGbits.LATG1 = 0;
-[e = . . _LATGbits 0 1 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 24:     LATGbits.LATG0 = 0;
+[e = . . _LATGbits 0 0 -> -> 0 `i `uc ]
 "25
-[; ;LEDarray.c: 25:     LATAbits.LATA2 = 0;
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 25:     LATGbits.LATG1 = 0;
+[e = . . _LATGbits 0 1 -> -> 0 `i `uc ]
 "26
-[; ;LEDarray.c: 26:     LATFbits.LATF6 = 0;
-[e = . . _LATFbits 0 6 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 26:     LATAbits.LATA2 = 0;
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 "27
-[; ;LEDarray.c: 27:     LATAbits.LATA4 = 0;
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 27:     LATFbits.LATF6 = 0;
+[e = . . _LATFbits 0 6 -> -> 0 `i `uc ]
 "28
-[; ;LEDarray.c: 28:     LATAbits.LATA5 = 0;
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 28:     LATAbits.LATA4 = 0;
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 "29
-[; ;LEDarray.c: 29:     LATFbits.LATF0 = 0;
-[e = . . _LATFbits 0 0 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 29:     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 "30
-[; ;LEDarray.c: 30:     LATBbits.LATB0 = 0;
-[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 30:     LATFbits.LATF0 = 0;
+[e = . . _LATFbits 0 0 -> -> 0 `i `uc ]
 "31
-[; ;LEDarray.c: 31:     LATBbits.LATB1 = 0;
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+[; ;LEDarray.c: 31:     LATBbits.LATB0 = 0;
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 "32
-[; ;LEDarray.c: 32: }
+[; ;LEDarray.c: 32:     LATBbits.LATB1 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"33
+[; ;LEDarray.c: 33: }
 [e :UE 2015 ]
 }
-"37
-[; ;LEDarray.c: 37: void LEDarray_disp_bin(unsigned int number)
-[v _LEDarray_disp_bin `(v ~T0 @X0 1 ef1`ui ]
 "38
-[; ;LEDarray.c: 38: {
+[; ;LEDarray.c: 38: void LEDarray_disp_bin(unsigned int number)
+[v _LEDarray_disp_bin `(v ~T0 @X0 1 ef1`ui ]
+"39
+[; ;LEDarray.c: 39: {
 {
 [e :U _LEDarray_disp_bin ]
-"37
-[; ;LEDarray.c: 37: void LEDarray_disp_bin(unsigned int number)
-[v _number `ui ~T0 @X0 1 r1 ]
 "38
-[; ;LEDarray.c: 38: {
+[; ;LEDarray.c: 38: void LEDarray_disp_bin(unsigned int number)
+[v _number `ui ~T0 @X0 1 r1 ]
+"39
+[; ;LEDarray.c: 39: {
 [f ]
-"42
-[; ;LEDarray.c: 42:     int mask= 0b000000001;
+"43
+[; ;LEDarray.c: 43:     int mask= 0b000000001;
 [v _mask `i ~T0 @X0 1 a ]
 [e = _mask -> 1 `i ]
-"43
-[; ;LEDarray.c: 43:     int led_arr[9];
-[v _led_arr `i ~T0 @X0 -> 9 `i a ]
 "44
-[; ;LEDarray.c: 44:     for(int ctr=0;ctr<9;ctr++){
+[; ;LEDarray.c: 44:     int led_arr[9];
+[v _led_arr `i ~T0 @X0 -> 9 `i a ]
+"45
+[; ;LEDarray.c: 45:     for(int ctr=0;ctr<9;ctr++){
 {
 [v _ctr `i ~T0 @X0 1 a ]
 [e = _ctr -> 0 `i ]
@@ -2176,143 +2191,143 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 2018  ]
 [e :U 2017 ]
 {
-"45
-[; ;LEDarray.c: 45:         if (number & mask)
-[e $ ! != & _number -> _mask `ui -> -> 0 `i `ui 2020  ]
 "46
-[; ;LEDarray.c: 46:             led_arr[ctr]=1;
+[; ;LEDarray.c: 46:         if (number & mask)
+[e $ ! != & _number -> _mask `ui -> -> 0 `i `ui 2020  ]
+"47
+[; ;LEDarray.c: 47:             led_arr[ctr]=1;
 [e = *U + &U _led_arr * -> -> _ctr `ui `ux -> -> # *U &U _led_arr `ui `ux -> 1 `i ]
 [e $U 2021  ]
-"48
-[; ;LEDarray.c: 48:         else
-[e :U 2020 ]
 "49
-[; ;LEDarray.c: 49:             led_arr[ctr]=0;
+[; ;LEDarray.c: 49:         else
+[e :U 2020 ]
+"50
+[; ;LEDarray.c: 50:             led_arr[ctr]=0;
 [e = *U + &U _led_arr * -> -> _ctr `ui `ux -> -> # *U &U _led_arr `ui `ux -> 0 `i ]
 [e :U 2021 ]
-"51
-[; ;LEDarray.c: 51:         mask<<=1;
-[e =<< _mask -> 1 `i ]
 "52
-[; ;LEDarray.c: 52:     }
+[; ;LEDarray.c: 52:         mask<<=1;
+[e =<< _mask -> 1 `i ]
+"53
+[; ;LEDarray.c: 53:     }
 }
 [e ++ _ctr -> 1 `i ]
 [e $ < _ctr -> 9 `i 2017  ]
 [e :U 2018 ]
 }
-"54
-[; ;LEDarray.c: 54:     LATGbits.LATG0 = led_arr[0];
-[e = . . _LATGbits 0 0 -> *U + &U _led_arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "55
-[; ;LEDarray.c: 55:     LATGbits.LATG1 = led_arr[1];
-[e = . . _LATGbits 0 1 -> *U + &U _led_arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 55:     LATGbits.LATG0 = led_arr[0];
+[e = . . _LATGbits 0 0 -> *U + &U _led_arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "56
-[; ;LEDarray.c: 56:     LATAbits.LATA2 = led_arr[2];
-[e = . . _LATAbits 0 2 -> *U + &U _led_arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 56:     LATGbits.LATG1 = led_arr[1];
+[e = . . _LATGbits 0 1 -> *U + &U _led_arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "57
-[; ;LEDarray.c: 57:     LATFbits.LATF6 = led_arr[3];
-[e = . . _LATFbits 0 6 -> *U + &U _led_arr * -> -> -> 3 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 57:     LATAbits.LATA2 = led_arr[2];
+[e = . . _LATAbits 0 2 -> *U + &U _led_arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "58
-[; ;LEDarray.c: 58:     LATAbits.LATA4 = led_arr[4];
-[e = . . _LATAbits 0 4 -> *U + &U _led_arr * -> -> -> 4 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 58:     LATFbits.LATF6 = led_arr[3];
+[e = . . _LATFbits 0 6 -> *U + &U _led_arr * -> -> -> 3 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "59
-[; ;LEDarray.c: 59:     LATAbits.LATA5 = led_arr[5];
-[e = . . _LATAbits 0 5 -> *U + &U _led_arr * -> -> -> 5 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 59:     LATAbits.LATA4 = led_arr[4];
+[e = . . _LATAbits 0 4 -> *U + &U _led_arr * -> -> -> 4 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "60
-[; ;LEDarray.c: 60:     LATFbits.LATF0 = led_arr[6];
-[e = . . _LATFbits 0 0 -> *U + &U _led_arr * -> -> -> 6 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 60:     LATAbits.LATA5 = led_arr[5];
+[e = . . _LATAbits 0 5 -> *U + &U _led_arr * -> -> -> 5 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "61
-[; ;LEDarray.c: 61:     LATBbits.LATB0 = led_arr[7];
-[e = . . _LATBbits 0 0 -> *U + &U _led_arr * -> -> -> 7 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 61:     LATFbits.LATF0 = led_arr[6];
+[e = . . _LATFbits 0 0 -> *U + &U _led_arr * -> -> -> 6 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "62
-[; ;LEDarray.c: 62:     LATBbits.LATB1 = led_arr[8];
-[e = . . _LATBbits 0 1 -> *U + &U _led_arr * -> -> -> 8 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+[; ;LEDarray.c: 62:     LATBbits.LATB0 = led_arr[7];
+[e = . . _LATBbits 0 0 -> *U + &U _led_arr * -> -> -> 7 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
 "63
-[; ;LEDarray.c: 63: }
+[; ;LEDarray.c: 63:     LATBbits.LATB1 = led_arr[8];
+[e = . . _LATBbits 0 1 -> *U + &U _led_arr * -> -> -> 8 `i `ui `ux -> -> # *U &U _led_arr `ui `ux `uc ]
+"64
+[; ;LEDarray.c: 64: }
 [e :UE 2016 ]
 }
-"69
-[; ;LEDarray.c: 69: void LEDarray_disp_dec(unsigned int number)
-[v _LEDarray_disp_dec `(v ~T0 @X0 1 ef1`ui ]
 "70
-[; ;LEDarray.c: 70: {
+[; ;LEDarray.c: 70: void LEDarray_disp_dec(unsigned int number)
+[v _LEDarray_disp_dec `(v ~T0 @X0 1 ef1`ui ]
+"71
+[; ;LEDarray.c: 71: {
 {
 [e :U _LEDarray_disp_dec ]
-"69
-[; ;LEDarray.c: 69: void LEDarray_disp_dec(unsigned int number)
-[v _number `ui ~T0 @X0 1 r1 ]
 "70
-[; ;LEDarray.c: 70: {
-[f ]
+[; ;LEDarray.c: 70: void LEDarray_disp_dec(unsigned int number)
+[v _number `ui ~T0 @X0 1 r1 ]
 "71
-[; ;LEDarray.c: 71:     if(number>10){
+[; ;LEDarray.c: 71: {
+[f ]
+"72
+[; ;LEDarray.c: 72:     if(number>10){
 [e $ ! > _number -> -> 10 `i `ui 2023  ]
 {
-"72
-[; ;LEDarray.c: 72:  unsigned int disp_val;
-[v _disp_val `ui ~T0 @X0 1 a ]
 "73
-[; ;LEDarray.c: 73:     disp_val=powf(2,(number/10)-1);
+[; ;LEDarray.c: 73:  unsigned int disp_val;
+[v _disp_val `ui ~T0 @X0 1 a ]
+"74
+[; ;LEDarray.c: 74:     disp_val=powf(2,(number/10)-1);
 [e = _disp_val -> ( _powf (2 , -> -> 2 `i `f -> - / _number -> -> 10 `i `ui -> -> 1 `i `ui `f `ui ]
-"76
-[; ;LEDarray.c: 76:  LEDarray_disp_bin(disp_val);
-[e ( _LEDarray_disp_bin (1 _disp_val ]
 "77
-[; ;LEDarray.c: 77: }
-}
-[e :U 2023 ]
+[; ;LEDarray.c: 77:  LEDarray_disp_bin(disp_val);
+[e ( _LEDarray_disp_bin (1 _disp_val ]
 "78
 [; ;LEDarray.c: 78: }
+}
+[e :U 2023 ]
+"79
+[; ;LEDarray.c: 79: }
 [e :UE 2022 ]
 }
-"85
-[; ;LEDarray.c: 85: void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
-[v _LEDarray_disp_PPM `(v ~T0 @X0 1 ef2`ui`ui ]
 "86
-[; ;LEDarray.c: 86: {
+[; ;LEDarray.c: 86: void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
+[v _LEDarray_disp_PPM `(v ~T0 @X0 1 ef2`ui`ui ]
+"87
+[; ;LEDarray.c: 87: {
 {
 [e :U _LEDarray_disp_PPM ]
-"85
-[; ;LEDarray.c: 85: void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
+"86
+[; ;LEDarray.c: 86: void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
 [v _cur_val `ui ~T0 @X0 1 r1 ]
 [v _max `ui ~T0 @X0 1 r2 ]
-"86
-[; ;LEDarray.c: 86: {
-[f ]
 "87
-[; ;LEDarray.c: 87:  unsigned int disp_val;
+[; ;LEDarray.c: 87: {
+[f ]
+"88
+[; ;LEDarray.c: 88:  unsigned int disp_val;
 [v _disp_val `ui ~T0 @X0 1 a ]
-"90
-[; ;LEDarray.c: 90:  LEDarray_disp_bin(disp_val);
-[e ( _LEDarray_disp_bin (1 _disp_val ]
 "91
-[; ;LEDarray.c: 91: }
+[; ;LEDarray.c: 91:  LEDarray_disp_bin(disp_val);
+[e ( _LEDarray_disp_bin (1 _disp_val ]
+"92
+[; ;LEDarray.c: 92: }
 [e :UE 2024 ]
 }
-"93
-[; ;LEDarray.c: 93: int incrementseconds(int seconds)
-[v _incrementseconds `(i ~T0 @X0 1 ef1`i ]
 "94
-[; ;LEDarray.c: 94: {
+[; ;LEDarray.c: 94: int incrementseconds(int seconds)
+[v _incrementseconds `(i ~T0 @X0 1 ef1`i ]
+"95
+[; ;LEDarray.c: 95: {
 {
 [e :U _incrementseconds ]
-"93
-[; ;LEDarray.c: 93: int incrementseconds(int seconds)
-[v _seconds `i ~T0 @X0 1 r1 ]
 "94
-[; ;LEDarray.c: 94: {
-[f ]
+[; ;LEDarray.c: 94: int incrementseconds(int seconds)
+[v _seconds `i ~T0 @X0 1 r1 ]
 "95
-[; ;LEDarray.c: 95:     seconds++;
-[e ++ _seconds -> 1 `i ]
+[; ;LEDarray.c: 95: {
+[f ]
 "96
-[; ;LEDarray.c: 96:     LEDarray_disp_bin(seconds);
-[e ( _LEDarray_disp_bin (1 -> _seconds `ui ]
+[; ;LEDarray.c: 96:     seconds++;
+[e ++ _seconds -> 1 `i ]
 "97
-[; ;LEDarray.c: 97:     return seconds;
+[; ;LEDarray.c: 97:     LEDarray_disp_bin(seconds);
+[e ( _LEDarray_disp_bin (1 -> _seconds `ui ]
+"98
+[; ;LEDarray.c: 98:     return seconds;
 [e ) _seconds ]
 [e $UE 2025  ]
-"98
-[; ;LEDarray.c: 98: }
+"99
+[; ;LEDarray.c: 99: }
 [e :UE 2025 ]
 }

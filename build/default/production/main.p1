@@ -68,6 +68,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29718
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 29718: extern volatile TRISDbits_t TRISDbits __attribute__((address(0xF84)));
 [v _TRISDbits `VS1379 ~T0 @X0 0 e@3972 ]
+"8 ./comparator.h
+[; ;./comparator.h: 8: void DAC_init(void);
+[v _DAC_init `(v ~T0 @X0 0 ef ]
 "6 ./LEDarray.h
 [; ;./LEDarray.h: 6: void LEDarray_init(void);
 [v _LEDarray_init `(v ~T0 @X0 0 ef ]
@@ -80,15 +83,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10
 [; ;./comparator.h: 10: void Comp1_inithigh(void);
 [v _Comp1_inithigh `(v ~T0 @X0 0 ef ]
-"8 ./interrupts.h
-[; ;./interrupts.h: 8: void Interrupts_init(void);
+"10 ./interrupts.h
+[; ;./interrupts.h: 10: void Interrupts_init(void);
 [v _Interrupts_init `(v ~T0 @X0 0 ef ]
-"9 ./timers.h
-[; ;./timers.h: 9: unsigned int get16bitTMR0val(void);
-[v _get16bitTMR0val `(ui ~T0 @X0 0 ef ]
-"10 ./LEDarray.h
-[; ;./LEDarray.h: 10: int incrementseconds(int seconds);
-[v _incrementseconds `(i ~T0 @X0 0 ef1`i ]
+"6 ./Functions.h
+[; ;./Functions.h: 6: void increment();
+[v _increment `(v ~T0 @X0 0 e? ]
 "2 main.c
 [p x FEXTOSC  =  HS      ]
 "3
@@ -2069,33 +2069,68 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40928
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 40928: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
+"7 ./Global Variables.h
+[; ;./Global Variables.h: 7:     int seconds;
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
+"10
+[; ;./Global Variables.h: 10:     int week;
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
+"11
+[; ;./Global Variables.h: 11:     int year;
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
+"7
+[; ;./Global Variables.h: 7:     int seconds;
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
+"10
+[; ;./Global Variables.h: 10:     int week;
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
+"11
+[; ;./Global Variables.h: 11:     int year;
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"17 main.c
-[; ;main.c: 17: void main(void) {
+"19 main.c
+[; ;main.c: 19: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"19
-[; ;main.c: 19:     LATHbits.LATH3=1;
-[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
-"20
-[; ;main.c: 20:     TRISHbits.TRISH3=0;
-[e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
 "21
-[; ;main.c: 21:     LATDbits.LATD7=0;
-[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 21:     LATHbits.LATH3=1;
+[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
 "22
-[; ;main.c: 22:     TRISDbits.TRISD7=0;
+[; ;main.c: 22:     TRISHbits.TRISH3=0;
+[e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
+"23
+[; ;main.c: 23:     LATDbits.LATD7=0;
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"24
+[; ;main.c: 24:     TRISDbits.TRISD7=0;
 [e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
-"25
-[; ;main.c: 25:     int seconds = 0;
-[v _seconds `i ~T0 @X0 1 a ]
-[e = _seconds -> 0 `i ]
 "26
-[; ;main.c: 26:     int timer = 0;
-[v _timer `i ~T0 @X0 1 a ]
-[e = _timer -> 0 `i ]
+[; ;main.c: 26:     DAC_init();
+[e ( _DAC_init ..  ]
 "27
 [; ;main.c: 27:     LEDarray_init();
 [e ( _LEDarray_init ..  ]
@@ -2112,30 +2147,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 31:     Interrupts_init();
 [e ( _Interrupts_init ..  ]
 "32
-[; ;main.c: 32:     while(1){
+[; ;main.c: 32:     int hour = 0;
+[v _hour `i ~T0 @X0 1 a ]
+[e = _hour -> 0 `i ]
+"33
+[; ;main.c: 33:     while(1){
 [e :U 2017 ]
 {
-"33
-[; ;main.c: 33:         timer = get16bitTMR0val();
-[e = _timer -> ( _get16bitTMR0val ..  `i ]
 "34
-[; ;main.c: 34:         if (timer == 0b11111111){
-[e $ ! == _timer -> 255 `i 2019  ]
-{
+[; ;main.c: 34:         increment();
+[e ( _increment ..  ]
 "35
-[; ;main.c: 35:             seconds = incrementseconds(seconds);
-[e = _seconds ( _incrementseconds (1 _seconds ]
-"37
-[; ;main.c: 37:     }
-}
-[e :U 2019 ]
-"38
-[; ;main.c: 38:     }
+[; ;main.c: 35:     }
 }
 [e :U 2016 ]
 [e $U 2017  ]
 [e :U 2018 ]
-"39
-[; ;main.c: 39:     }
+"36
+[; ;main.c: 36:     }
 [e :UE 2015 ]
 }

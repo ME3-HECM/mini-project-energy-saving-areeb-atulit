@@ -24241,6 +24241,19 @@ void Comp1_init(void);
 void Comp1_inithigh(void);
 # 2 "comparator.c" 2
 
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 3 "comparator.c" 2
 
 
 

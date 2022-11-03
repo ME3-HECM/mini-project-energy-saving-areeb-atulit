@@ -2,6 +2,8 @@
 #define _interrupts_H
 
 #include <xc.h>
+#include "Functions.h"
+#include "Global Variables.h"
 
 #define _XTAL_FREQ 64000000
 

@@ -2,6 +2,7 @@
 #include "LEDarray.h"
 #include <math.h>
 #include "ADC.h"
+#include "Global Variables.h"
 /************************************
 / LEDarray_init
 / Function used to initialise pins to drive the LEDarray

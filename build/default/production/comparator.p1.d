@@ -1,3 +1,4 @@
 build/default/production/comparator.p1:  \
 comparator.c  \
-comparator.h 
+comparator.h  \
+Global\ Variables.h 

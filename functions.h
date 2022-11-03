@@ -1,10 +1,7 @@
-#ifndef _functions_H
-#define _functions_H
-
+#ifndef _Functions_H
+#define _Functions_H
 #include <xc.h>
-
 #define _XTAL_FREQ 64000000
-
-void incrementseconds(int seconds);
-
+//function prototypes
+void increment();
 #endif

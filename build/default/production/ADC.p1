@@ -2054,116 +2054,131 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40928
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 40928: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"10 ADC.c
-[; ;ADC.c: 10: void ADC_init(void)
-[v _ADC_init `(v ~T0 @X0 1 ef ]
+"7 ./Global Variables.h
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
+"10
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
 "11
-[; ;ADC.c: 11: {
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
+"11 ADC.c
+[; ;ADC.c: 11: void ADC_init(void)
+[v _ADC_init `(v ~T0 @X0 1 ef ]
+"12
+[; ;ADC.c: 12: {
 {
 [e :U _ADC_init ]
 [f ]
-"12
-[; ;ADC.c: 12:     TRISAbits.TRISA3=1;
-[e = . . _TRISAbits 0 3 -> -> 1 `i `uc ]
 "13
-[; ;ADC.c: 13:     ANSELAbits.ANSELA3=1;
+[; ;ADC.c: 13:     TRISAbits.TRISA3=1;
+[e = . . _TRISAbits 0 3 -> -> 1 `i `uc ]
+"14
+[; ;ADC.c: 14:     ANSELAbits.ANSELA3=1;
 [e = . . _ANSELAbits 0 3 -> -> 1 `i `uc ]
-"16
-[; ;ADC.c: 16:     ADREFbits.ADNREF = 0;
-[e = . . _ADREFbits 0 2 -> -> 0 `i `uc ]
 "17
-[; ;ADC.c: 17:     ADREFbits.ADPREF = 0b00;
-[e = . . _ADREFbits 0 0 -> -> 0 `i `uc ]
+[; ;ADC.c: 17:     ADREFbits.ADNREF = 0;
+[e = . . _ADREFbits 0 2 -> -> 0 `i `uc ]
 "18
-[; ;ADC.c: 18:     ADPCH=0b11;
-[e = _ADPCH -> -> 3 `i `uc ]
+[; ;ADC.c: 18:     ADREFbits.ADPREF = 0b00;
+[e = . . _ADREFbits 0 0 -> -> 0 `i `uc ]
 "19
-[; ;ADC.c: 19:     ADCON0bits.ADFM = 0;
-[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
+[; ;ADC.c: 19:     ADPCH=0b11;
+[e = _ADPCH -> -> 3 `i `uc ]
 "20
-[; ;ADC.c: 20:     ADCON0bits.ADCS = 1;
-[e = . . _ADCON0bits 0 4 -> -> 1 `i `uc ]
+[; ;ADC.c: 20:     ADCON0bits.ADFM = 0;
+[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
 "21
-[; ;ADC.c: 21:     ADCON0bits.ADON = 1;
-[e = . . _ADCON0bits 0 7 -> -> 1 `i `uc ]
+[; ;ADC.c: 21:     ADCON0bits.ADCS = 1;
+[e = . . _ADCON0bits 0 4 -> -> 1 `i `uc ]
 "22
-[; ;ADC.c: 22: }
+[; ;ADC.c: 22:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 7 -> -> 1 `i `uc ]
+"23
+[; ;ADC.c: 23: }
 [e :UE 2015 ]
 }
-"24
-[; ;ADC.c: 24: unsigned int ADC_getval(void)
-[v _ADC_getval `(ui ~T0 @X0 1 ef ]
 "25
-[; ;ADC.c: 25: {
+[; ;ADC.c: 25: unsigned int ADC_getval(void)
+[v _ADC_getval `(ui ~T0 @X0 1 ef ]
+"26
+[; ;ADC.c: 26: {
 {
 [e :U _ADC_getval ]
 [f ]
-"26
-[; ;ADC.c: 26:     unsigned int tmpval;
+"27
+[; ;ADC.c: 27:     unsigned int tmpval;
 [v _tmpval `ui ~T0 @X0 1 a ]
-"28
-[; ;ADC.c: 28:     ADCON0bits.GO = 1;
+"29
+[; ;ADC.c: 29:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
-"30
-[; ;ADC.c: 30:     while (ADCON0bits.GO);
+"31
+[; ;ADC.c: 31:     while (ADCON0bits.GO);
 [e $U 2017  ]
 [e :U 2018 ]
 [e :U 2017 ]
 [e $ != -> . . _ADCON0bits 1 0 `i -> 0 `i 2018  ]
 [e :U 2019 ]
-"32
-[; ;ADC.c: 32:     tmpval = ADRESH;
+"33
+[; ;ADC.c: 33:     tmpval = ADRESH;
 [e = _tmpval -> _ADRESH `ui ]
-"36
-[; ;ADC.c: 36:     tmpval = 255 - tmpval;
+"37
+[; ;ADC.c: 37:     tmpval = 255 - tmpval;
 [e = _tmpval - -> -> 255 `i `ui _tmpval ]
-"38
-[; ;ADC.c: 38:     return tmpval;
+"39
+[; ;ADC.c: 39:     return tmpval;
 [e ) _tmpval ]
 [e $UE 2016  ]
-"39
-[; ;ADC.c: 39: }
+"40
+[; ;ADC.c: 40: }
 [e :UE 2016 ]
 }
-"40
-[; ;ADC.c: 40: void ADC_lightMeter(int val, int range)
-[v _ADC_lightMeter `(v ~T0 @X0 1 ef2`i`i ]
 "41
-[; ;ADC.c: 41: {
+[; ;ADC.c: 41: void ADC_lightMeter(int val, int range)
+[v _ADC_lightMeter `(v ~T0 @X0 1 ef2`i`i ]
+"42
+[; ;ADC.c: 42: {
 {
 [e :U _ADC_lightMeter ]
-"40
-[; ;ADC.c: 40: void ADC_lightMeter(int val, int range)
+"41
+[; ;ADC.c: 41: void ADC_lightMeter(int val, int range)
 [v _val `i ~T0 @X0 1 r1 ]
 [v _range `i ~T0 @X0 1 r2 ]
-"41
-[; ;ADC.c: 41: {
-[f ]
 "42
-[; ;ADC.c: 42:     unsigned int LEDintensity = 0;
+[; ;ADC.c: 42: {
+[f ]
+"43
+[; ;ADC.c: 43:     unsigned int LEDintensity = 0;
 [v _LEDintensity `ui ~T0 @X0 1 a ]
 [e = _LEDintensity -> -> 0 `i `ui ]
-"43
-[; ;ADC.c: 43:     int ctr = val*10/range;
+"44
+[; ;ADC.c: 44:     int ctr = val*10/range;
 [v _ctr `i ~T0 @X0 1 a ]
 [e = _ctr / * _val -> 10 `i _range ]
-"45
-[; ;ADC.c: 45:     for(;ctr > 0;ctr--)
+"46
+[; ;ADC.c: 46:     for(;ctr > 0;ctr--)
 {
 [e $ > _ctr -> 0 `i 2021  ]
 [e $U 2022  ]
 [e :U 2021 ]
-"46
-[; ;ADC.c: 46:         LEDintensity+=powf(2,ctr-1);
+"47
+[; ;ADC.c: 47:         LEDintensity+=powf(2,ctr-1);
 [e =+ _LEDintensity ( _powf (2 , -> -> 2 `i `f -> - _ctr -> 1 `i `f ]
 [e -- _ctr -> 1 `i ]
 [e $ > _ctr -> 0 `i 2021  ]
 [e :U 2022 ]
 }
-"48
-[; ;ADC.c: 48:     LEDarray_disp_bin(LEDintensity);
-[e ( _LEDarray_disp_bin (1 _LEDintensity ]
 "49
-[; ;ADC.c: 49:     }
+[; ;ADC.c: 49:     LEDarray_disp_bin(LEDintensity);
+[e ( _LEDarray_disp_bin (1 _LEDintensity ]
+"50
+[; ;ADC.c: 50:     }
 [e :UE 2020 ]
 }

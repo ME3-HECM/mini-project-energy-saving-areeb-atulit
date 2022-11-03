@@ -1976,26 +1976,116 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40928
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f67k40.h: 40928: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"16 functions.c
-[; ;functions.c: 16: void incrementseconds(int seconds)
-[v _incrementseconds `(v ~T0 @X0 1 ef1`i ]
-"17
-[; ;functions.c: 17: {
+"7 ./Global Variables.h
+[; ;./Global Variables.h: 7:     int seconds;
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
+"10
+[; ;./Global Variables.h: 10:     int week;
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
+"11
+[; ;./Global Variables.h: 11:     int year;
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
+"7
+[; ;./Global Variables.h: 7:     int seconds;
+[; ;./Global Variables.h: 7:     int seconds;
+[v _seconds `i ~T0 @X0 1 e ]
+"8
+[; ;./Global Variables.h: 8:     int hour;
+[; ;./Global Variables.h: 8:     int hour;
+[v _hour `i ~T0 @X0 1 e ]
+"9
+[; ;./Global Variables.h: 9:     int day;
+[; ;./Global Variables.h: 9:     int day;
+[v _day `i ~T0 @X0 1 e ]
+"10
+[; ;./Global Variables.h: 10:     int week;
+[; ;./Global Variables.h: 10:     int week;
+[v _week `i ~T0 @X0 1 e ]
+"11
+[; ;./Global Variables.h: 11:     int year;
+[; ;./Global Variables.h: 11:     int year;
+[v _year `i ~T0 @X0 1 e ]
+"11 Functions.c
+[; ;Functions.c: 11: void increment()
+[v _increment `(v ~T0 @X0 1 ef ]
+"12
+[; ;Functions.c: 12: {
 {
-[e :U _incrementseconds ]
-"16
-[; ;functions.c: 16: void incrementseconds(int seconds)
-[v _seconds `i ~T0 @X0 1 r1 ]
-"17
-[; ;functions.c: 17: {
+[e :U _increment ]
 [f ]
+"14
+[; ;Functions.c: 14:     if (seconds == 2)
+[e $ ! == _seconds -> 2 `i 2016  ]
+"15
+[; ;Functions.c: 15:     {
+{
+"16
+[; ;Functions.c: 16:         hour++;
+[e ++ _hour -> 1 `i ]
+"17
+[; ;Functions.c: 17:         LEDarray_disp_bin(hour);
+[e ( _LEDarray_disp_bin (1 -> _hour `ui ]
 "18
-[; ;functions.c: 18:     seconds++;
-[e ++ _seconds -> 1 `i ]
-"19
-[; ;functions.c: 19:     LEDarray_disp_bin(seconds);
-[e ( _LEDarray_disp_bin (1 -> _seconds `ui ]
+[; ;Functions.c: 18:         seconds = 0;
+[e = _seconds -> 0 `i ]
 "20
-[; ;functions.c: 20: }
+[; ;Functions.c: 20:     }
+}
+[e :U 2016 ]
+"22
+[; ;Functions.c: 22:     if (hour == 24)
+[e $ ! == _hour -> 24 `i 2017  ]
+"23
+[; ;Functions.c: 23:     {
+{
+"24
+[; ;Functions.c: 24:         day++;
+[e ++ _day -> 1 `i ]
+"25
+[; ;Functions.c: 25:         hour = 0;
+[e = _hour -> 0 `i ]
+"26
+[; ;Functions.c: 26:     }
+}
+[e :U 2017 ]
+"28
+[; ;Functions.c: 28:     if (day%7 == 0)
+[e $ ! == % _day -> 7 `i -> 0 `i 2018  ]
+"29
+[; ;Functions.c: 29:     {
+{
+"30
+[; ;Functions.c: 30:         week++;
+[e ++ _week -> 1 `i ]
+"31
+[; ;Functions.c: 31:     }
+}
+[e :U 2018 ]
+"32
+[; ;Functions.c: 32:     if (day == 365)
+[e $ ! == _day -> 365 `i 2019  ]
+"33
+[; ;Functions.c: 33:     {
+{
+"34
+[; ;Functions.c: 34:         year++;
+[e ++ _year -> 1 `i ]
+"35
+[; ;Functions.c: 35:     }
+}
+[e :U 2019 ]
+"37
+[; ;Functions.c: 37: }
 [e :UE 2015 ]
 }

@@ -1,7 +1,7 @@
-build/default/production/functions.p1:  \
-functions.c  \
+build/default/production/Functions.p1:  \
+Functions.c  \
+Functions.h  \
+ADC.h  \
 LEDarray.h  \
 interrupts.h  \
-comparator.h  \
-timers.h  \
-functions.h 
+Global\ Variables.h 

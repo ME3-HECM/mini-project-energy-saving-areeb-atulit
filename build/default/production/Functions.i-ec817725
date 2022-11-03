@@ -1,4 +1,4 @@
-# 1 "LEDarray.c"
+# 1 "Functions.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "LEDarray.c" 2
+# 1 "Functions.c" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -24226,20 +24226,16 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 2 3
-# 1 "LEDarray.c" 2
+# 1 "Functions.c" 2
 
-# 1 "./LEDarray.h" 1
-
-
+# 1 "./Functions.h" 1
 
 
 
-void LEDarray_init(void);
-void LEDarray_disp_bin(unsigned int number);
-void LEDarray_disp_dec(unsigned int number);
-void LEDarray_disp_PPM(unsigned int number, unsigned int max);
-int incrementseconds(int seconds);
-# 2 "LEDarray.c" 2
+
+
+int increment(int seconds, int hour,int day, int week, int year);
+# 2 "Functions.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 1 3
 # 15 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 3
@@ -24610,7 +24606,7 @@ double jn(int, double);
 double y0(double);
 double y1(double);
 double yn(int, double);
-# 3 "LEDarray.c" 2
+# 3 "Functions.c" 2
 
 # 1 "./ADC.h" 1
 
@@ -24623,7 +24619,26 @@ double yn(int, double);
 void ADC_init(void);
 unsigned int ADC_getval(void);
 void ADC_lightMeter(int val, int range);
-# 4 "LEDarray.c" 2
+# 4 "Functions.c" 2
+
+# 1 "./LEDarray.h" 1
+
+
+
+
+
+void LEDarray_init(void);
+void LEDarray_disp_bin(unsigned int number);
+void LEDarray_disp_dec(unsigned int number);
+void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+int incrementseconds(int seconds);
+# 5 "Functions.c" 2
+
+# 1 "./interrupts.h" 1
+
+
+
+
 
 # 1 "./Global Variables.h" 1
 
@@ -24637,99 +24652,56 @@ void ADC_lightMeter(int val, int range);
     int day;
     int week;
     int year;
-# 5 "LEDarray.c" 2
+# 6 "./interrupts.h" 2
+
+
+
+
+void Interrupts_init(void);
+void __attribute__((picinterrupt(("high_priority")))) HighISR();
+# 6 "Functions.c" 2
+
+# 1 "./Global Variables.h" 1
 
 
 
 
 
-void LEDarray_init(void)
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 7 "Functions.c" 2
+
+
+
+
+int increment(int seconds, int hour,int day, int week, int year)
 {
+    if (seconds == 10)
+    {
+        hour++;
+        LEDarray_disp_bin(hour);
+        seconds = 0;
 
-    TRISGbits.TRISG0 = 0;
-    TRISGbits.TRISG1 = 0;
-    TRISAbits.TRISA2 = 0;
-    TRISFbits.TRISF6 = 0;
-    TRISAbits.TRISA4 = 0;
-    TRISAbits.TRISA5 = 0;
-    TRISFbits.TRISF0 = 0;
-    TRISBbits.TRISB0 = 0;
-    TRISBbits.TRISB1 = 0;
-
-
-    LATGbits.LATG0 = 0;
-    LATGbits.LATG1 = 0;
-    LATAbits.LATA2 = 0;
-    LATFbits.LATF6 = 0;
-    LATAbits.LATA4 = 0;
-    LATAbits.LATA5 = 0;
-    LATFbits.LATF0 = 0;
-    LATBbits.LATB0 = 0;
-    LATBbits.LATB1 = 0;
-}
-
-
-
-
-void LEDarray_disp_bin(unsigned int number)
-{
-
-
-
-    int mask= 0b000000001;
-    int led_arr[9];
-    for(int ctr=0;ctr<9;ctr++){
-        if (number & mask)
-            led_arr[ctr]=1;
-
-        else
-            led_arr[ctr]=0;
-
-        mask<<=1;
     }
 
-    LATGbits.LATG0 = led_arr[0];
-    LATGbits.LATG1 = led_arr[1];
-    LATAbits.LATA2 = led_arr[2];
-    LATFbits.LATF6 = led_arr[3];
-    LATAbits.LATA4 = led_arr[4];
-    LATAbits.LATA5 = led_arr[5];
-    LATFbits.LATF0 = led_arr[6];
-    LATBbits.LATB0 = led_arr[7];
-    LATBbits.LATB1 = led_arr[8];
-}
+    if (hour == 24)
+    {
+        day++;
+        hour = 0;
+    }
 
+    if (day%7 == 0)
+    {
+        week++;
+    }
+    if (day == 365)
+    {
+        year++;
+    }
 
-
-
-
-void LEDarray_disp_dec(unsigned int number)
-{
-    if(number>10){
- unsigned int disp_val;
-    disp_val=powf(2,(number/10)-1);
-
-
- LEDarray_disp_bin(disp_val);
-}
-}
-
-
-
-
-
-
-void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
-{
- unsigned int disp_val;
-
-
- LEDarray_disp_bin(disp_val);
-}
-
-int incrementseconds(int seconds)
-{
-    seconds++;
-    LEDarray_disp_bin(seconds);
-    return seconds;
+    return seconds, hour, day, week, year;
 }

@@ -24233,12 +24233,62 @@ unsigned char __t3rd16on(void);
 
 
 
+# 1 "./Functions.h" 1
+
+
+
+
+
+void increment();
+# 5 "./interrupts.h" 2
+
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 6 "./interrupts.h" 2
+
 
 
 
 void Interrupts_init(void);
 void __attribute__((picinterrupt(("high_priority")))) HighISR();
 # 2 "interrupts.c" 2
+
+# 1 "./LEDarray.h" 1
+
+
+
+
+
+void LEDarray_init(void);
+void LEDarray_disp_bin(unsigned int number);
+void LEDarray_disp_dec(unsigned int number);
+void LEDarray_disp_PPM(unsigned int number, unsigned int max);
+int incrementseconds(int seconds);
+# 3 "interrupts.c" 2
+
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 4 "interrupts.c" 2
 
 
 
@@ -24250,8 +24300,10 @@ void Interrupts_init(void)
 
 
     PIE2bits.C1IE=1;
-        INTCONbits.IPEN=0;
-
+    PIE0bits.TMR0IE=1;
+    IPR2bits.C1IP = 1;
+    IPR0bits.TMR0IP = 0;
+    INTCONbits.IPEN=1;
     INTCONbits.PEIE=1;
     INTCONbits.GIE=1;
 
@@ -24265,9 +24317,18 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR()
 {
 
 
-    if(PIR2bits.C1IF){
+        if(PIR2bits.C1IF){
         LATHbits.LATH3 = !LATHbits.LATH3;
         PIR2bits.C1IF=0;
+    }
+}
 
+void __attribute__((picinterrupt(("low_priority")))) LowISR()
+{
+    if(PIR0bits.TMR0IF){
+        seconds++;
+        TMR0H=00001011;
+        TMR0L=11011011;
+        PIR0bits.TMR0IF = 0;
     }
 }

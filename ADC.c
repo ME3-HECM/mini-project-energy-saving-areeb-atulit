@@ -2,6 +2,7 @@
 #include "ADC.h"
 #include <math.h>
 #include "LEDarray.h"
+#include "Global Variables.h"
 /************************************
 / ADC_init_init
 / Function used to initialise ADC module and set it up

@@ -1,6 +1,6 @@
 #include <xc.h>
 #include "comparator.h"
-
+#include "Global Variables.h"
 /************************************
  * Function to set up DAC for use by the comparator module
 ************************************/

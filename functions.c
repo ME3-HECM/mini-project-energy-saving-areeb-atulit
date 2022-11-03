@@ -1,20 +1,37 @@
-/*
- * File:   functions.c
- * Author: 44756
- *
- * Created on October 31, 2022, 11:49 PM
- */
-
-
 #include <xc.h>
+#include "Functions.h"
+#include <math.h>
+#include "ADC.h"
 #include "LEDarray.h"
 #include "interrupts.h"
-#include "comparator.h"
-#include "timers.h"
-#include "functions.h"
+#include "Global Variables.h"
+/************************************
 
-void incrementseconds(int seconds)
+************************************/
+void increment()
 {
-    seconds++;
-    LEDarray_disp_bin(seconds);
+    
+    if (seconds == 2)
+    {
+        hour++;
+        LEDarray_disp_bin(hour);
+        seconds = 0;
+        
+    }
+    
+    if (hour == 24)
+    {
+        day++;
+        hour = 0;
+    }
+    
+    if (day%7 == 0)
+    {
+        week++;
+    }
+    if (day == 365)
+    {
+        year++;
+    }
+    
 }

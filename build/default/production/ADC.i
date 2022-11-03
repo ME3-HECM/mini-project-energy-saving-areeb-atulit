@@ -24625,6 +24625,20 @@ void LEDarray_disp_PPM(unsigned int number, unsigned int max);
 int incrementseconds(int seconds);
 # 4 "ADC.c" 2
 
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int day;
+    int week;
+    int year;
+# 5 "ADC.c" 2
+
 
 
 

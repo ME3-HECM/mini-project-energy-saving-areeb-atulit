@@ -10,8 +10,10 @@
 #include "interrupts.h"
 #include "comparator.h"
 #include "timers.h"
-
+#include "Functions.h"
+#include "Global Variables.h"
 #define _XTAL_FREQ 64000000 //note intrinsic _delay function is 62.5ns at 64,000,000Hz  
+
 
 
 void main(void) {
@@ -21,20 +23,16 @@ void main(void) {
     LATDbits.LATD7=0;   //set initial output state
     TRISDbits.TRISD7=0; //set TRIS value for pin (output)
 	//call your initialisation functions to set up the hardware modules
-    //DAC_init();
-    int seconds = 0;
-    int timer = 0;
+    DAC_init();
     LEDarray_init();
     Timer0_init();
     Comp1_init();
     Comp1_inithigh();
     Interrupts_init();
+    int hour = 0;
     while(1){
-        timer = get16bitTMR0val();
-        if (timer == 0b11111111){
-            seconds = incrementseconds(seconds);
-            //__delay_ms(500);
+        increment();
     }
     }
-    }
+
 
