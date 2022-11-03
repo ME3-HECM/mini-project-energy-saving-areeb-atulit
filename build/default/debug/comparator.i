@@ -1,4 +1,4 @@
-# 1 "timers.c"
+# 1 "comparator.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "timers.c" 2
+# 1 "comparator.c" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -24226,19 +24226,20 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.h" 2 3
-# 1 "timers.c" 2
+# 1 "comparator.c" 2
 
-# 1 "./timers.h" 1
-
-
+# 1 "./comparator.h" 1
 
 
 
 
 
-void Timer0_init(void);
-unsigned int get16bitTMR0val(void);
-# 2 "timers.c" 2
+
+
+void DAC_init(void);
+void Comp1_init(void);
+void Comp1_inithigh(void);
+# 2 "comparator.c" 2
 
 # 1 "./Global Variables.h" 1
 
@@ -24247,37 +24248,54 @@ unsigned int get16bitTMR0val(void);
 
 
 
-    int seconds;
-    int hour;
+    volatile int seconds;
+    volatile int hour;
     int day;
     int week;
     int year;
-# 3 "timers.c" 2
+# 3 "comparator.c" 2
 
 
 
 
-void Timer0_init(void)
+void DAC_init(void)
 {
-    T0CON1bits.T0CS=0b010;
-    T0CON1bits.T0ASYNC=1;
-    T0CON1bits.T0CKPS=0b1000;
-    T0CON0bits.T016BIT=1;
+    DAC1CON0bits.PSS=0b00;
+    DAC1CON0bits.NSS=0b0;
 
 
-    TMR0H=0b00001011;
-    TMR0L=0b11011011;
-    T0CON0bits.T0EN=1;
+
+    DAC1CON1bits.DAC1R=20;
+    DAC1CON0bits.DAC1EN=1;
 }
 
 
 
 
 
-unsigned int get16bitTMR0val(void)
-{
- unsigned int a=TMR0L;
-    unsigned int b=TMR0H;
 
-    return b;
+
+void Comp1_init(void)
+{
+    TRISFbits.TRISF7=1;
+    CM1NCHbits.NCH=0b011;
+    CM1PCHbits.PCH=0b101;
+    CM1CON0bits.HYS=1;
+    CM1CON0bits.POL=1;
+    CM1CON1bits.INTP=1;
+    DAC_init();
+    CM1CON0bits.EN=1;
+
+}
+
+void Comp1_inithigh(void)
+{
+    TRISFbits.TRISF7=1;
+    CM1NCHbits.NCH=0b011;
+    CM1PCHbits.PCH=0b101;
+    CM1CON0bits.HYS=1;
+    CM1CON0bits.POL=1;
+    CM1CON1bits.INTN=1;
+    DAC_init();
+    CM1CON0bits.EN=1;
 }

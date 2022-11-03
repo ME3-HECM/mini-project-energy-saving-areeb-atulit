@@ -4,8 +4,8 @@
 
 #include <xc.h> 
 
-    int seconds;
-    int hour;
+    volatile int seconds;
+    volatile int hour;
     int day;
     int week;
     int year;

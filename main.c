@@ -12,27 +12,37 @@
 #include "timers.h"
 #include "Functions.h"
 #include "Global Variables.h"
+#include "ADC.h"
 #define _XTAL_FREQ 64000000 //note intrinsic _delay function is 62.5ns at 64,000,000Hz  
 
-
-
 void main(void) {
-    
-    LATHbits.LATH3=1;   //set initial output state
-    TRISHbits.TRISH3=0; //set TRIS value for pin (output)
-    LATDbits.LATD7=0;   //set initial output state
-    TRISDbits.TRISD7=0; //set TRIS value for pin (output)
-	//call your initialisation functions to set up the hardware modules
+
+    LATHbits.LATH3 = 1; //set initial output state
+    TRISHbits.TRISH3 = 0; //set TRIS value for pin (output)
+    LATDbits.LATD7 = 1; //set initial output state
+    TRISDbits.TRISD7 = 0; //set TRIS value for pin (output)
+    //call your initialisation functions to set up the hardware modules
+    hour = 1;
     DAC_init();
     LEDarray_init();
     Timer0_init();
     Comp1_init();
     Comp1_inithigh();
     Interrupts_init();
-    int hour = 0;
-    while(1){
+    ADC_init();
+    int a = ADC_getval();
+    //int hour = 0;
+    while (1) {
         increment();
+        a = ADC_getval();
+        if (1 < hour && hour < 5) {
+            LATHbits.LATH3 = 0;
+        } else if (a < 50 && (hour > 5 || hour < 1)) {
+            LATHbits.LATH3 = 1;
+
+        }
+//        __delay_ms(50);
     }
-    }
+}
 
 

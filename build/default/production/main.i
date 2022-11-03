@@ -24270,8 +24270,8 @@ void increment();
 
 
 
-    int seconds;
-    int hour;
+    volatile int seconds;
+    volatile int hour;
     int day;
     int week;
     int year;
@@ -24317,32 +24317,54 @@ unsigned int get16bitTMR0val(void);
 
 
 
-    int seconds;
-    int hour;
+    volatile int seconds;
+    volatile int hour;
     int day;
     int week;
     int year;
 # 14 "main.c" 2
 
+# 1 "./ADC.h" 1
 
+
+
+
+
+
+
+void ADC_init(void);
+unsigned int ADC_getval(void);
+void ADC_lightMeter(int val, int range);
+# 15 "main.c" 2
 
 
 
 void main(void) {
 
-    LATHbits.LATH3=1;
-    TRISHbits.TRISH3=0;
-    LATDbits.LATD7=0;
-    TRISDbits.TRISD7=0;
+    LATHbits.LATH3 = 1;
+    TRISHbits.TRISH3 = 0;
+    LATDbits.LATD7 = 1;
+    TRISDbits.TRISD7 = 0;
 
+    hour = 1;
     DAC_init();
     LEDarray_init();
     Timer0_init();
     Comp1_init();
     Comp1_inithigh();
     Interrupts_init();
-    int hour = 0;
-    while(1){
+    ADC_init();
+    int a = ADC_getval();
+
+    while (1) {
         increment();
+        a = ADC_getval();
+        if (1 < hour && hour < 5) {
+            LATHbits.LATH3 = 0;
+        } else if (a < 50 && (hour > 5 || hour < 1)) {
+            LATHbits.LATH3 = 1;
+
+        }
+
     }
-    }
+}

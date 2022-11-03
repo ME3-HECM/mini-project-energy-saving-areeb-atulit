@@ -27,12 +27,11 @@ void Interrupts_init(void)
 ************************************/
 void __interrupt(high_priority) HighISR()
 {
-
-
         if(PIR2bits.C1IF){ 					//check the interrupt source
         LATHbits.LATH3 = !LATHbits.LATH3; //toggle LED
         PIR2bits.C1IF=0; 						//clear the interrupt flag
     }
+
 }
 
 void __interrupt(low_priority) LowISR()
@@ -43,6 +42,11 @@ void __interrupt(low_priority) LowISR()
         TMR0L=11011011;
         PIR0bits.TMR0IF = 0;                    //clear the interrupt flag!
     }  
+    
+    if(seconds==2)
+    {
+        LATDbits.LATD7 = !LATDbits.LATD7;
+    }
 }
 
 

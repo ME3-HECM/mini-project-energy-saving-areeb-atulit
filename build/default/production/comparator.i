@@ -24248,8 +24248,8 @@ void Comp1_inithigh(void);
 
 
 
-    int seconds;
-    int hour;
+    volatile int seconds;
+    volatile int hour;
     int day;
     int week;
     int year;
