@@ -4,4 +4,5 @@
 #define _XTAL_FREQ 64000000
 //function prototypes
 void increment();
+void poweroff();
 #endif

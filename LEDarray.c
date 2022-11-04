@@ -68,14 +68,12 @@ void LEDarray_disp_bin(unsigned int number)
 / where each LED is a value of 10
 ************************************/
 void LEDarray_disp_dec(unsigned int number)
-{
-    if(number>10){// anything below 10 should not light up any LED
-	unsigned int disp_val;
-    disp_val=pow(2,(number/10)-1);//2^x will light up correct led but needs to be one less to account for no led in <10
-	//some code to manipulate the variable number into the correct
+{ //some code to manipulate the variable number into the correct
 	//format and store in disp_val for display on the LED array
-	LEDarray_disp_bin(disp_val); 	//display value on LED array
-}
+     unsigned int shift = number/10;
+     unsigned int bitmask = 0b000000001;
+     unsigned int disp_val = (bitmask << shift) -1;
+     LEDarray_disp_bin(disp_val);
 }
 /************************************
 / LEDarray_disp_PPM
@@ -85,9 +83,18 @@ void LEDarray_disp_dec(unsigned int number)
 ************************************/
 void LEDarray_disp_PPM(unsigned int cur_val, unsigned int max)
 {
-	unsigned int disp_val;
+	 unsigned int disp_val;
+     unsigned int shift = cur_val/10;
+     unsigned int bitmask = 0b000000001;
+    
+     unsigned int shiftmax = max/10;
+     unsigned int bitmaskmax = 0b000000001;
+     cur_val = (bitmask << shift) -1;
+     max = (bitmaskmax << shiftmax);
+     disp_val = cur_val | max;
 	// some code to format the variable cur_val and max, store in disp_val for display on the LED array
 	// hint: one method is to manipulate the variables separately and then combine them using the bitwise OR operator
+
 	LEDarray_disp_bin(disp_val);	//display value on LED array
 }
 

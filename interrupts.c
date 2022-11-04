@@ -43,9 +43,13 @@ void __interrupt(low_priority) LowISR()
         PIR0bits.TMR0IF = 0;                    //clear the interrupt flag!
     }  
     
-    if(seconds==2)
+    if(seconds==5)
     {
         LATDbits.LATD7 = !LATDbits.LATD7;
+    }
+    if (hour==5)
+    {
+        LATHbits.LATH3 = 1;
     }
 }
 

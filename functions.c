@@ -11,7 +11,7 @@
 void increment()
 {
     
-    if (seconds == 2)
+    if (seconds == 1)
     {
         hour++;
         LEDarray_disp_bin(hour);
@@ -34,4 +34,13 @@ void increment()
         year++;
     }
     
+}
+
+void poweroff()
+{
+        //int a = ADC_getval();
+        if (1 < hour && hour < 5) {
+            LATHbits.LATH3 = 0;
+
+}
 }

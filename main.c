@@ -17,12 +17,12 @@
 
 void main(void) {
 
-    LATHbits.LATH3 = 1; //set initial output state
+    LATHbits.LATH3 = 0; //set initial output state
     TRISHbits.TRISH3 = 0; //set TRIS value for pin (output)
     LATDbits.LATD7 = 1; //set initial output state
     TRISDbits.TRISD7 = 0; //set TRIS value for pin (output)
     //call your initialisation functions to set up the hardware modules
-    hour = 1;
+    hour = 0;
     DAC_init();
     LEDarray_init();
     Timer0_init();
@@ -30,19 +30,10 @@ void main(void) {
     Comp1_inithigh();
     Interrupts_init();
     ADC_init();
-    int a = ADC_getval();
-    //int hour = 0;
     while (1) {
         increment();
-        a = ADC_getval();
-        if (1 < hour && hour < 5) {
-            LATHbits.LATH3 = 0;
-        } else if (a < 50 && (hour > 5 || hour < 1)) {
-            LATHbits.LATH3 = 1;
-
+        poweroff();
         }
-//        __delay_ms(50);
     }
-}
 
 
