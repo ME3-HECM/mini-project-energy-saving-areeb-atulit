@@ -13,7 +13,7 @@
   8h - Dh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   18h - A3h		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   E00h - E7Eh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
-  E80h - 1247h		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
+  E80h - 1249h		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   200000h - 20000Fh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   300000h - 30000Bh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
  Unused ranges:
@@ -21,7 +21,7 @@
   Eh - 17h
   A4h - DFFh
   E7Fh - E7Fh
-  1248h - 1FFFFFh
+  124Ah - 1FFFFFh
   200010h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -111,7 +111,7 @@
 00001210 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001220 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001230 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001240 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
+00001240 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------

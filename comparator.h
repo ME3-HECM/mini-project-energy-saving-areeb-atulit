@@ -6,6 +6,6 @@
 #define _XTAL_FREQ 64000000
 
 void DAC_init(void);
-void Comp1_init(void);
-void Comp1_inithigh(void);
+void Comp1_init_rising_edge(void);
+void Comp1_init_falling_edge(void);
 #endif

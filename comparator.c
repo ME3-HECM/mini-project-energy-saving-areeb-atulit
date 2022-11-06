@@ -21,7 +21,7 @@ void DAC_init(void)
  * Function to set up comparator to compare RF7 to the DAC output voltage
  * Note the CM1 interrupt is not enabled by this function 
 ************************************/
-void Comp1_init(void)
+void Comp1_init_rising_edge(void)
 {
     TRISFbits.TRISF7=1;		// set pin RF7 as input
     CM1NCHbits.NCH=0b011; 	// pin RF7 as input for comparator
@@ -34,7 +34,7 @@ void Comp1_init(void)
     
 }
 
-void Comp1_inithigh(void)
+void Comp1_init_falling_edge(void)
 {
     TRISFbits.TRISF7=1;		// set pin RF7 as input
     CM1NCHbits.NCH=0b011; 	// pin RF7 as input for comparator

@@ -8,6 +8,13 @@
 /************************************
 
 ************************************/
+
+void streetLightInit(void){
+    LATHbits.LATH3 = 0; //set initial output state
+    TRISHbits.TRISH3 = 0; //set TRIS value for pin (output)
+    LATDbits.LATD7 = 1; //set initial output state
+    TRISDbits.TRISD7 = 0; //set TRIS value for pin (output)
+}
 void increment()
 {
     
