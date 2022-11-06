@@ -39,7 +39,7 @@ void increment()
 void poweroff()
 {
         //int a = ADC_getval();
-        if (1 < hour && hour < 5) {
+        if (1 <= hour && hour < 5) {
             LATHbits.LATH3 = 0;
 
 }
