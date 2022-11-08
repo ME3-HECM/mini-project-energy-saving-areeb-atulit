@@ -24353,12 +24353,23 @@ unsigned int ADC_getval(void);
 void ADC_lightMeter(int val, int range);
 # 15 "main.c" 2
 
+# 1 "./LCD.h" 1
+# 17 "./LCD.h"
+void LCD_E_TOG(void);
+void LCD_sendnibble(unsigned char number);
+void LCD_sendbyte(unsigned char Byte, char type);
+void LCD_Init(void);
+void LCD_setline (char line);
+void LCD_sendstring(char *string);
+void LCD_scroll(void);
+void LCD_clear(void);
+void time2String(char *buf, unsigned int h, unsigned int s);
+void date2String(char *buf, unsigned int d, unsigned int m,unsigned int y);
+# 16 "main.c" 2
+
 
 
 void main(void) {
-    int prevState = LATHbits.LATH3;
-    int a = 0;
-    hour = 0;
 
     streetLightInit();
     LEDarray_init();
@@ -24368,6 +24379,9 @@ void main(void) {
     Interrupts_init();
     ADC_init();
     day1_init();
+    LCD_Init();
+    char strtime[100];
+    char strdate[100];
     while (1) {
         increment();
         poweroff();
@@ -24375,5 +24389,9 @@ void main(void) {
         sunset();
         timeadjuster(sunrise(),sunset());
         daylightsavings();
+
+
+        LCD_setline(2);
+        date2String(strdate, day_of_year, month_num,year);
         }
     }

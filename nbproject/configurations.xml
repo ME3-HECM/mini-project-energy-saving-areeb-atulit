@@ -11,6 +11,7 @@
       <itemPath>timers.h</itemPath>
       <itemPath>Functions.h</itemPath>
       <itemPath>Global Variables.h</itemPath>
+      <itemPath>LCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -26,6 +27,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>timers.c</itemPath>
       <itemPath>Functions.c</itemPath>
+      <itemPath>LCD.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

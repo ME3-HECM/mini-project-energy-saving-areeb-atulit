@@ -13,12 +13,10 @@
 #include "Functions.h"
 #include "Global Variables.h"
 #include "ADC.h"
+#include "LCD.h"
 #define _XTAL_FREQ 64000000 //note intrinsic _delay function is 62.5ns at 64,000,000Hz  
 
 void main(void) {
-    int prevState = LATHbits.LATH3;
-    int a = 0;
-    hour = 0;
     //call your initialisation functions to set up the hardware modules
     streetLightInit(); //initialise street light
     LEDarray_init();//initialise LED strip
@@ -28,6 +26,9 @@ void main(void) {
     Interrupts_init();
     ADC_init();
     day1_init();
+    LCD_Init();
+    char strtime[100];
+    char strdate[100];
     while (1) {
         increment();
         poweroff();
@@ -35,6 +36,10 @@ void main(void) {
         sunset();
         timeadjuster(sunrise(),sunset());
         daylightsavings();
+//        LCD_setline(1); //Set Line 2
+//        time2String(strtime,hour,seconds);
+        LCD_setline(2); //Set Line 2
+        date2String(strdate, day_of_year, month_num,year);
         }
     }
 

@@ -6,4 +6,5 @@ Functions.h  \
 Global\ Variables.h  \
 comparator.h  \
 timers.h  \
-ADC.h 
+ADC.h  \
+LCD.h 
