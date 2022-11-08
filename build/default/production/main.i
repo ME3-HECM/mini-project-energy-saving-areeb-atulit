@@ -24382,7 +24382,7 @@ void main(void) {
     char strtime[100];
     char strdate[100];
     while (1) {
-                LCD_setline(1);
+        LCD_setline(1);
         time2String(strdate, hour,seconds,day_of_month, month_num,year);
         increment();
         poweroff();
@@ -24390,8 +24390,6 @@ void main(void) {
         sunset();
         timeadjuster(sunrise(),sunset());
         daylightsavings();
-
-
 
         }
     }

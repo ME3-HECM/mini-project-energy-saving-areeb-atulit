@@ -2140,7 +2140,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 2017 ]
 {
 "33
-[; ;main.c: 33:                 LCD_setline(1);
+[; ;main.c: 33:         LCD_setline(1);
 [e ( _LCD_setline (1 -> -> 1 `i `uc ]
 "34
 [; ;main.c: 34:         time2String(strdate, hour,seconds,day_of_month, month_num,year);
@@ -2163,13 +2163,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40
 [; ;main.c: 40:         daylightsavings();
 [e ( _daylightsavings ..  ]
-"44
-[; ;main.c: 44:         }
+"42
+[; ;main.c: 42:         }
 }
 [e :U 2016 ]
 [e $U 2017  ]
 [e :U 2018 ]
-"45
-[; ;main.c: 45:     }
+"43
+[; ;main.c: 43:     }
 [e :UE 2015 ]
 }

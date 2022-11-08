@@ -22,17 +22,17 @@ void increment()
     {
         month[1] = 29;
     }
-    else 
+    else if (year%4 != 0)
     {
         month[1] = 28;
     }
-    if (seconds == 3600)
+    if (seconds == 1)
     {
         hour++;
 //        LEDarray_disp_bin(hour);
         seconds = 0; 
     }
-    if (hour == 24)
+    if (hour == 2)
     {
         day_of_year++;
         //LEDarray_disp_bin(day_of_year);
@@ -41,21 +41,21 @@ void increment()
         day_of_month++;
         hour = 0;
     }
-    if (day_of_week == 8)
+    if (day_of_week == 8)//changed from 7 to 8
     {
         day_of_week = 1;
     }
-    if (day_of_month == month[month_num-1])
+    if (day_of_month == month[month_num-1]+1)
     {
-        day_of_month = 0;
+        day_of_month = 1;//changed from 0 to 1
         month_num++;
     }
     if (month_num == 13)
     {
-        month_num=0;
+        month_num=1; //changed from 0 to 1
         year++;
     }
-    LEDarray_disp_bin(day_of_week);
+    LEDarray_disp_bin(month[month_num-1]);
 }
 
 void poweroff()
@@ -63,7 +63,6 @@ void poweroff()
         //int a = ADC_getval();
         if (1 <= hour && hour < 5) {
             LATHbits.LATH3 = 0;
-
 }
 }
 
@@ -74,7 +73,7 @@ void day1_init()
     day_of_year = 1;
     day_of_month = 1;
     day_of_week = 6; //1 (Monday) to 7(Sunday), 6 is Saturday
-    year = 2022;
+    year = 2024;
     month_num = 1;
     LATHbits.LATH3 = 1;
 }

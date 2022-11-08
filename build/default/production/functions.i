@@ -24708,7 +24708,7 @@ void increment()
     {
         month[1] = 29;
     }
-    else
+    else if (year%4 != 0)
     {
         month[1] = 28;
     }
@@ -24718,7 +24718,7 @@ void increment()
 
         seconds = 0;
     }
-    if (hour == 5)
+    if (hour == 2)
     {
         day_of_year++;
 
@@ -24731,17 +24731,17 @@ void increment()
     {
         day_of_week = 1;
     }
-    if (day_of_month == month[month_num-1])
+    if (day_of_month == month[month_num-1]+1)
     {
-        day_of_month = 0;
+        day_of_month = 1;
         month_num++;
     }
     if (month_num == 13)
     {
-        month_num=0;
+        month_num=1;
         year++;
     }
-    LEDarray_disp_bin(day_of_week);
+    LEDarray_disp_bin(month[month_num-1]);
 }
 
 void poweroff()
@@ -24749,7 +24749,6 @@ void poweroff()
 
         if (1 <= hour && hour < 5) {
             LATHbits.LATH3 = 0;
-
 }
 }
 
@@ -24760,7 +24759,7 @@ void day1_init()
     day_of_year = 1;
     day_of_month = 1;
     day_of_week = 6;
-    year = 2022;
+    year = 2024;
     month_num = 1;
     LATHbits.LATH3 = 1;
 }

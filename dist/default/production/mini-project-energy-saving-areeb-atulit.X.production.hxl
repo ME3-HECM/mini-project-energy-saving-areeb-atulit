@@ -12,14 +12,16 @@
   0h - 3h		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   8h - Dh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   18h - ABh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
-  E00h - 216Bh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
+  E00h - E90h		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
+  E92h - 21B9h		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   200000h - 20000Fh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
   300000h - 30000Bh		(dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.hex)
  Unused ranges:
   4h - 7h
   Eh - 17h
   ACh - DFFh
-  216Ch - 1FFFFFh
+  E91h - E91h
+  21BAh - 1FFFFFh
   200010h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -50,7 +52,7 @@
 00000E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000E90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E90 | H1 -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000EA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000EB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000EC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -351,7 +353,12 @@
 00002130 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002140 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002150 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00002160 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
+00002160 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002170 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002180 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002190 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000021A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000021B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------

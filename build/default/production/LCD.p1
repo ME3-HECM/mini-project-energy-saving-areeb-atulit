@@ -2365,7 +2365,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _y `ui ~T0 @X0 1 r6 ]
 [f ]
 "138
-[; ;LCD.c: 138:     sprintf(buf,"%d:%d:%d %d-%d-%d",h, s/60, s,d,m,y);
+[; ;LCD.c: 138:     sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
 [e ( _sprintf (1 , , , , , , (. , _buf :s 1C _h / _s -> -> 60 `i `ui _s _d _m _y ]
 "139
 [; ;LCD.c: 139:     LCD_sendstring(buf);
@@ -2378,4 +2378,4 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 2039 ]
 }
 [p f _sprintf 8388736 ]
-[a 1C 37 100 58 37 100 58 37 100 32 37 100 45 37 100 45 37 100 0 ]
+[a 1C 37 100 58 37 100 58 37 100 32 37 100 45 37 100 45 37 100 32 0 ]

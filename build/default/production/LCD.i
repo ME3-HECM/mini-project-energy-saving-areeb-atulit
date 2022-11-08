@@ -24524,7 +24524,7 @@ void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigne
 
 
 
-    sprintf(buf,"%d:%d:%d %d-%d-%d",h, s/60, s,d,m,y);
+    sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
     LCD_sendstring(buf);
     _delay((unsigned long)((1000)*(64000000/4000.0)));
 

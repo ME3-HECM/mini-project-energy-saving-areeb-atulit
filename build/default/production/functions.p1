@@ -2171,8 +2171,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 2018  ]
 "25
-[; ;Functions.c: 25:     else
+[; ;Functions.c: 25:     else if (year%4 != 0)
 [e :U 2017 ]
+[e $ ! != % _year -> 4 `i -> 0 `i 2019  ]
 "26
 [; ;Functions.c: 26:     {
 {
@@ -2182,10 +2183,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28
 [; ;Functions.c: 28:     }
 }
+[e :U 2019 ]
 [e :U 2018 ]
 "29
 [; ;Functions.c: 29:     if (seconds == 1)
-[e $ ! == _seconds -> 1 `i 2019  ]
+[e $ ! == _seconds -> 1 `i 2020  ]
 "30
 [; ;Functions.c: 30:     {
 {
@@ -2198,10 +2200,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34
 [; ;Functions.c: 34:     }
 }
-[e :U 2019 ]
+[e :U 2020 ]
 "35
-[; ;Functions.c: 35:     if (hour == 5)
-[e $ ! == _hour -> 5 `i 2020  ]
+[; ;Functions.c: 35:     if (hour == 2)
+[e $ ! == _hour -> 2 `i 2021  ]
 "36
 [; ;Functions.c: 36:     {
 {
@@ -2220,10 +2222,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "43
 [; ;Functions.c: 43:     }
 }
-[e :U 2020 ]
+[e :U 2021 ]
 "44
 [; ;Functions.c: 44:     if (day_of_week == 8)
-[e $ ! == _day_of_week -> 8 `i 2021  ]
+[e $ ! == _day_of_week -> 8 `i 2022  ]
 "45
 [; ;Functions.c: 45:     {
 {
@@ -2233,42 +2235,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47
 [; ;Functions.c: 47:     }
 }
-[e :U 2021 ]
+[e :U 2022 ]
 "48
-[; ;Functions.c: 48:     if (day_of_month == month[month_num-1])
-[e $ ! == _day_of_month *U + &U _month * -> -> - _month_num -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux 2022  ]
+[; ;Functions.c: 48:     if (day_of_month == month[month_num-1]+1)
+[e $ ! == _day_of_month + *U + &U _month * -> -> - _month_num -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux -> 1 `i 2023  ]
 "49
 [; ;Functions.c: 49:     {
 {
 "50
-[; ;Functions.c: 50:         day_of_month = 0;
-[e = _day_of_month -> 0 `i ]
+[; ;Functions.c: 50:         day_of_month = 1;
+[e = _day_of_month -> 1 `i ]
 "51
 [; ;Functions.c: 51:         month_num++;
 [e ++ _month_num -> 1 `i ]
 "52
 [; ;Functions.c: 52:     }
 }
-[e :U 2022 ]
+[e :U 2023 ]
 "53
 [; ;Functions.c: 53:     if (month_num == 13)
-[e $ ! == _month_num -> 13 `i 2023  ]
+[e $ ! == _month_num -> 13 `i 2024  ]
 "54
 [; ;Functions.c: 54:     {
 {
 "55
-[; ;Functions.c: 55:         month_num=0;
-[e = _month_num -> 0 `i ]
+[; ;Functions.c: 55:         month_num=1;
+[e = _month_num -> 1 `i ]
 "56
 [; ;Functions.c: 56:         year++;
 [e ++ _year -> 1 `i ]
 "57
 [; ;Functions.c: 57:     }
 }
-[e :U 2023 ]
+[e :U 2024 ]
 "58
-[; ;Functions.c: 58:     LEDarray_disp_bin(day_of_week);
-[e ( _LEDarray_disp_bin (1 -> _day_of_week `ui ]
+[; ;Functions.c: 58:     LEDarray_disp_bin(month[month_num-1]);
+[e ( _LEDarray_disp_bin (1 -> *U + &U _month * -> -> - _month_num -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux `ui ]
 "59
 [; ;Functions.c: 59: }
 [e :UE 2016 ]
@@ -2283,229 +2285,229 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "64
 [; ;Functions.c: 64:         if (1 <= hour && hour < 5) {
-[e $ ! && <= -> 1 `i _hour < _hour -> 5 `i 2025  ]
+[e $ ! && <= -> 1 `i _hour < _hour -> 5 `i 2026  ]
 {
 "65
 [; ;Functions.c: 65:             LATHbits.LATH3 = 0;
 [e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
+"66
+[; ;Functions.c: 66: }
+}
+[e :U 2026 ]
 "67
 [; ;Functions.c: 67: }
+[e :UE 2025 ]
 }
-[e :U 2025 ]
-"68
-[; ;Functions.c: 68: }
-[e :UE 2024 ]
-}
-"70
-[; ;Functions.c: 70: void day1_init()
+"69
+[; ;Functions.c: 69: void day1_init()
 [v _day1_init `(v ~T0 @X0 1 ef ]
-"71
-[; ;Functions.c: 71: {
+"70
+[; ;Functions.c: 70: {
 {
 [e :U _day1_init ]
 [f ]
-"72
-[; ;Functions.c: 72:     seconds = 0;
+"71
+[; ;Functions.c: 71:     seconds = 0;
 [e = _seconds -> 0 `i ]
-"73
-[; ;Functions.c: 73:     hour = 0;
+"72
+[; ;Functions.c: 72:     hour = 0;
 [e = _hour -> 0 `i ]
-"74
-[; ;Functions.c: 74:     day_of_year = 1;
+"73
+[; ;Functions.c: 73:     day_of_year = 1;
 [e = _day_of_year -> 1 `i ]
-"75
-[; ;Functions.c: 75:     day_of_month = 1;
+"74
+[; ;Functions.c: 74:     day_of_month = 1;
 [e = _day_of_month -> 1 `i ]
-"76
-[; ;Functions.c: 76:     day_of_week = 6;
+"75
+[; ;Functions.c: 75:     day_of_week = 6;
 [e = _day_of_week -> 6 `i ]
+"76
+[; ;Functions.c: 76:     year = 2024;
+[e = _year -> 2024 `i ]
 "77
-[; ;Functions.c: 77:     year = 2022;
-[e = _year -> 2022 `i ]
-"78
-[; ;Functions.c: 78:     month_num = 1;
+[; ;Functions.c: 77:     month_num = 1;
 [e = _month_num -> 1 `i ]
-"79
-[; ;Functions.c: 79:     LATHbits.LATH3 = 1;
+"78
+[; ;Functions.c: 78:     LATHbits.LATH3 = 1;
 [e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
-"80
-[; ;Functions.c: 80: }
-[e :UE 2026 ]
+"79
+[; ;Functions.c: 79: }
+[e :UE 2027 ]
 }
-"82
-[; ;Functions.c: 82: int sunrise()
+"81
+[; ;Functions.c: 81: int sunrise()
 [v _sunrise `(i ~T0 @X0 1 ef ]
-"83
-[; ;Functions.c: 83: {
+"82
+[; ;Functions.c: 82: {
 {
 [e :U _sunrise ]
 [f ]
-"84
-[; ;Functions.c: 84:     int prevState = LATHbits.LATH3;
+"83
+[; ;Functions.c: 83:     int prevState = LATHbits.LATH3;
 [v _prevState `i ~T0 @X0 1 a ]
 [e = _prevState -> . . _LATHbits 0 3 `i ]
-"85
-[; ;Functions.c: 85:     int sunrise_time = 0;
+"84
+[; ;Functions.c: 84:     int sunrise_time = 0;
 [v _sunrise_time `i ~T0 @X0 1 a ]
 [e = _sunrise_time -> 0 `i ]
+"85
+[; ;Functions.c: 85:     if (5<=hour<=8)
+[e $ ! <= -> <= -> 5 `i _hour `i -> 8 `i 2029  ]
 "86
-[; ;Functions.c: 86:     if (5<=hour<=8)
-[e $ ! <= -> <= -> 5 `i _hour `i -> 8 `i 2028  ]
+[; ;Functions.c: 86:     {
+{
 "87
-[; ;Functions.c: 87:     {
-{
+[; ;Functions.c: 87:         if (prevState==1 && LATHbits.LATH3==0)
+[e $ ! && == _prevState -> 1 `i == -> . . _LATHbits 0 3 `i -> 0 `i 2030  ]
 "88
-[; ;Functions.c: 88:         if (prevState==1 && LATHbits.LATH3==0)
-[e $ ! && == _prevState -> 1 `i == -> . . _LATHbits 0 3 `i -> 0 `i 2029  ]
-"89
-[; ;Functions.c: 89:         {
+[; ;Functions.c: 88:         {
 {
-"90
-[; ;Functions.c: 90:             sunrise_time = seconds+(hour*3600);
+"89
+[; ;Functions.c: 89:             sunrise_time = seconds+(hour*3600);
 [e = _sunrise_time + _seconds * _hour -> 3600 `i ]
+"90
+[; ;Functions.c: 90:         }
+}
+[e :U 2030 ]
 "91
-[; ;Functions.c: 91:         }
+[; ;Functions.c: 91:     }
 }
 [e :U 2029 ]
 "92
-[; ;Functions.c: 92:     }
-}
-[e :U 2028 ]
-"93
-[; ;Functions.c: 93:     return sunrise_time;
+[; ;Functions.c: 92:     return sunrise_time;
 [e ) _sunrise_time ]
-[e $UE 2027  ]
-"94
-[; ;Functions.c: 94: }
-[e :UE 2027 ]
+[e $UE 2028  ]
+"93
+[; ;Functions.c: 93: }
+[e :UE 2028 ]
 }
-"96
-[; ;Functions.c: 96: int sunset()
+"95
+[; ;Functions.c: 95: int sunset()
 [v _sunset `(i ~T0 @X0 1 ef ]
-"97
-[; ;Functions.c: 97: {
+"96
+[; ;Functions.c: 96: {
 {
 [e :U _sunset ]
 [f ]
-"98
-[; ;Functions.c: 98:     int prevState = LATHbits.LATH3;
+"97
+[; ;Functions.c: 97:     int prevState = LATHbits.LATH3;
 [v _prevState `i ~T0 @X0 1 a ]
 [e = _prevState -> . . _LATHbits 0 3 `i ]
-"99
-[; ;Functions.c: 99:     int sunset_time = 0;
+"98
+[; ;Functions.c: 98:     int sunset_time = 0;
 [v _sunset_time `i ~T0 @X0 1 a ]
 [e = _sunset_time -> 0 `i ]
+"99
+[; ;Functions.c: 99:     if (16<=hour<=20)
+[e $ ! <= -> <= -> 16 `i _hour `i -> 20 `i 2032  ]
 "100
-[; ;Functions.c: 100:     if (16<=hour<=20)
-[e $ ! <= -> <= -> 16 `i _hour `i -> 20 `i 2031  ]
+[; ;Functions.c: 100:     {
+{
 "101
-[; ;Functions.c: 101:     {
-{
+[; ;Functions.c: 101:         if (prevState==0 && LATHbits.LATH3==1)
+[e $ ! && == _prevState -> 0 `i == -> . . _LATHbits 0 3 `i -> 1 `i 2033  ]
 "102
-[; ;Functions.c: 102:         if (prevState==0 && LATHbits.LATH3==1)
-[e $ ! && == _prevState -> 0 `i == -> . . _LATHbits 0 3 `i -> 1 `i 2032  ]
-"103
-[; ;Functions.c: 103:         {
+[; ;Functions.c: 102:         {
 {
-"104
-[; ;Functions.c: 104:             sunset_time = seconds+(hour*3600);
+"103
+[; ;Functions.c: 103:             sunset_time = seconds+(hour*3600);
 [e = _sunset_time + _seconds * _hour -> 3600 `i ]
+"104
+[; ;Functions.c: 104:         }
+}
+[e :U 2033 ]
 "105
-[; ;Functions.c: 105:         }
+[; ;Functions.c: 105:     }
 }
 [e :U 2032 ]
 "106
-[; ;Functions.c: 106:     }
-}
-[e :U 2031 ]
-"107
-[; ;Functions.c: 107:     return sunset_time;
+[; ;Functions.c: 106:     return sunset_time;
 [e ) _sunset_time ]
-[e $UE 2030  ]
-"108
-[; ;Functions.c: 108: }
-[e :UE 2030 ]
+[e $UE 2031  ]
+"107
+[; ;Functions.c: 107: }
+[e :UE 2031 ]
 }
-"110
-[; ;Functions.c: 110: void timeadjuster(int sunrise_time, int sunset_time)
+"109
+[; ;Functions.c: 109: void timeadjuster(int sunrise_time, int sunset_time)
 [v _timeadjuster `(v ~T0 @X0 1 ef2`i`i ]
-"111
-[; ;Functions.c: 111: {
+"110
+[; ;Functions.c: 110: {
 {
 [e :U _timeadjuster ]
-"110
-[; ;Functions.c: 110: void timeadjuster(int sunrise_time, int sunset_time)
+"109
+[; ;Functions.c: 109: void timeadjuster(int sunrise_time, int sunset_time)
 [v _sunrise_time `i ~T0 @X0 1 r1 ]
 [v _sunset_time `i ~T0 @X0 1 r2 ]
-"111
-[; ;Functions.c: 111: {
+"110
+[; ;Functions.c: 110: {
 [f ]
-"112
-[; ;Functions.c: 112:     int solarnoon = 0;
+"111
+[; ;Functions.c: 111:     int solarnoon = 0;
 [v _solarnoon `i ~T0 @X0 1 a ]
 [e = _solarnoon -> 0 `i ]
-"113
-[; ;Functions.c: 113:     int adjustment = 0;
+"112
+[; ;Functions.c: 112:     int adjustment = 0;
 [v _adjustment `i ~T0 @X0 1 a ]
 [e = _adjustment -> 0 `i ]
-"114
-[; ;Functions.c: 114:     solarnoon = (sunrise_time+sunset_time)/2;
+"113
+[; ;Functions.c: 113:     solarnoon = (sunrise_time+sunset_time)/2;
 [e = _solarnoon / + _sunrise_time _sunset_time -> 2 `i ]
-"115
-[; ;Functions.c: 115:     adjustment = (12*3600)-solarnoon;
+"114
+[; ;Functions.c: 114:     adjustment = (12*3600)-solarnoon;
 [e = _adjustment - * -> 12 `i -> 3600 `i _solarnoon ]
+"115
+[; ;Functions.c: 115:     if (hour==11 && seconds==1800)
+[e $ ! && == _hour -> 11 `i == _seconds -> 1800 `i 2035  ]
 "116
-[; ;Functions.c: 116:     if (hour==11 && seconds==1800)
-[e $ ! && == _hour -> 11 `i == _seconds -> 1800 `i 2034  ]
-"117
-[; ;Functions.c: 117:     {
+[; ;Functions.c: 116:     {
 {
-"118
-[; ;Functions.c: 118:         seconds+=adjustment;
+"117
+[; ;Functions.c: 117:         seconds+=adjustment;
 [e =+ _seconds _adjustment ]
+"118
+[; ;Functions.c: 118:     }
+}
+[e :U 2035 ]
 "119
-[; ;Functions.c: 119:     }
+[; ;Functions.c: 119: }
+[e :UE 2034 ]
 }
-[e :U 2034 ]
 "120
-[; ;Functions.c: 120: }
-[e :UE 2033 ]
-}
-"121
-[; ;Functions.c: 121: void daylightsavings()
+[; ;Functions.c: 120: void daylightsavings()
 [v _daylightsavings `(v ~T0 @X0 1 ef ]
-"122
-[; ;Functions.c: 122: {
+"121
+[; ;Functions.c: 121: {
 {
 [e :U _daylightsavings ]
 [f ]
+"122
+[; ;Functions.c: 122:     if (month_num ==3 && day_of_week==7 && 25<=day_of_month<=31)
+[e $ ! && && == _month_num -> 3 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i 2037  ]
 "123
-[; ;Functions.c: 123:     if (month_num ==3 && day_of_week==7 && 25<=day_of_month<=31)
-[e $ ! && && == _month_num -> 3 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i 2036  ]
+[; ;Functions.c: 123:     {
+{
 "124
-[; ;Functions.c: 124:     {
-{
-"125
-[; ;Functions.c: 125:         hour++;
+[; ;Functions.c: 124:         hour++;
 [e ++ _hour -> 1 `i ]
-"126
-[; ;Functions.c: 126:     }
-}
-[e :U 2036 ]
-"127
-[; ;Functions.c: 127:     if (month_num ==10 && day_of_week==7 && 25<=day_of_month<=31)
-[e $ ! && && == _month_num -> 10 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i 2037  ]
-"128
-[; ;Functions.c: 128:     {
-{
-"129
-[; ;Functions.c: 129:         hour--;
-[e -- _hour -> 1 `i ]
-"130
-[; ;Functions.c: 130:     }
+"125
+[; ;Functions.c: 125:     }
 }
 [e :U 2037 ]
-"132
-[; ;Functions.c: 132: }
-[e :UE 2035 ]
+"126
+[; ;Functions.c: 126:     if (month_num ==10 && day_of_week==7 && 25<=day_of_month<=31)
+[e $ ! && && == _month_num -> 10 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i 2038  ]
+"127
+[; ;Functions.c: 127:     {
+{
+"128
+[; ;Functions.c: 128:         hour--;
+[e -- _hour -> 1 `i ]
+"129
+[; ;Functions.c: 129:     }
+}
+[e :U 2038 ]
+"131
+[; ;Functions.c: 131: }
+[e :UE 2036 ]
 }
