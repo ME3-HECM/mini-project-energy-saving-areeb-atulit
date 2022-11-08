@@ -121,7 +121,7 @@ void LCD_sendstring(char *string) {
 void LCD_scroll(void) {
     //code here to scroll the text on the LCD screen
     LCD_sendbyte(0b00011000,0);
-    __delay_ms(400);
+    __delay_ms(50);
 }
 
 /************************************
@@ -129,25 +129,25 @@ void LCD_scroll(void) {
  * the result is stored in buf as ascii text ready for display on LCD
  * Note result is stored in a buffer using pointers, it is not sent to the LCD
  ************************************/
-void time2String(char *buf,unsigned int h, unsigned int s) {
+void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y) {
     //code to calculate the inegeter and fractions part of a ADC value
     // and format as a string using sprintf (see GitHub readme)
 //    int int_part=ADC_val/77; // i.e. 255 / 5V = 51
 //    int frac_part=(ADC_val*100)/77 - int_part*100;
    
-    sprintf(buf,"%d:%02d:%03d",h, s/60, s);
+    sprintf(buf,"%d:%d:%d %d-%d-%d",h, s/60, s,d,m,y);
     LCD_sendstring(buf);
-    __delay_ms(950);
+    __delay_ms(1000);
     
-    LCD_sendbyte(0b00000001,0);
-    __delay_ms(50);
+//    LCD_sendbyte(0b00000001,0);
+//    __delay_ms(50);
 }
-void date2String(char *buf, unsigned int d, unsigned int m,unsigned int y)
-{
-    sprintf(buf,"%d/%02d/%03d",d,m,y);
-    LCD_sendstring(buf);
-    __delay_ms(950);
-    
-    LCD_sendbyte(0b00000001,0);
-    __delay_ms(500);
-}
+//void date2String(char *str, unsigned int d, unsigned int m,unsigned int y)
+//{
+//    sprintf(str,"%d-%02d-%03d",d,m,y);
+//    LCD_sendstring(str);
+//    __delay_ms(1000);
+//    
+////    LCD_sendbyte(0b00000001,0);
+////    __delay_ms(500);
+//}

@@ -26,22 +26,24 @@ void increment()
     {
         month[1] = 28;
     }
-    if (seconds == 1)
+    if (seconds == 3600)
     {
         hour++;
-        LEDarray_disp_bin(hour);
+//        LEDarray_disp_bin(hour);
         seconds = 0; 
     }
     if (hour == 24)
     {
         day_of_year++;
+        //LEDarray_disp_bin(day_of_year);
         day_of_week++;
+        
         day_of_month++;
         hour = 0;
     }
-    if (day_of_week == 7)
+    if (day_of_week == 8)
     {
-        day_of_week = 0;
+        day_of_week = 1;
     }
     if (day_of_month == month[month_num-1])
     {
@@ -53,6 +55,7 @@ void increment()
         month_num=0;
         year++;
     }
+    LEDarray_disp_bin(day_of_week);
 }
 
 void poweroff()

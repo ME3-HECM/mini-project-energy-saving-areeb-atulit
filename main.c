@@ -30,16 +30,15 @@ void main(void) {
     char strtime[100];
     char strdate[100];
     while (1) {
+        LCD_setline(1); //Set Line 1
+        time2String(strdate, hour,seconds,day_of_month, month_num,year);
         increment();
         poweroff();
         sunrise();
         sunset();
         timeadjuster(sunrise(),sunset());
         daylightsavings();
-//        LCD_setline(1); //Set Line 2
-//        time2String(strtime,hour,seconds);
-        LCD_setline(2); //Set Line 2
-        date2String(strdate, day_of_year, month_num,year);
+
         }
     }
 

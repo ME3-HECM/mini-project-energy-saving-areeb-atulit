@@ -11,69 +11,68 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+$C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 idloc IDLOC 5 200000 200000 10 1 1
-init CODE 0 A0 A0 4 1 2
+init CODE 0 A8 A8 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 C 1 1
 $dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-intcodelo CODE 0 18 18 88 1 2
-cinit CODE 0 20D0 20D0 4C 1 2
+intcodelo CODE 0 18 18 90 1 2
+cinit CODE 0 1DD0 1DD0 50 1 2
 idloc IDLOC 5 200000 200000 10 1 1
-intcode_body CODE 0 2226 2226 3C 1 2
-text0 CODE 0 1D20 1D20 88 1 2
-text1 CODE 0 1E1E 1E1E 6E 1 2
-text2 CODE 0 1B10 1B10 C4 1 2
-text3 CODE 0 1E8C 1E8C 6C 1 2
-text4 CODE 0 1EF8 1EF8 6C 1 2
-text5 CODE 0 247A 247A A 1 2
-text6 CODE 0 2262 2262 3A 1 2
-text7 CODE 0 1852 1852 10C 1 2
-text8 CODE 0 195E 195E E8 1 2
-text9 CODE 0 1FCC 1FCC 5E 1 2
-text10 CODE 0 21A6 21A6 40 1 2
-text11 CODE 0 1DA8 1DA8 76 1 2
-text12 CODE 0 207E 207E 52 1 2
-text13 CODE 0 202A 202A 54 1 2
-text14 CODE 0 E98 E98 2BA 1 2
-text15 CODE 0 1152 1152 2B6 1 2
-text16 CODE 0 1BD4 1BD4 AA 1 2
-text17 CODE 0 2162 2162 44 1 2
-text18 CODE 0 1A46 1A46 CA 1 2
-text19 CODE 0 2484 2484 2 1 2
-text20 CODE 0 21E6 21E6 40 1 2
-text21 CODE 0 1590 1590 164 1 2
-text22 CODE 0 1408 1408 188 1 2
-text23 CODE 0 16F4 16F4 15E 1 2
-text24 CODE 0 211C 211C 46 1 2
-text25 CODE 0 2334 2334 2C 1 2
-text26 CODE 0 2360 2360 26 1 2
-text27 CODE 0 229C 229C 34 1 2
-text28 CODE 0 23F4 23F4 20 1 2
-text29 CODE 0 2386 2386 26 1 2
-text30 CODE 0 22D0 22D0 34 1 2
-text31 CODE 0 1C7E 1C7E A2 1 2
-text32 CODE 0 2304 2304 30 1 2
-text33 CODE 0 1F64 1F64 68 1 2
-text34 CODE 0 246C 246C E 1 2
-text35 CODE 0 245A 245A 12 1 2
-text36 CODE 0 23AC 23AC 24 1 2
-text37 CODE 0 23D0 23D0 24 1 2
-text38 CODE 0 2446 2446 14 1 2
-text39 CODE 0 2414 2414 1A 1 2
-nvBANK0 BANK0 1 9D 9D 6 1 1
-nvBANK1 BANK1 1 19C 19C 4 1 1
-cstackCOMRAM COMRAM 1 1 1 50 1 1
-cstackBANK0 BANK0 1 60 60 31 1 1
+intcode_body CODE 0 1F72 1F72 3C 1 2
+text0 CODE 0 1966 1966 98 1 2
+text1 CODE 0 1B6C 1B6C 70 1 2
+text2 CODE 0 1800 1800 C4 1 2
+text3 CODE 0 19FE 19FE 80 1 2
+text4 CODE 0 1D7E 1D7E 52 1 2
+text5 CODE 0 1E20 1E20 50 1 2
+text6 CODE 0 13F8 13F8 14E 1 2
+text7 CODE 0 E90 E90 27C 1 2
+text8 CODE 0 1A7E 1A7E 7A 1 2
+text9 CODE 0 1E70 1E70 44 1 2
+nvCOMRAM COMRAM 1 53 53 2 1 1
+text10 CODE 0 1736 1736 CA 1 2
+text11 CODE 0 216A 216A 2 1 2
+text12 CODE 0 1EF6 1EF6 40 1 2
+text13 CODE 0 1294 1294 164 1 2
+text14 CODE 0 110C 110C 188 1 2
+text15 CODE 0 1AF8 1AF8 74 1 2
+text16 CODE 0 1FAE 1FAE 34 1 2
+text17 CODE 0 1BDC 1BDC 6E 1 2
+text18 CODE 0 1C4A 1C4A 6E 1 2
+text19 CODE 0 2046 2046 26 1 2
+text20 CODE 0 2160 2160 A 1 2
+text21 CODE 0 1F36 1F36 3C 1 2
+text22 CODE 0 1546 1546 108 1 2
+text23 CODE 0 164E 164E E8 1 2
+text24 CODE 0 1D20 1D20 5E 1 2
+text25 CODE 0 1EB4 1EB4 42 1 2
+text26 CODE 0 20DA 20DA 20 1 2
+text27 CODE 0 206C 206C 26 1 2
+text28 CODE 0 1FE2 1FE2 34 1 2
+text29 CODE 0 18C4 18C4 A2 1 2
+text30 CODE 0 2016 2016 30 1 2
+text31 CODE 0 1CB8 1CB8 68 1 2
+text32 CODE 0 2152 2152 E 1 2
+text33 CODE 0 2140 2140 12 1 2
+text34 CODE 0 2092 2092 24 1 2
+text35 CODE 0 20B6 20B6 24 1 2
+text36 CODE 0 212C 212C 14 1 2
+text37 CODE 0 20FA 20FA 1A 1 2
+nvBANK0 BANK0 1 A3 A3 2 1 1
+nvBANK1 BANK1 1 1A0 1A0 6 1 1
+cstackCOMRAM COMRAM 1 1 1 4F 1 1
+cstackBANK0 BANK0 1 60 60 39 1 1
 cstackBANK1 BANK1 1 100 100 64 1 1
-temp COMRAM 1 56 56 1 1 1
-bssBANK0 BANK0 1 91 91 C 1 1
-bssBANK1 BANK1 1 164 164 20 1 1
+temp COMRAM 1 55 55 1 1 1
+bssBANK0 BANK0 1 99 99 A 1 1
+bssBANK1 BANK1 1 164 164 24 1 1
 intcode CODE 0 8 8 6 1 2
-smallconst SMALLCONST 0 E00 E00 98 1 2
-idataBANK1 CODE 0 242E 242E 18 1 1
-dataBANK1 BANK1 1 184 184 18 1 1
-bssCOMRAM COMRAM 1 51 51 5 1 1
+smallconst SMALLCONST 0 E00 E00 90 1 2
+idataBANK1 CODE 0 2114 2114 18 1 1
+dataBANK1 BANK1 1 188 188 18 1 1
+bssCOMRAM COMRAM 1 50 50 3 1 1
 config CONFIG 4 300000 300000 C 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -81,11 +80,11 @@ config CONFIG 4 300000 300000 C 1 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM A3-FF 1
-RAM 1A0-DE9 1
+RAM A5-FF 1
+RAM 1A6-DE9 1
 SFR DEF-FFF 1
-BANK0 A3-FF 1
-BANK1 1A0-1FF 1
+BANK0 A5-FF 1
+BANK1 1A6-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
 BANK4 400-4FF 1
@@ -96,24 +95,24 @@ BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
 CONST E-17 1
-CONST A4-DFF 1
-CONST 2486-1FFFF 1
-SMALLCONST 2486-1FFFF 1
+CONST AC-DFF 1
+CONST 216C-1FFFF 1
+SMALLCONST 216C-1FFFF 1
 CODE 4-7 1
 CODE E-17 1
-CODE A4-DFF 1
-CODE 2486-1FFFF 1
+CODE AC-DFF 1
+CODE 216C-1FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DE9 1
-BIGRAM 57-5F 1
-BIGRAM A3-FF 1
-BIGRAM 1A0-DE9 1
+BIGRAM 56-5F 1
+BIGRAM A5-FF 1
+BIGRAM 1A6-DE9 1
 BIGSFR DEF-FFF 1
-COMRAM 57-5F 1
+COMRAM 56-5F 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 2486-FFFF 1
+MEDIUMCONST 216C-FFFF 1
 MEDIUMCONST 10E00-1FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -129,538 +128,510 @@ MEDIUMCONST 10E00-1FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-18 intcodelo CODE >18246:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-18 intcodelo CODE >37:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-26 intcodelo CODE >39:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-36 intcodelo CODE >40:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-3A intcodelo CODE >41:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-3E intcodelo CODE >42:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-42 intcodelo CODE >43:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-44 intcodelo CODE >46:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-58 intcodelo CODE >48:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-7A intcodelo CODE >49:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-7A intcodelo CODE >50:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-8E intcodelo CODE >52:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-90 intcodelo CODE >54:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-8 intcode CODE >18401:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-8 intcode CODE >28:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2226 intcode_body CODE >28:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2226 intcode_body CODE >30:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2236 intcode_body CODE >31:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-225A intcode_body CODE >32:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-225E intcode_body CODE >35:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2414 text39 CODE >11:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-2414 text39 CODE >13:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-2416 text39 CODE >14:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-241A text39 CODE >17:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-241E text39 CODE >18:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-2422 text39 CODE >19:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-2426 text39 CODE >20:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-2428 text39 CODE >21:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-242A text39 CODE >22:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-242C text39 CODE >23:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
-2446 text38 CODE >7:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-2446 text38 CODE >9:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-244C text38 CODE >10:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-244E text38 CODE >14:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-2456 text38 CODE >15:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-2458 text38 CODE >16:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23D0 text37 CODE >37:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23D0 text37 CODE >39:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23D2 text37 CODE >40:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23DC text37 CODE >41:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23E4 text37 CODE >42:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23E6 text37 CODE >43:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23E8 text37 CODE >44:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23EA text37 CODE >45:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23EE text37 CODE >46:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23F2 text37 CODE >47:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23AC text36 CODE >24:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23AC text36 CODE >26:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23AE text36 CODE >27:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23B8 text36 CODE >28:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23C0 text36 CODE >29:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23C2 text36 CODE >30:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23C4 text36 CODE >31:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23C6 text36 CODE >32:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23CA text36 CODE >33:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-23CE text36 CODE >35:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
-245A text35 CODE >10:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-245A text35 CODE >14:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-245E text35 CODE >15:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2460 text35 CODE >16:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2462 text35 CODE >17:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2464 text35 CODE >18:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2466 text35 CODE >19:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-2468 text35 CODE >20:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-246A text35 CODE >22:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
-246C text34 CODE >8:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-246C text34 CODE >9:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-246E text34 CODE >10:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2476 text34 CODE >11:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2478 text34 CODE >12:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1F64 text33 CODE >17:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1F66 text33 CODE >20:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1F7A text33 CODE >21:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1F7C text33 CODE >22:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1F90 text33 CODE >23:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1F92 text33 CODE >24:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1FA6 text33 CODE >25:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1FA8 text33 CODE >26:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1FBC text33 CODE >27:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1FBE text33 CODE >28:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1FC2 text33 CODE >29:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1FCA text33 CODE >30:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2304 text32 CODE >36:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2306 text32 CODE >37:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2314 text32 CODE >39:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2316 text32 CODE >40:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-231A text32 CODE >41:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-231A text32 CODE >43:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-231C text32 CODE >45:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2324 text32 CODE >46:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-232A text32 CODE >47:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2332 text32 CODE >48:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C7E text31 CODE >53:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C7E text31 CODE >57:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C80 text31 CODE >58:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C82 text31 CODE >60:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C84 text31 CODE >61:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C86 text31 CODE >62:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C88 text31 CODE >63:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C8A text31 CODE >65:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C8C text31 CODE >66:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C8E text31 CODE >67:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C90 text31 CODE >68:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C92 text31 CODE >70:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C94 text31 CODE >71:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1C96 text31 CODE >72:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CAE text31 CODE >77:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CB4 text31 CODE >78:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CBC text31 CODE >79:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CC6 text31 CODE >80:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CCE text31 CODE >81:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CD8 text31 CODE >82:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CE0 text31 CODE >83:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CEA text31 CODE >84:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CF2 text31 CODE >85:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1CFC text31 CODE >86:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1D0A text31 CODE >87:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1D14 text31 CODE >88:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1D1E text31 CODE >90:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22D0 text30 CODE >95:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22D2 text30 CODE >96:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22E0 text30 CODE >98:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22EA text30 CODE >100:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22F8 text30 CODE >102:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2302 text30 CODE >104:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2386 text29 CODE >10:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2386 text29 CODE >13:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2388 text29 CODE >14:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-238A text29 CODE >15:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-238C text29 CODE >16:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-238E text29 CODE >17:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2390 text29 CODE >18:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2392 text29 CODE >19:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2394 text29 CODE >20:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2396 text29 CODE >21:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-2398 text29 CODE >24:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-239A text29 CODE >25:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-239C text29 CODE >26:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-239E text29 CODE >27:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23A0 text29 CODE >28:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23A2 text29 CODE >29:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23A4 text29 CODE >30:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23A6 text29 CODE >31:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23A8 text29 CODE >32:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23AA text29 CODE >33:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-23F4 text28 CODE >7:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-23F4 text28 CODE >9:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-23FC text28 CODE >10:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-23FE text28 CODE >11:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-2406 text28 CODE >12:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-2408 text28 CODE >15:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-240C text28 CODE >16:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-2410 text28 CODE >17:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-2412 text28 CODE >18:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
-229C text27 CODE >109:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-229C text27 CODE >112:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22A0 text27 CODE >113:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22B6 text27 CODE >112:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-22CE text27 CODE >116:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-2360 text26 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-2360 text26 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-236C text26 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-2374 text26 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-237C text26 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-2384 text26 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
-2334 text25 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\isdigit.c
-2334 text25 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\isdigit.c
-235E text25 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\isdigit.c
-211C text24 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\isspace.c
-211C text24 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\isspace.c
-2160 text24 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\isspace.c
-16F4 text23 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-16F4 text23 CODE >6:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-1704 text23 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-1764 text23 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-176C text23 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-1770 text23 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-178C text23 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-179A text23 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-17A2 text23 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-17AC text23 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-17E6 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-181A text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-1850 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\atoi.c
-1408 text22 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1408 text22 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-140C text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-141A text22 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-143A text22 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-143E text22 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-144C text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-146C text22 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1470 text22 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-147C text22 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-149A text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-149E text22 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-14A2 text22 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-14B4 text22 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-14B6 text22 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-14C4 text22 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-14D6 text22 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1504 text22 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1524 text22 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1526 text22 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1538 text22 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-153E text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-154E text22 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-156E text22 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-158E text22 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
-1590 text21 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-1590 text21 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-1594 text21 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-15A2 text21 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-15C2 text21 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-15C6 text21 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-15D4 text21 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-15F4 text21 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-1612 text21 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-1616 text21 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-161A text21 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-162C text21 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-162E text21 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-163C text21 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-166A text21 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-168A text21 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-169C text21 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-16A2 text21 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-16B2 text21 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-16D2 text21 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-16F2 text21 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
-21E6 text20 CODE >1:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
-21E6 text20 CODE >3:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
-2224 text20 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
-2484 text19 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
-2484 text19 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
-1A46 text18 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1A46 text18 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1A6A text18 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1A70 text18 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1A74 text18 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1AC8 text18 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1AFC text18 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-1B0E text18 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
-2162 text17 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-2162 text17 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-216A text17 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-216E text17 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-2180 text17 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-2184 text17 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-21A4 text17 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
-1BD4 text16 CODE >133:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1BD4 text16 CODE >139:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1BE2 text16 CODE >140:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1BF6 text16 CODE >145:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C18 text16 CODE >146:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C20 text16 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C24 text16 CODE >148:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C38 text16 CODE >149:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C3C text16 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C5A text16 CODE >154:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C68 text16 CODE >156:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1C7C text16 CODE >164:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1152 text15 CODE >443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1152 text15 CODE >450:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1172 text15 CODE >451:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1186 text15 CODE >452:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1196 text15 CODE >453:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-11B6 text15 CODE >458:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-11C6 text15 CODE >459:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-11C8 text15 CODE >462:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-11F6 text15 CODE >463:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-11FE text15 CODE >464:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-120E text15 CODE >469:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1214 text15 CODE >470:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-123C text15 CODE >471:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-123C text15 CODE >480:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1244 text15 CODE >481:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-124A text15 CODE >482:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-124E text15 CODE >487:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1254 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1280 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1284 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1288 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-128C text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1290 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1294 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1298 text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-129C text15 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-12D6 text15 CODE >489:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-12DC text15 CODE >490:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-12E2 text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1302 text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1306 text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-130A text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-130E text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1312 text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1316 text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-131A text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-131E text15 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1346 text15 CODE >482:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-13C0 text15 CODE >495:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-13D0 text15 CODE >496:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-13D6 text15 CODE >497:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-13E6 text15 CODE >501:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1406 text15 CODE >502:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-E98 text14 CODE >1007:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-E98 text14 CODE >1019:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EC0 text14 CODE >1020:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-ECE text14 CODE >1022:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EDC text14 CODE >1023:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EE0 text14 CODE >1027:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EE8 text14 CODE >1028:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EEC text14 CODE >1038:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EEE text14 CODE >1039:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-EFC text14 CODE >1040:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F00 text14 CODE >1061:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F08 text14 CODE >1062:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F0C text14 CODE >1063:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F2C text14 CODE >1063:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F3A text14 CODE >1063:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F44 text14 CODE >1028:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F56 text14 CODE >1074:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F7E text14 CODE >1075:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-F8C text14 CODE >1076:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FB4 text14 CODE >1077:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FC2 text14 CODE >1078:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FC4 text14 CODE >1079:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FD0 text14 CODE >1082:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FEC text14 CODE >1083:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FF0 text14 CODE >1084:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-FFE text14 CODE >1083:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-103A text14 CODE >1117:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-104A text14 CODE >1187:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-108A text14 CODE >1230:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-10C6 text14 CODE >1232:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-10E2 text14 CODE >1233:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1112 text14 CODE >1509:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1124 text14 CODE >1514:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-1150 text14 CODE >1517:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-202A text13 CODE >1520:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-202A text13 CODE >1525:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-2032 text13 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-2036 text13 CODE >1533:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-2052 text13 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-2072 text13 CODE >1538:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-207C text13 CODE >1543:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
-207E text12 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-207E text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-2088 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-2090 text12 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-2098 text12 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-20A0 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-20BC text12 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-20CE text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
-1DA8 text11 CODE >145:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1DA8 text11 CODE >147:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1DD6 text11 CODE >148:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1DE2 text11 CODE >149:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1DFA text11 CODE >151:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1E04 text11 CODE >152:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-1E1C text11 CODE >153:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
-21A6 text10 CODE >67:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21A6 text10 CODE >69:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21AE text10 CODE >70:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21B6 text10 CODE >71:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21C0 text10 CODE >72:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21C8 text10 CODE >73:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21D2 text10 CODE >74:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21DA text10 CODE >75:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21E2 text10 CODE >76:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-21E4 text10 CODE >77:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1FCC text9 CODE >118:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1FCC text9 CODE >120:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1FF6 text9 CODE >122:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1FFA text9 CODE >124:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2022 text9 CODE >126:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2028 text9 CODE >129:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-195E text8 CODE >38:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-195E text8 CODE >43:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1966 text8 CODE >45:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-196E text8 CODE >46:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-198C text8 CODE >47:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-19AA text8 CODE >50:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-19C4 text8 CODE >52:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-19CA text8 CODE >53:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-19EA text8 CODE >55:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-19F4 text8 CODE >56:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-19FE text8 CODE >57:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A08 text8 CODE >58:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A12 text8 CODE >59:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A1C text8 CODE >60:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A26 text8 CODE >61:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A30 text8 CODE >62:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A3A text8 CODE >63:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1A44 text8 CODE >64:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
-1852 text7 CODE >19:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1852 text7 CODE >21:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1872 text7 CODE >23:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-187C text7 CODE >24:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1880 text7 CODE >27:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-188A text7 CODE >29:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-189C text7 CODE >31:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18A0 text7 CODE >32:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18AC text7 CODE >33:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18B4 text7 CODE >35:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18C8 text7 CODE >37:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18CE text7 CODE >38:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18D4 text7 CODE >39:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18DA text7 CODE >40:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18E2 text7 CODE >42:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-18F8 text7 CODE >44:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1900 text7 CODE >46:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-192C text7 CODE >48:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1934 text7 CODE >49:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-193A text7 CODE >51:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1950 text7 CODE >53:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1958 text7 CODE >54:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-195C text7 CODE >56:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2262 text6 CODE >58:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2262 text6 CODE >61:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2298 text6 CODE >62:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-229A text6 CODE >65:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-247A text5 CODE >12:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-247A text5 CODE >14:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-247C text5 CODE >15:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-247E text5 CODE >16:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2480 text5 CODE >17:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-2482 text5 CODE >18:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1EF8 text4 CODE >79:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1EF8 text4 CODE >81:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1F12 text4 CODE >82:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1F1A text4 CODE >85:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1F3A text4 CODE >87:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1F5A text4 CODE >90:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1F62 text4 CODE >91:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E8C text3 CODE >93:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E8C text3 CODE >95:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1EA6 text3 CODE >96:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1EAE text3 CODE >99:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1ECE text3 CODE >101:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1EEE text3 CODE >104:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1EF6 text3 CODE >105:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1B10 text2 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B10 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B14 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B22 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B2A text2 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B2E text2 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B3C text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B44 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B48 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B50 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B62 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B66 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B6A text2 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B70 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B72 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B80 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B86 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1B9C text2 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BA4 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BA6 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BAC text2 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BB2 text2 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BC2 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BCA text2 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1BD2 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
-1E1E text1 CODE >107:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E1E text1 CODE >109:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E1E text1 CODE >110:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E26 text1 CODE >111:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E46 text1 CODE >112:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E56 text1 CODE >113:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E82 text1 CODE >115:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1E8A text1 CODE >117:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
-1D20 text0 CODE >19:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D20 text0 CODE >21:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D24 text0 CODE >22:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D28 text0 CODE >23:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D2C text0 CODE >24:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D30 text0 CODE >25:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D34 text0 CODE >26:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D38 text0 CODE >27:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D3C text0 CODE >28:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D40 text0 CODE >29:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D44 text0 CODE >33:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D48 text0 CODE >34:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D4C text0 CODE >35:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D50 text0 CODE >36:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D54 text0 CODE >37:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D70 text0 CODE >38:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D74 text0 CODE >41:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-1D7A text0 CODE >42:C:\Users\44756\OneDrive - Imperial College London\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
-20D0 cinit CODE >11102:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D0 cinit CODE >11104:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D0 cinit CODE >11107:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D0 cinit CODE >11154:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D2 cinit CODE >11155:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D4 cinit CODE >11156:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D6 cinit CODE >11157:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20D8 cinit CODE >11158:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20DA cinit CODE >11159:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20DC cinit CODE >11160:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20E0 cinit CODE >11161:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20E4 cinit CODE >11162:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20E4 cinit CODE >11163:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20E6 cinit CODE >11164:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20EA cinit CODE >11165:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20EC cinit CODE >11166:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20EE cinit CODE >11167:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20F0 cinit CODE >11171:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20F4 cinit CODE >11172:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20F6 cinit CODE >11173:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20F6 cinit CODE >11174:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20F8 cinit CODE >11175:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20FA cinit CODE >11176:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-20FC cinit CODE >11179:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2100 cinit CODE >11180:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2102 cinit CODE >11181:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2102 cinit CODE >11182:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2104 cinit CODE >11183:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2106 cinit CODE >11184:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2108 cinit CODE >11187:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-210A cinit CODE >11188:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-210C cinit CODE >11189:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-210E cinit CODE >11190:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2110 cinit CODE >11191:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2112 cinit CODE >11197:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2112 cinit CODE >11199:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2114 cinit CODE >11200:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2116 cinit CODE >11201:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
-2118 cinit CODE >11202:C:\Users\44756\AppData\Local\Temp\xcAs119g.s
+18 intcodelo CODE >17573:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+18 intcodelo CODE >37:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+26 intcodelo CODE >39:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+36 intcodelo CODE >40:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+3C intcodelo CODE >41:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+40 intcodelo CODE >42:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+44 intcodelo CODE >43:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+48 intcodelo CODE >46:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+5E intcodelo CODE >48:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+80 intcodelo CODE >49:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+80 intcodelo CODE >50:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+96 intcodelo CODE >52:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+98 intcodelo CODE >54:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+8 intcode CODE >17734:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+8 intcode CODE >28:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+1F72 intcode_body CODE >28:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+1F72 intcode_body CODE >30:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+1F82 intcode_body CODE >31:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+1FA6 intcode_body CODE >32:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+1FAA intcode_body CODE >35:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+20FA text37 CODE >11:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+20FA text37 CODE >13:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+20FC text37 CODE >14:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+2100 text37 CODE >17:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+2104 text37 CODE >18:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+2108 text37 CODE >19:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+210C text37 CODE >20:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+210E text37 CODE >21:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+2110 text37 CODE >22:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+2112 text37 CODE >23:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\ADC.c
+212C text36 CODE >7:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+212C text36 CODE >9:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+2132 text36 CODE >10:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+2134 text36 CODE >14:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+213C text36 CODE >15:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+213E text36 CODE >16:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20B6 text35 CODE >37:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20B6 text35 CODE >39:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20B8 text35 CODE >40:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20C2 text35 CODE >41:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20CA text35 CODE >42:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20CC text35 CODE >43:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20CE text35 CODE >44:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20D0 text35 CODE >45:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20D4 text35 CODE >46:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20D8 text35 CODE >47:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+2092 text34 CODE >24:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+2092 text34 CODE >26:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+2094 text34 CODE >27:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+209E text34 CODE >28:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20A6 text34 CODE >29:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20A8 text34 CODE >30:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20AA text34 CODE >31:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20AC text34 CODE >32:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20B0 text34 CODE >33:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+20B4 text34 CODE >35:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\comparator.c
+2140 text33 CODE >10:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+2140 text33 CODE >14:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+2144 text33 CODE >15:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+2146 text33 CODE >16:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+2148 text33 CODE >17:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+214A text33 CODE >18:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+214C text33 CODE >19:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+214E text33 CODE >20:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+2150 text33 CODE >22:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\interrupts.c
+2152 text32 CODE >8:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2152 text32 CODE >9:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2154 text32 CODE >10:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+215C text32 CODE >11:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+215E text32 CODE >12:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CB8 text31 CODE >17:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CBA text31 CODE >20:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CCE text31 CODE >21:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CD0 text31 CODE >22:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CE4 text31 CODE >23:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CE6 text31 CODE >24:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CFA text31 CODE >25:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1CFC text31 CODE >26:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1D10 text31 CODE >27:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1D12 text31 CODE >28:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1D16 text31 CODE >29:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1D1E text31 CODE >30:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2016 text30 CODE >36:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2018 text30 CODE >37:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2026 text30 CODE >39:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2028 text30 CODE >40:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+202C text30 CODE >41:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+202C text30 CODE >43:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+202E text30 CODE >45:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2036 text30 CODE >46:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+203C text30 CODE >47:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2044 text30 CODE >48:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18C4 text29 CODE >53:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18C4 text29 CODE >57:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18C6 text29 CODE >58:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18C8 text29 CODE >60:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18CA text29 CODE >61:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18CC text29 CODE >62:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18CE text29 CODE >63:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18D0 text29 CODE >65:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18D2 text29 CODE >66:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18D4 text29 CODE >67:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18D6 text29 CODE >68:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18D8 text29 CODE >70:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18DA text29 CODE >71:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18DC text29 CODE >72:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18F4 text29 CODE >77:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+18FA text29 CODE >78:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1902 text29 CODE >79:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+190C text29 CODE >80:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1914 text29 CODE >81:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+191E text29 CODE >82:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1926 text29 CODE >83:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1930 text29 CODE >84:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1938 text29 CODE >85:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1942 text29 CODE >86:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1950 text29 CODE >87:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+195A text29 CODE >88:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1964 text29 CODE >90:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FE2 text28 CODE >95:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FE4 text28 CODE >96:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FF2 text28 CODE >98:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FFC text28 CODE >100:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+200A text28 CODE >102:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+2014 text28 CODE >104:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+206C text27 CODE >10:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+206C text27 CODE >13:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+206E text27 CODE >14:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2070 text27 CODE >15:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2072 text27 CODE >16:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2074 text27 CODE >17:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2076 text27 CODE >18:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2078 text27 CODE >19:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+207A text27 CODE >20:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+207C text27 CODE >21:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+207E text27 CODE >24:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2080 text27 CODE >25:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2082 text27 CODE >26:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2084 text27 CODE >27:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2086 text27 CODE >28:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2088 text27 CODE >29:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+208A text27 CODE >30:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+208C text27 CODE >31:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+208E text27 CODE >32:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+2090 text27 CODE >33:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+20DA text26 CODE >7:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20DA text26 CODE >9:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20E2 text26 CODE >10:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20E4 text26 CODE >11:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20EC text26 CODE >12:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20EE text26 CODE >15:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20F2 text26 CODE >16:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20F6 text26 CODE >17:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+20F8 text26 CODE >18:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\timers.c
+1EB4 text25 CODE >70:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EB4 text25 CODE >72:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EBE text25 CODE >73:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EC6 text25 CODE >74:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1ED0 text25 CODE >75:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1ED8 text25 CODE >76:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EE0 text25 CODE >77:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EE8 text25 CODE >78:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EF2 text25 CODE >79:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1EF4 text25 CODE >80:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1D20 text24 CODE >121:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1D20 text24 CODE >123:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1D4A text24 CODE >125:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1D4E text24 CODE >127:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1D76 text24 CODE >129:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1D7C text24 CODE >132:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+164E text23 CODE >38:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+164E text23 CODE >43:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+1656 text23 CODE >45:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+165E text23 CODE >46:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+167C text23 CODE >47:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+169A text23 CODE >50:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+16B4 text23 CODE >52:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+16BA text23 CODE >53:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+16DA text23 CODE >55:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+16E4 text23 CODE >56:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+16EE text23 CODE >57:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+16F8 text23 CODE >58:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+1702 text23 CODE >59:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+170C text23 CODE >60:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+1716 text23 CODE >61:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+1720 text23 CODE >62:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+172A text23 CODE >63:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+1734 text23 CODE >64:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LEDarray.c
+1546 text22 CODE >19:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1546 text22 CODE >21:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1566 text22 CODE >23:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+156E text22 CODE >24:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1572 text22 CODE >27:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+157A text22 CODE >29:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+158E text22 CODE >31:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1592 text22 CODE >33:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+159A text22 CODE >35:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15AE text22 CODE >37:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15B4 text22 CODE >39:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15B8 text22 CODE >41:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15BC text22 CODE >42:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15C6 text22 CODE >44:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15DA text22 CODE >46:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+15E2 text22 CODE >48:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+160E text22 CODE >50:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1616 text22 CODE >51:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+161C text22 CODE >53:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1632 text22 CODE >55:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+163A text22 CODE >56:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1640 text22 CODE >58:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+164C text22 CODE >59:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1F36 text21 CODE >61:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1F36 text21 CODE >64:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1F6E text21 CODE >65:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1F70 text21 CODE >68:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2160 text20 CODE >12:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2160 text20 CODE >14:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2162 text20 CODE >15:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2164 text20 CODE >16:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2166 text20 CODE >17:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2168 text20 CODE >18:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+2046 text19 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+2046 text19 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+2052 text19 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+205A text19 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+2062 text19 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+206A text19 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+1C4A text18 CODE >82:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C4A text18 CODE >84:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C64 text18 CODE >85:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C6C text18 CODE >88:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C8C text18 CODE >90:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1CAE text18 CODE >93:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1CB6 text18 CODE >94:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BDC text17 CODE >96:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BDC text17 CODE >98:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BF6 text17 CODE >99:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BFE text17 CODE >102:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C1E text17 CODE >104:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C40 text17 CODE >107:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1C48 text17 CODE >108:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1FAE text16 CODE >109:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FAE text16 CODE >112:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FB2 text16 CODE >113:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FC8 text16 CODE >112:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1FE0 text16 CODE >116:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1AF8 text15 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1AF8 text15 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B00 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B12 text15 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B16 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B1A text15 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B20 text15 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B22 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B30 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B36 text15 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B4C text15 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B54 text15 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B56 text15 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B5C text15 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B62 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B62 text15 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+1B6A text15 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lwdiv.c
+110C text14 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+110C text14 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1110 text14 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+111E text14 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+113E text14 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1142 text14 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1150 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1170 text14 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1174 text14 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1180 text14 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+119E text14 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+11A2 text14 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+11A6 text14 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+11B8 text14 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+11BA text14 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+11C8 text14 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+11DA text14 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1208 text14 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1228 text14 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+122A text14 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+123C text14 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1242 text14 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1252 text14 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1272 text14 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1292 text14 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+1294 text13 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1294 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1298 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+12A6 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+12C6 text13 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+12CA text13 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+12D8 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+12F8 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1316 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+131A text13 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+131E text13 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1330 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1332 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1340 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+136E text13 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+138E text13 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+13A0 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+13A6 text13 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+13B6 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+13D6 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+13F6 text13 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1EF6 text12 CODE >1:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+1EF6 text12 CODE >3:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+1F34 text12 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+216A text11 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+216A text11 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+1736 text10 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+1736 text10 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+175A text10 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+1760 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+1764 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+17B8 text10 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+17EC text10 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+17FE text10 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+1E70 text9 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1E70 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1E78 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1E7C text9 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1E8E text9 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1E92 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1EB2 text9 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1A7E text8 CODE >133:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1A7E text8 CODE >145:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AA0 text8 CODE >146:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AA8 text8 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AAC text8 CODE >148:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AC0 text8 CODE >149:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AC4 text8 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AE2 text8 CODE >156:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1AF6 text8 CODE >164:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+E90 text7 CODE >443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+E90 text7 CODE >450:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+EB0 text7 CODE >451:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+EC4 text7 CODE >452:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+ED4 text7 CODE >453:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+EF4 text7 CODE >462:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F22 text7 CODE >463:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F2A text7 CODE >464:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F3A text7 CODE >469:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F40 text7 CODE >470:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F68 text7 CODE >471:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F68 text7 CODE >480:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F70 text7 CODE >481:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F76 text7 CODE >482:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F7A text7 CODE >487:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+F80 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FAC text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FB0 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FB4 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FB8 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FBC text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FC0 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FC4 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FC8 text7 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1002 text7 CODE >489:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1008 text7 CODE >490:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+100E text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+102E text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1032 text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1036 text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+103A text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+103E text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1042 text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1046 text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+104A text7 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1072 text7 CODE >482:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+10C4 text7 CODE >495:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+10D4 text7 CODE >496:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+10DA text7 CODE >497:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+10EA text7 CODE >501:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+110A text7 CODE >502:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+13F8 text6 CODE >1007:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+13F8 text6 CODE >1019:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+141C text6 CODE >1020:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+142A text6 CODE >1022:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1438 text6 CODE >1023:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+143C text6 CODE >1117:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+144C text6 CODE >1187:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1484 text6 CODE >1230:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+14BE text6 CODE >1232:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+14DA text6 CODE >1233:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+150A text6 CODE >1509:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+151C text6 CODE >1514:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1544 text6 CODE >1517:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E20 text5 CODE >1520:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E20 text5 CODE >1525:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E28 text5 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E2C text5 CODE >1533:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E48 text5 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E64 text5 CODE >1538:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1E6E text5 CODE >1543:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1D7E text4 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1D7E text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1D88 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1D90 text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1D98 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1DA0 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1DBC text4 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1DCE text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+19FE text3 CODE >132:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+19FE text3 CODE >138:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1A58 text3 CODE >139:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1A64 text3 CODE >140:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1A7C text3 CODE >144:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\LCD.c
+1800 text2 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1800 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1804 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1812 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+181A text2 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+181E text2 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+182C text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1834 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1838 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1840 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1852 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1856 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+185A text2 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1860 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1862 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1870 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1876 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+188C text2 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1894 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1896 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+189C text2 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+18A2 text2 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+18B2 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+18BA text2 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+18C2 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+1B6C text1 CODE >110:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1B6C text1 CODE >112:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1B6C text1 CODE >113:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1B74 text1 CODE >114:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1B94 text1 CODE >115:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BA4 text1 CODE >116:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BD2 text1 CODE >118:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1BDA text1 CODE >120:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\Functions.c
+1966 text0 CODE >19:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1966 text0 CODE >21:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+196A text0 CODE >22:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+196E text0 CODE >23:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1972 text0 CODE >24:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1976 text0 CODE >25:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+197A text0 CODE >26:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+197E text0 CODE >27:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1982 text0 CODE >28:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1986 text0 CODE >29:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+198A text0 CODE >33:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1990 text0 CODE >34:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+19C6 text0 CODE >35:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+19CA text0 CODE >36:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+19CE text0 CODE >37:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+19D2 text0 CODE >38:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+19D6 text0 CODE >39:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+19F2 text0 CODE >40:C:\Users\areeb\OneDrive\Documents\GitHub\mini-project-energy-saving-areeb-atulit.X\main.c
+1DD0 cinit CODE >11089:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD0 cinit CODE >11091:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD0 cinit CODE >11094:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD0 cinit CODE >11141:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD2 cinit CODE >11142:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD4 cinit CODE >11143:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD6 cinit CODE >11144:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DD8 cinit CODE >11145:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DDA cinit CODE >11146:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DDC cinit CODE >11147:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DE0 cinit CODE >11148:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DE4 cinit CODE >11149:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DE4 cinit CODE >11150:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DE6 cinit CODE >11151:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DEA cinit CODE >11152:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DEC cinit CODE >11153:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DEE cinit CODE >11154:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DF0 cinit CODE >11158:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DF4 cinit CODE >11159:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DF6 cinit CODE >11160:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DF6 cinit CODE >11161:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DF8 cinit CODE >11162:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DFA cinit CODE >11163:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1DFC cinit CODE >11166:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E00 cinit CODE >11167:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E02 cinit CODE >11168:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E02 cinit CODE >11169:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E04 cinit CODE >11170:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E06 cinit CODE >11171:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E08 cinit CODE >11174:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E0A cinit CODE >11175:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E0C cinit CODE >11176:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E0E cinit CODE >11182:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E0E cinit CODE >11184:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E10 cinit CODE >11185:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E12 cinit CODE >11187:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E14 cinit CODE >11188:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E16 cinit CODE >11189:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E18 cinit CODE >11190:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E1A cinit CODE >11191:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
+1E1C cinit CODE >11192:C:\Users\areeb\AppData\Local\Temp\xcAscds.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -677,107 +648,112 @@ ___awdiv@counter A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-
 sunset@sunset_time 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_streetLightInit 247A 0 CODE 0 text5 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Hspace_0 2486 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Hspace_1 1A0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_streetLightInit 2160 0 CODE 0 text20 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Hspace_0 216C 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Hspace_1 1A6 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hspace_4 60000C 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_poweroff 2262 0 CODE 0 text6 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_timeadjuster 1E1E 0 CODE 0 text1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_poweroff 1F36 0 CODE 0 text21 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_timeadjuster 1B6C 0 CODE 0 text1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ?_abs 18 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LowISR A0 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_poweroff 229C 0 CODE 0 text6 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-?_vfprintf 6C 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LowISR A8 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_poweroff 1F72 0 CODE 0 text21 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+?_vfprintf 6A 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lsmallconst E00 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-_atoi 16F4 0 CODE 0 text23 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_dbuf 164 0 BANK1 1 bssBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_dtoa 1152 0 CODE 0 text15 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_hour 51 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_main 1D20 0 CODE 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_prec 99 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_year 9D 0 BANK0 1 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+_dbuf 168 0 BANK1 1 bssBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_dtoa E90 0 CODE 0 text7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_hour 9F 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_main 1966 0 CODE 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_prec 50 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_year 1A0 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 abs@a 18 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-btemp 56 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-date2String@buf 89 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+btemp 55 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 pad@i 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 pad@p 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 pad@w 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-start A0 0 CODE 0 init C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+start A8 0 CODE 0 init C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 ___aomod@counter 16 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 pad@fp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ?___wmul 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LCD_Init 1C7E 0 CODE 0 text31 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Hpowerup A0 0 CODE 0 powerup dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_DAC_init 2446 0 CODE 0 text38 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_vfpfcnvrt 1152 0 CODE 0 text14 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-ttemp5 57 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-ttemp6 5A 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-ttemp7 5E 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LEDarray_init 2386 0 CODE 0 text29 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-__end_of_LCD_Init 1D20 0 CODE 0 text31 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-intlevel0 0 0 CODE 0 text C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-intlevel1 0 0 CODE 0 text C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-intlevel2 0 0 CODE 0 text C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-intlevel3 0 0 CODE 0 text C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+_LCD_Init 18C4 0 CODE 0 text29 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Hpowerup A8 0 CODE 0 powerup dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_DAC_init 212C 0 CODE 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_vfpfcnvrt 1546 0 CODE 0 text6 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+ttemp5 56 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+ttemp6 59 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+ttemp7 5D 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LEDarray_init 206C 0 CODE 0 text27 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+__end_of_LCD_Init 1966 0 CODE 0 text29 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+intlevel1 0 0 CODE 0 text C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+intlevel2 0 0 CODE 0 text C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+intlevel3 0 0 CODE 0 text C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_DAC_init 245A 0 CODE 0 text38 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_DAC_init 2140 0 CODE 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+time2String@d 93 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+time2String@h 8F 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+time2String@m 95 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+time2String@s 91 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+time2String@y 97 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-wtemp8 57 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LCD_sendbyte 2304 0 CODE 0 text32 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+wtemp8 56 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LCD_sendbyte 2016 0 CODE 0 text30 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 main@strdate 100 0 BANK1 1 cstackBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___awdiv@sign B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 timeadjuster@adjustment 19 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_vfpfcnvrt E98 0 CODE 0 text14 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_vfpfcnvrt 13F8 0 CODE 0 text6 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 dtoa@fp 21 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LEDarray_disp_bin 195E 0 CODE 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_timeadjuster 1E8C 0 CODE 0 text1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LEDarray_disp_bin 164E 0 CODE 0 text23 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_timeadjuster 1BDC 0 CODE 0 text1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___wmul@multiplicand 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _ADRESH F64 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_Interrupts_init 246C 0 CODE 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_Interrupts_init 2152 0 CODE 0 text33 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___awdiv@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-_day_of_week 9F 0 BANK0 1 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_day_of_year 19E 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+_day_of_week 53 0 COMRAM 1 nvCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_day_of_year 1A4 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of___wmul 2386 0 CODE 0 text26 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_Comp1_init_rising_edge 23D0 0 CODE 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of___wmul 206C 0 CODE 0 text19 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_Comp1_init_rising_edge 20B6 0 CODE 0 text34 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_time2String 19FE 0 CODE 0 text3 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _CM1CON0bits ED0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _CM1CON1bits ED1 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_ADC_init 2414 0 CODE 0 text39 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_ADC_init 20FA 0 CODE 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LnvBANK1 0 0 ABS 0 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Hintcodelo A0 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Hintcodelo A8 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___awdiv@divisor 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of___aodiv 1590 0 CODE 0 text22 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of___aomod 16F4 0 CODE 0 text21 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of___awdiv 1BD4 0 CODE 0 text2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of___aodiv 1294 0 CODE 0 text14 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of___aomod 13F8 0 CODE 0 text13 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of___awdiv 18C4 0 CODE 0 text2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of___lwdiv 1B6C 0 CODE 0 text15 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___aodiv@quotient 18 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ?_sunset C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_ADC_init 242E 0 CODE 0 text39 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_ADC_init 2114 0 CODE 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___aomod@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-date2String@d 8B 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-date2String@m 8D 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-date2String@y 8F 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___lwdiv@quotient B 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _LowISR 18 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LCD_sendbyte 2334 0 CODE 0 text32 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LCD_setline 22D0 0 CODE 0 text30 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LCD_sendbyte 2046 0 CODE 0 text30 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LCD_setline 1FE2 0 CODE 0 text28 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___aomod@divisor E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_Interrupts_init 245A 0 CODE 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-start_initialization 20D0 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_Interrupts_init 2140 0 CODE 0 text33 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+start_initialization 1DD0 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _TRISAbits F81 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _TRISBbits F82 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -802,19 +778,17 @@ __end_of_P4 E39 0 SMALLCONST 0 smallconst dist/default/production\mini-project-e
 __end_of_P5 E35 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_bp E71 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_cp E21 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_date2String 1E1E 0 CODE 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 sunset@prevState F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _IPR0bits E1F 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _IPR2bits E21 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 sunrise@prevState F 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+isa$xinst 0 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 fputc@fp 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 fputs@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LCD_E_TOG 247A 0 CODE 0 text34 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LEDarray_init 23AC 0 CODE 0 text29 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-vfpfcnvrt@done 68 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LCD_E_TOG 2160 0 CODE 0 text32 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LEDarray_init 2092 0 CODE 0 text27 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -827,7 +801,7 @@ __Hbank8 0 0 ABS 0 bank8 dist/default/production\mini-project-energy-saving-aree
 __Hbank9 0 0 ABS 0 bank9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hcinit 0 0 ABS 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_sunset 1EF8 0 CODE 0 text3 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_sunset 1C4A 0 CODE 0 text17 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hidloc 200010 0 IDLOC 5 idloc dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -847,6 +821,7 @@ __Htext7 0 0 ABS 0 text7 dist/default/production\mini-project-energy-saving-aree
 __Htext8 0 0 ABS 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Htext9 0 0 ABS 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _CM1PCHbits ED3 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___lwdiv@counter A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbank10 0 0 ABS 0 bank10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbank11 0 0 ABS 0 bank11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbank12 0 0 ABS 0 bank12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -854,13 +829,13 @@ __Hbank13 0 0 ABS 0 bank13 dist/default/production\mini-project-energy-saving-ar
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__smallconst E00 0 SMALLCONST 0 smallconst C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-__end_of_sprintf 20D0 0 CODE 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_HighISR 2262 0 CODE 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__smallconst E00 0 SMALLCONST 0 smallconst C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+__end_of_sprintf 1DD0 0 CODE 0 text4 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_HighISR 1FAE 0 CODE 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hconfig 30000C 0 CONFIG 4 config dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 sunrise@sunrise_time 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LCD_sendnibble 1F64 0 CODE 0 text33 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LCD_sendnibble 1CB8 0 CODE 0 text31 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -871,14 +846,12 @@ __Lbank6 0 0 ABS 0 bank6 dist/default/production\mini-project-energy-saving-aree
 __Lbank7 0 0 ABS 0 bank7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank8 0 0 ABS 0 bank8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank9 0 0 ABS 0 bank9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_isdigit 2360 0 CODE 0 text25 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lcinit 0 0 ABS 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lconst 0 0 CONST 0 const dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lidata 0 0 CODE 0 idata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lidloc 0 0 IDLOC 5 idloc dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lparam 0 0 COMRAM 1 rparam dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_isspace 2162 0 CODE 0 text24 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lrdata 0 0 COMRAM 1 rdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lstack 0 0 STACK 2 stack dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext0 0 0 ABS 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -892,72 +865,72 @@ __Ltext7 0 0 ABS 0 text7 dist/default/production\mini-project-energy-saving-aree
 __Ltext8 0 0 ABS 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LCD_E_TOG 246C 0 CODE 0 text34 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LCD_E_TOG 2152 0 CODE 0 text32 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _INTCONbits FF2 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hheap 0 0 HEAP 7 heap dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Hinit A4 0 CODE 0 init dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Hinit AC 0 CODE 0 init dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Htemp 57 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Htemp 56 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Htext 0 0 ABS 0 text dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Labs1 0 0 ABS 0 abs1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ldata 0 0 ABS 0 data dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lheap 0 0 HEAP 7 heap dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Linit A0 0 CODE 0 init dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Linit A8 0 CODE 0 init dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Ltemp 56 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Ltemp 55 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pnvBANK0 9D 0 BANK0 1 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pnvBANK1 19C 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_sunrise 1F64 0 CODE 0 text4 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pnvBANK0 A3 0 BANK0 1 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pnvBANK1 1A0 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_sunrise 1CB8 0 CODE 0 text18 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___aodiv@counter 16 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_ivln2_h E75 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_ivln2_l E19 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___wmul 2360 0 CODE 0 text26 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___wmul 2046 0 CODE 0 text19 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___aomod@sign 17 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-int$flags 56 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+int$flags 55 0 COMRAM 1 temp dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_Timer0_init 23F4 0 CODE 0 text28 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-isspace@c 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_Timer0_init 20DA 0 CODE 0 text26 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_LCD_sendstring 229C 0 CODE 0 text27 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_LCD_sendstring 1FAE 0 CODE 0 text16 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__S0 2486 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__S1 1A0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__S0 216C 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__S1 1A6 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_abs 21E6 0 CODE 0 text20 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_pad 1BD4 0 CODE 0 text16 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_tiny@sqrtf$F2355 E15 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_abs 1EF6 0 CODE 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_pad 1A7E 0 CODE 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_tiny@sqrtf$F2315 E15 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LEDarray_disp_bin@number 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pnvCOMRAM 53 0 COMRAM 1 nvCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___aodiv@sign 17 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_day1_init 21E6 0 CODE 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_day1_init 1EF6 0 CODE 0 text25 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-sprintf@fmt 74 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+sprintf@fmt 72 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LEDarray_disp_bin@ctr 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_dtoa$2141 33 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_abs 2226 0 CODE 0 text20 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_dtoa$2130 33 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_abs 1F36 0 CODE 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_lg2 E31 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_ovt E25 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_pad 1C7E 0 CODE 0 text16 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_pad 1AF8 0 CODE 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LCD_sendbyte@Byte 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-int_func 2226 0 CODE 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+int_func 1F72 0 CODE 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LCD_sendbyte@type 7 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LCD_sendnibble 1FCC 0 CODE 0 text33 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LCD_sendnibble 1D20 0 CODE 0 text31 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HnvBANK1 0 0 ABS 0 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hramtop E00 0 RAM 0 ramtop dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pdataBANK1 184 0 BANK1 1 dataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__activetblptr 3 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pdataBANK1 188 0 BANK1 1 dataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__activetblptr 1 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -989,49 +962,46 @@ __Htext34 0 0 ABS 0 text34 dist/default/production\mini-project-energy-saving-ar
 __Htext35 0 0 ABS 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Htext36 0 0 ABS 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Htext37 0 0 ABS 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Htext38 0 0 ABS 0 text38 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Htext39 0 0 ABS 0 text39 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 vfpfcnvrt@fmt 46 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_day1_init 21A6 0 CODE 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_day1_init 1EB4 0 CODE 0 text25 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _PIE0bits E29 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _PIE2bits E2B 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LCD_sendstring@string 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LCD_sendstring 22D0 0 CODE 0 text27 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LCD_sendstring 1FE2 0 CODE 0 text16 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 pad@buf 18 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext10 21A6 0 CODE 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext11 1DA8 0 CODE 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext12 207E 0 CODE 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext13 202A 0 CODE 0 text13 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext14 E98 0 CODE 0 text14 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext15 1152 0 CODE 0 text15 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext16 1BD4 0 CODE 0 text16 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext17 2162 0 CODE 0 text17 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext18 1A46 0 CODE 0 text18 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext19 2484 0 CODE 0 text19 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext20 21E6 0 CODE 0 text20 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext21 1590 0 CODE 0 text21 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext22 1408 0 CODE 0 text22 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext23 16F4 0 CODE 0 text23 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext24 211C 0 CODE 0 text24 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext25 2334 0 CODE 0 text25 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext26 2360 0 CODE 0 text26 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext27 229C 0 CODE 0 text27 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext28 23F4 0 CODE 0 text28 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext29 2386 0 CODE 0 text29 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext30 22D0 0 CODE 0 text30 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext31 1C7E 0 CODE 0 text31 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext32 2304 0 CODE 0 text32 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext33 1F64 0 CODE 0 text33 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext34 246C 0 CODE 0 text34 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext35 245A 0 CODE 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext36 23AC 0 CODE 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext37 23D0 0 CODE 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext38 2446 0 CODE 0 text38 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext39 2414 0 CODE 0 text39 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___aodiv 1408 0 CODE 0 text22 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___aomod 1590 0 CODE 0 text21 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___awdiv 1B10 0 CODE 0 text2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pintcode_body 2226 0 CODE 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext10 1736 0 CODE 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext11 216A 0 CODE 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext12 1EF6 0 CODE 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext13 1294 0 CODE 0 text13 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext14 110C 0 CODE 0 text14 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext15 1AF8 0 CODE 0 text15 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext16 1FAE 0 CODE 0 text16 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext17 1BDC 0 CODE 0 text17 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext18 1C4A 0 CODE 0 text18 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext19 2046 0 CODE 0 text19 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext20 2160 0 CODE 0 text20 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext21 1F36 0 CODE 0 text21 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext22 1546 0 CODE 0 text22 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext23 164E 0 CODE 0 text23 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext24 1D20 0 CODE 0 text24 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext25 1EB4 0 CODE 0 text25 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext26 20DA 0 CODE 0 text26 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext27 206C 0 CODE 0 text27 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext28 1FE2 0 CODE 0 text28 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext29 18C4 0 CODE 0 text29 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext30 2016 0 CODE 0 text30 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext31 1CB8 0 CODE 0 text31 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext32 2152 0 CODE 0 text32 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext33 2140 0 CODE 0 text33 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext34 2092 0 CODE 0 text34 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext35 20B6 0 CODE 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext36 212C 0 CODE 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext37 20FA 0 CODE 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___aodiv 110C 0 CODE 0 text14 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___aomod 1294 0 CODE 0 text13 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___awdiv 1800 0 CODE 0 text2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pintcode_body 1F72 0 CODE 0 intcode_body dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___lwdiv 1AF8 0 CODE 0 text15 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1039,7 +1009,7 @@ __Lbank13 0 0 ABS 0 bank13 dist/default/production\mini-project-energy-saving-ar
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-?_atoi C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_time2String 1A7E 0 CODE 0 text3 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___wmul@multiplier 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1051,17 +1021,18 @@ _LATEbits F7D 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb
 _LATFbits F7E 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _LATGbits F7F 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _LATHbits F80 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_comp_check 9B 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_comp_check 9D 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_sunset 1E8C 0 CODE 0 text3 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___lwdiv@divisor 8 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_sunset 1BDC 0 CODE 0 text17 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+isa$std 1 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 LEDarray_disp_bin@mask 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_day_of_month 19C 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-stacklo 0 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
+_day_of_month 1A2 0 BANK1 1 nvBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+stacklo 0 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_seconds 53 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_seconds A1 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _ADCON0bits F60 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1070,8 +1041,8 @@ __Lspace_0 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-
 __Lspace_1 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pbssCOMRAM 51 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LCD_setline 2304 0 CODE 0 text30 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pbssCOMRAM 50 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LCD_setline 2016 0 CODE 0 text28 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _PIR0bits E33 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1081,7 +1052,7 @@ vfpfcnvrt@convarg 60 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-
 ___aodiv@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 timeadjuster@sunrise_time 13 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-end_of_initialization 2112 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+end_of_initialization 1E0E 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 fputc@c 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1092,32 +1063,34 @@ ___awdiv@quotient C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project
 ?___aodiv 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ?___aomod 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ?___awdiv 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-vfprintf@fmt 6E 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_daylightsavings 202A 0 CODE 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___lwdiv@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+?___lwdiv 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+vfprintf@fmt 6C 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_daylightsavings 1D7E 0 CODE 0 text24 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lramtop E00 0 RAM 0 ramtop dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pcinit 20D0 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pcinit 1DD0 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 vfpfcnvrt@ap 48 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-vfpfcnvrt@cp 6A 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+vfpfcnvrt@cp 68 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 vfpfcnvrt@fp 44 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext0 1D20 0 CODE 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext1 1E1E 0 CODE 0 text1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext2 1B10 0 CODE 0 text2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext3 1E8C 0 CODE 0 text3 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext4 1EF8 0 CODE 0 text4 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext5 247A 0 CODE 0 text5 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext6 2262 0 CODE 0 text6 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext7 1852 0 CODE 0 text7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext8 195E 0 CODE 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ptext9 1FCC 0 CODE 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext0 1966 0 CODE 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext1 1B6C 0 CODE 0 text1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext2 1800 0 CODE 0 text2 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext3 19FE 0 CODE 0 text3 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext4 1D7E 0 CODE 0 text4 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext5 1E20 0 CODE 0 text5 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext6 13F8 0 CODE 0 text6 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext7 E90 0 CODE 0 text7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext8 1A7E 0 CODE 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ptext9 1E70 0 CODE 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-vfprintf@ap 70 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-vfprintf@fp 6C 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-vfprintf@cfmt 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_increment 195E 0 CODE 0 text7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+vfprintf@ap 6E 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+vfprintf@fp 6A 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+vfprintf@cfmt 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_increment 164E 0 CODE 0 text22 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext12 0 0 ABS 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1146,68 +1119,61 @@ __Ltext34 0 0 ABS 0 text34 dist/default/production\mini-project-energy-saving-ar
 __Ltext35 0 0 ABS 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext36 0 0 ABS 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Ltext37 0 0 ABS 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Ltext38 0 0 ABS 0 text38 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Ltext39 0 0 ABS 0 text39 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LCD_setline@line 9 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__ramtop E00 0 RAM 0 ramtop C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-_sprintf 207E 0 CODE 0 text12 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__ramtop E00 0 RAM 0 ramtop C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+_sprintf 1D7E 0 CODE 0 text4 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _HighISR 8 0 CODE 0 intcode dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_vfprintf 202A 0 CODE 0 text13 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_vfprintf 1E20 0 CODE 0 text5 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 LEDarray_disp_bin@led_arr A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Lpowerup A0 0 CODE 0 powerup dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Lpowerup A8 0 CODE 0 powerup dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-sprintf@ap 7C 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_isdigit 2334 0 CODE 0 text25 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_isspace 211C 0 CODE 0 text24 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+sprintf@ap 80 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _CM1NCHbits ED2 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __psmallconst E00 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_vfprintf 207E 0 CODE 0 text13 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-___heap_lo 0 0 ABS 0 - C:\Users\44756\AppData\Local\Temp\xcAs119g.o
-_sunrise 1EF8 0 CODE 0 text4 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_vfprintf 1E70 0 CODE 0 text5 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+___heap_lo 0 0 ABS 0 - C:\Users\areeb\AppData\Local\Temp\xcAscds.o
+_sunrise 1C4A 0 CODE 0 text18 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of__initialization 2112 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_increment 1852 0 CODE 0 text7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of__initialization 1E0E 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_increment 1546 0 CODE 0 text22 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pidataBANK1 242E 0 CODE 0 idataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pidataBANK1 2114 0 CODE 0 idataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_isspace$2190 A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_Comp1_init_falling_edge 23D0 0 CODE 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_daylightsavings 1FCC 0 CODE 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_Comp1_init_falling_edge 20B6 0 CODE 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_daylightsavings 1D20 0 CODE 0 text24 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __pintcodelo 18 0 CODE 0 intcodelo dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_Timer0_init 2414 0 CODE 0 text28 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_Comp1_init_falling_edge 23F4 0 CODE 0 text37 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_Timer0_init 20FA 0 CODE 0 text26 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_Comp1_init_falling_edge 20DA 0 CODE 0 text35 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _T0CON0bits FD5 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _T0CON1bits FD6 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_streetLightInit 2484 0 CODE 0 text5 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-sprintf@f 7E 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-sprintf@s 72 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_atoi 1852 0 CODE 0 text23 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_streetLightInit 216A 0 CODE 0 text20 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+sprintf@f 82 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+sprintf@s 70 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_cp_h E7D 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_cp_l E79 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_dp_h E11 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_dp_l E09 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_dtoa 1408 0 CODE 0 text15 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_dtoa 110C 0 CODE 0 text7 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_huge E65 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_main 1DA8 0 CODE 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_main 19FE 0 CODE 0 text0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_tiny E61 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __pintcode 8 0 CODE 0 intcode dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_month_num A1 0 BANK0 1 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-isdigit@c 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_month_num A3 0 BANK0 1 nvBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _ADPCH F5F 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 timeadjuster@solarnoon 17 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_fputc 1B10 0 CODE 0 text18 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_fputs 21A6 0 CODE 0 text17 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-?_sprintf 72 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_fputc 1800 0 CODE 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_fputs 1EB4 0 CODE 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+?_sprintf 70 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_ivln2 E1D 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_lg2_h E2D 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_lg2_l E29 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _TMR0H FD4 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 _TMR0L FD3 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_putch 2486 0 CODE 0 text19 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_putch 216C 0 CODE 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __end_of_two24 E69 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1217,29 +1183,24 @@ __LRAM 1 0 ABS 0 - dist/default/production\mini-project-energy-saving-areeb-atul
 __Lbss 0 0 RAM 1 bss dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-atoi@neg 11 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_Comp1_init_rising_edge 23AC 0 CODE 0 text36 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_errno 95 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_flags 55 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_fputc 1A46 0 CODE 0 text18 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_fputs 2162 0 CODE 0 text17 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-fabsf@F465 91 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_month 184 0 BANK1 1 dataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_putch 2484 0 CODE 0 text19 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_width 97 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-?_isdigit 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-?_isspace 6 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_Comp1_init_rising_edge 2092 0 CODE 0 text34 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_errno 99 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_flags 52 0 COMRAM 1 bssCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_fputc 1736 0 CODE 0 text10 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_fputs 1E70 0 CODE 0 text9 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+fabsf@F465 164 0 BANK1 1 bssBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_month 188 0 BANK1 1 dataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_putch 216A 0 CODE 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+_width 9B 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-atoi@n 13 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-atoi@s C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-_date2String 1DA8 0 CODE 0 text11 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__initialization 20D0 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__pbssBANK0 91 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+time2String@buf 8D 0 BANK0 1 cstackBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__initialization 1DD0 0 CODE 0 cinit dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__pbssBANK0 99 0 BANK0 1 bssBANK0 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __pbssBANK1 164 0 BANK1 1 bssBANK1 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ?_sunrise C 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 ___wmul@product A 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__Hsmallconst E98 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__Hsmallconst E90 0 SMALLCONST 0 smallconst dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 dtoa@d 23 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 dtoa@i 42 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 dtoa@n 39 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
@@ -1251,7 +1212,7 @@ _ANSELAbits E92 0 ABS 0 - dist/default/production\mini-project-energy-saving-are
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 __Hintcode E 0 CODE 0 intcode dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 timeadjuster@sunset_time 15 0 COMRAM 1 cstackCOMRAM dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
-__end_of_LEDarray_disp_bin 1A46 0 CODE 0 text8 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
+__end_of_LEDarray_disp_bin 1736 0 CODE 0 text23 dist/default/production\mini-project-energy-saving-areeb-atulit.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1276,14 +1237,14 @@ __end_of_LEDarray_disp_bin 1A46 0 CODE 0 text8 dist/default/production\mini-proj
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-intcodelo 0 18 18 8C 1
-text14 0 E98 E98 15EE 1
-cstackCOMRAM 1 1 1 56 1
-cstackBANK0 1 60 60 43 1
-cstackBANK1 1 100 100 A0 1
+intcodelo 0 18 18 94 1
+text7 0 E90 E90 12DC 1
+cstackCOMRAM 1 1 1 55 1
+cstackBANK0 1 60 60 45 1
+cstackBANK1 1 100 100 A6 1
 reset_vec 0 0 0 4 1
 intcode 0 8 8 6 1
-smallconst 0 E00 E00 98 1
+smallconst 0 E00 E00 90 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal
