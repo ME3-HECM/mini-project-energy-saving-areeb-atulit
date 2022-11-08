@@ -24245,6 +24245,11 @@ unsigned char __t3rd16on(void);
 void streetLightInit(void);
 void increment();
 void poweroff();
+void day1_init();
+int sunrise();
+int sunset();
+void timeadjuster(int sunrise_time,int sunset_time);
+void daylightsavings();
 # 5 "./interrupts.h" 2
 
 # 1 "./Global Variables.h" 1
@@ -24256,9 +24261,12 @@ void poweroff();
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 6 "./interrupts.h" 2
 
 
@@ -24290,9 +24298,12 @@ int incrementseconds(int seconds);
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 4 "interrupts.c" 2
 
 

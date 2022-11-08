@@ -16,6 +16,8 @@
 #define _XTAL_FREQ 64000000 //note intrinsic _delay function is 62.5ns at 64,000,000Hz  
 
 void main(void) {
+    int prevState = LATHbits.LATH3;
+    int a = 0;
     hour = 0;
     //call your initialisation functions to set up the hardware modules
     streetLightInit(); //initialise street light
@@ -25,9 +27,14 @@ void main(void) {
     Comp1_init_falling_edge();
     Interrupts_init();
     ADC_init();
+    day1_init();
     while (1) {
         increment();
         poweroff();
+        sunrise();
+        sunset();
+        timeadjuster(sunrise(),sunset());
+        daylightsavings();
         }
     }
 

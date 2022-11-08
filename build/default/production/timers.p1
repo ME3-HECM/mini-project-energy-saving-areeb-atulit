@@ -2024,14 +2024,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 8:     int hour;
 [v _hour `i ~T0 @X0 1 e ]
 "9
-[; ;./Global Variables.h: 9:     int day;
-[v _day `i ~T0 @X0 1 e ]
+[; ;./Global Variables.h: 9:     int month_num;
+[v _month_num `i ~T0 @X0 1 e ]
 "10
-[; ;./Global Variables.h: 10:     int week;
-[v _week `i ~T0 @X0 1 e ]
+[; ;./Global Variables.h: 10:     int day_of_year;
+[v _day_of_year `i ~T0 @X0 1 e ]
 "11
-[; ;./Global Variables.h: 11:     int year;
+[; ;./Global Variables.h: 11:     int day_of_week;
+[v _day_of_week `i ~T0 @X0 1 e ]
+"12
+[; ;./Global Variables.h: 12:     int day_of_month;
+[v _day_of_month `i ~T0 @X0 1 e ]
+"13
+[; ;./Global Variables.h: 13:     int year;
 [v _year `i ~T0 @X0 1 e ]
+"14
+[; ;./Global Variables.h: 14:     int comp_check;
+[v _comp_check `i ~T0 @X0 1 e ]
 "7 timers.c
 [; ;timers.c: 7: void Timer0_init(void)
 [v _Timer0_init `(v ~T0 @X0 1 ef ]

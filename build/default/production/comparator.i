@@ -24253,9 +24253,12 @@ void Comp1_init_falling_edge(void);
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 3 "comparator.c" 2
 
 

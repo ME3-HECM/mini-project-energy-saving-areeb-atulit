@@ -24637,9 +24637,12 @@ void ADC_lightMeter(int val, int range);
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 5 "LEDarray.c" 2
 
 

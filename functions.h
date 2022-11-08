@@ -6,4 +6,9 @@
 void streetLightInit(void);
 void increment();
 void poweroff();
+void day1_init();
+int sunrise();
+int sunset();
+void timeadjuster(int sunrise_time,int sunset_time);
+void daylightsavings();
 #endif

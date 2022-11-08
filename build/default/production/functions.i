@@ -24240,6 +24240,11 @@ unsigned char __t3rd16on(void);
 void streetLightInit(void);
 void increment();
 void poweroff();
+void day1_init();
+int sunrise();
+int sunset();
+void timeadjuster(int sunrise_time,int sunset_time);
+void daylightsavings();
 # 2 "Functions.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 1 3
@@ -24654,9 +24659,12 @@ int incrementseconds(int seconds);
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 6 "./interrupts.h" 2
 
 
@@ -24675,16 +24683,20 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR();
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 7 "Functions.c" 2
 
 
 
 
-
+int month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
 void streetLightInit(void){
+
     LATHbits.LATH3 = 0;
     TRISHbits.TRISH3 = 0;
     LATDbits.LATD7 = 1;
@@ -24692,37 +24704,112 @@ void streetLightInit(void){
 }
 void increment()
 {
-
+    if (year%4 == 0)
+    {
+        month[1] = 29;
+    }
+    else
+    {
+        month[1] = 28;
+    }
     if (seconds == 1)
     {
         hour++;
         LEDarray_disp_bin(hour);
         seconds = 0;
-
     }
-
     if (hour == 24)
     {
-        day++;
+        day_of_year++;
+        day_of_week++;
+        day_of_month++;
         hour = 0;
     }
-
-    if (day%7 == 0)
+    if (day_of_week == 7)
     {
-        week++;
+        day_of_week = 0;
     }
-    if (day == 365)
+    if (day_of_month == month[month_num-1])
     {
+        day_of_month = 0;
+        month_num++;
+    }
+    if (month_num == 13)
+    {
+        month_num=0;
         year++;
     }
-
 }
 
 void poweroff()
 {
 
-        if (1 < hour && hour < 5) {
+        if (1 <= hour && hour < 5) {
             LATHbits.LATH3 = 0;
 
 }
+}
+
+void day1_init()
+{
+    seconds = 0;
+    hour = 0;
+    day_of_year = 1;
+    day_of_month = 1;
+    day_of_week = 6;
+    year = 2022;
+    month_num = 1;
+    LATHbits.LATH3 = 1;
+}
+
+int sunrise()
+{
+    int prevState = LATHbits.LATH3;
+    int sunrise_time = 0;
+    if (5<=hour<=8)
+    {
+        if (prevState==1 && LATHbits.LATH3==0)
+        {
+            sunrise_time = seconds+(hour*3600);
+        }
+    }
+    return sunrise_time;
+}
+
+int sunset()
+{
+    int prevState = LATHbits.LATH3;
+    int sunset_time = 0;
+    if (16<=hour<=20)
+    {
+        if (prevState==0 && LATHbits.LATH3==1)
+        {
+            sunset_time = seconds+(hour*3600);
+        }
+    }
+    return sunset_time;
+}
+
+void timeadjuster(int sunrise_time, int sunset_time)
+{
+    int solarnoon = 0;
+    int adjustment = 0;
+    solarnoon = (sunrise_time+sunset_time)/2;
+    adjustment = (12*3600)-solarnoon;
+    if (hour==11 && seconds==1800)
+    {
+        seconds+=adjustment;
+    }
+}
+void daylightsavings()
+{
+    if (month_num ==3 && day_of_week==7 && 25<=day_of_month<=31)
+    {
+        hour++;
+    }
+    if (month_num ==10 && day_of_week==7 && 25<=day_of_month<=31)
+    {
+        hour--;
+    }
+
 }

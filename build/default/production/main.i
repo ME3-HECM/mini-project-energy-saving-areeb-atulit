@@ -24266,6 +24266,11 @@ int incrementseconds(int seconds);
 void streetLightInit(void);
 void increment();
 void poweroff();
+void day1_init();
+int sunrise();
+int sunset();
+void timeadjuster(int sunrise_time,int sunset_time);
+void daylightsavings();
 # 5 "./interrupts.h" 2
 
 # 1 "./Global Variables.h" 1
@@ -24277,9 +24282,12 @@ void poweroff();
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 6 "./interrupts.h" 2
 
 
@@ -24324,9 +24332,12 @@ unsigned int get16bitTMR0val(void);
 
     int seconds;
     int hour;
-    int day;
-    int week;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
     int year;
+    int comp_check;
 # 14 "main.c" 2
 
 # 1 "./ADC.h" 1
@@ -24345,18 +24356,24 @@ void ADC_lightMeter(int val, int range);
 
 
 void main(void) {
-
+    int prevState = LATHbits.LATH3;
+    int a = 0;
+    hour = 0;
 
     streetLightInit();
-    hour = 0;
     LEDarray_init();
     Timer0_init();
     Comp1_init_rising_edge();
     Comp1_init_falling_edge();
     Interrupts_init();
     ADC_init();
+    day1_init();
     while (1) {
         increment();
         poweroff();
+        sunrise();
+        sunset();
+        timeadjuster(sunrise(),sunset());
+        daylightsavings();
         }
     }
