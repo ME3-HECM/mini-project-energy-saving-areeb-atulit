@@ -11,7 +11,9 @@
     int day_of_week;
     int day_of_month;
     int year;
-    int comp_check;
+    int seconds_in_hour;
+    int hours_in_day;
+    
     
 #endif	
 

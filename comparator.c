@@ -41,7 +41,7 @@ void Comp1_init_falling_edge(void)
     CM1PCHbits.PCH=0b101;   //use DAC output for positive input
     CM1CON0bits.HYS=1;      //a little bit of hysteresis to stop multiple triggers
     CM1CON0bits.POL=1;      //needed for interrupt to work
-    CM1CON1bits.INTN=1; 	//set interrupt flag on positive going edge
+    CM1CON1bits.INTN=1; 	//set interrupt flag on negative going edge
     DAC_init();				//initialise the DAC
     CM1CON0bits.EN=1;   	//enable comparator 1
 }

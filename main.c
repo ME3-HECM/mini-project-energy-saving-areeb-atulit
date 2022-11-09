@@ -18,26 +18,28 @@
 
 void main(void) {
     //call your initialisation functions to set up the hardware modules
-    streetLightInit(); //initialise street light
-    LEDarray_init();//initialise LED strip
-    Timer0_init();//initialise timer
-    Comp1_init_rising_edge();//initialise comparator
-    Comp1_init_falling_edge();
-    Interrupts_init();
-    ADC_init();
+    streetLightInit();                  
+    LEDarray_init();                     
+    Timer0_init();                       
+    Comp1_init_rising_edge();            //initialise comparator to detect rising edge (LDR reads dark to light)
+    Comp1_init_falling_edge();           //initialise comparator to detect falling edge (LDR reads light to dark)
+    Interrupts_init();                   
+    ADC_init();                          
     day1_init();
     LCD_Init();
     char strtime[100];
     char strdate[100];
+    test_day(); //shorten duration of hours and days for test mode
+    //real_day();//set duration of hours and days to reflect real world
     while (1) {
         LCD_setline(1); //Set Line 1
-        time2String(strdate, hour,seconds,day_of_month, month_num,year);
-        increment();
-        poweroff();
-        sunrise();
-        sunset();
-        timeadjuster(sunrise(),sunset());
-        daylightsavings();
+        time2String(strdate,hour,seconds,day_of_month, month_num,year);
+        increment();                    //update counters of all units of time
+        poweroff();                     //check if time is between 1 and 5 AM and power light off if so
+        //sunrise();                      //check for sunrise and record time of event when it occurs
+        //sunset();                       //check for sunrise and record time of event when it occurs
+        time_adjuster(sunrise(),sunset());//Daily time adjustment to remain synchronous with sun
+        daylightsavings();               
 
         }
     }

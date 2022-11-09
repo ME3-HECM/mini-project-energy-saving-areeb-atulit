@@ -9,7 +9,7 @@
 ************************************/
 void LEDarray_init(void)
 {
-    	//set up TRIS registers for pins connected to LED array
+    //set up TRIS registers for pins connected to LED array
     TRISGbits.TRISG0 = 0;
     TRISGbits.TRISG1 = 0;
     TRISAbits.TRISA2 = 0;

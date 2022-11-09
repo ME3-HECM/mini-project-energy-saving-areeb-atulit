@@ -38,13 +38,3 @@ unsigned int ADC_getval(void)
 
     return tmpval; //return this value when the function is called
 }
-void ADC_lightMeter(int val, int range)
-{
-    unsigned int LEDintensity = 0; //corresponds to number of bars on led strip to light up
-    int ctr = val*10/range;//scale the brightness value from between max and min to 0-10 scale
-    
-    for(;ctr > 0;ctr--)//loop to light up each LED until the highest value LED to be turned on
-        LEDintensity+=pow(2,ctr-1);//update number to light up LEDs until the point determined
-    
-    LEDarray_disp_bin(LEDintensity);
-    }

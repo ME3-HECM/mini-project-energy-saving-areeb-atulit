@@ -28,6 +28,7 @@
       <itemPath>timers.c</itemPath>
       <itemPath>Functions.c</itemPath>
       <itemPath>LCD.c</itemPath>
+      <itemPath>Readme.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

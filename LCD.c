@@ -136,6 +136,7 @@ void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigne
 //    int frac_part=(ADC_val*100)/77 - int_part*100;
    
     sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
+    //sprintf(buf,"%d %d ",SS, SR);
     LCD_sendstring(buf);
     __delay_ms(1000);
     

@@ -23,7 +23,7 @@ void Timer0_init(void)
 ************************************/
 unsigned int get16bitTMR0val(void)
 {
-	unsigned int a=TMR0L;
+	unsigned int a=TMR0L; 
     unsigned int b=TMR0H;
     
     return b;

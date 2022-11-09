@@ -27,8 +27,8 @@ void Interrupts_init(void)
 ************************************/
 void __interrupt(high_priority) HighISR()
 {
-        if(PIR2bits.C1IF){ 					//check the interrupt source
-        LATHbits.LATH3 = !LATHbits.LATH3; //toggle LED
+        if(PIR2bits.C1IF){                      //check the interrupt source
+        LATHbits.LATH3 = !LATHbits.LATH3;       //toggle LED
         PIR2bits.C1IF=0; 						//clear the interrupt flag
     }
 
@@ -36,17 +36,13 @@ void __interrupt(high_priority) HighISR()
 
 void __interrupt(low_priority) LowISR()
 {
-    if(PIR0bits.TMR0IF){ 					//check the interrupt source for the timer interrupt
+    if(PIR0bits.TMR0IF){                        //check the interrupt source for the timer interrupt
         seconds++;
         TMR0H=00001011;                         //write High reg first, update happens when low reg is written to
         TMR0L=11011011;
         PIR0bits.TMR0IF = 0;                    //clear the interrupt flag!
     }  
     
-    if(seconds==5)
-    {
-        LATDbits.LATD7 = !LATDbits.LATD7;
-    }
     if (hour==5)
     {
         LATHbits.LATH3 = 1;
