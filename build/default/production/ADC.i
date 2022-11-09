@@ -24644,6 +24644,12 @@ int incrementseconds(int seconds);
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 5 "ADC.c" 2
 
 

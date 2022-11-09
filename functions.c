@@ -10,6 +10,7 @@
  ************************************/
 //define array with number of days in each month of the year
 int month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int adjustment_of_day = 1;
 
 // function to initialise street light LED
 
@@ -21,7 +22,7 @@ void streetLightInit(void) {
 //shorten duration of hours and days for test mode
 
 void test_day() {
-    seconds_in_hour = 1; //define number of seconds in hour
+    seconds_in_hour = 10; //define number of seconds in hour
     hours_in_day = 24;   //define number of hours in day
 }
 
@@ -51,6 +52,7 @@ void increment() {
         day_of_week++; //increment day of week
         day_of_month++; //increment day of month
         hour = 0; //reset hour counter to zero
+        adjustment_of_day = 1;
     }
 
     //reset day at the end of the week
@@ -76,7 +78,7 @@ void poweroff() {
 
 void day1_init() { //Start code on 1st Jan 2022 at 00:00 (12am)
     seconds = 0;
-    hour = 0;
+    hour = 23;
     day_of_year = 1;
     day_of_month = 1;
     day_of_week = 1; //1 (Monday) to 7(Sunday), 6 is Saturday
@@ -87,16 +89,23 @@ void day1_init() { //Start code on 1st Jan 2022 at 00:00 (12am)
 
 //function to record sunrise time
 
-int sunrise() {
-    int prevState = LATHbits.LATH3; //store previous state of LED
+/*int sunrise() {
+    int prevState = 1; //store previous state of LED
+    //if (LATHbits.LATH3 == 1 && hour > 5)
+     //   prevState = 1;
+    
     int sunrise_time = 0; //Initialise sunrise time
     //check for sunrise only between 5AM and 8AM 
     if (5 <= hour <= 8) {
         if (prevState == 1 && LATHbits.LATH3 == 0) //check that street light has gone from high to low state
             sunrise_time = seconds + (hour * 3600); //calculate sunrise time in seconds
     }
-    return sunrise_time;
+    SR=sunrise_time;
+    prevState = 0;
+    //return sunrise_time;
+    return prevState;
 }
+ 
 
 //function to record sunset time
 
@@ -110,16 +119,24 @@ int sunset() {
     }
     return sunset_time;
 }
+ */
 
 //Adjust the time at the end of the day to be synchronous with the sun
 
 void time_adjuster(int sunrise_time, int sunset_time) {
-    int solarnoon = 0;                              //initialise variable to store solar noon 
-    int adjustment = 0;                             //initialise variable to store required daily time adjustment
+    
+    int solarnoon = 0;                              //initialise variable to store solar noon                              
+    int adjustment = -2;                            //initialise variable to store required daily time adjustment
     solarnoon = (sunrise_time + sunset_time) / 2;   //Calculate average of sunrise and sunset time which is solar noon
-    adjustment = (12 * 3600) - solarnoon;           //Difference between solar noon and noon as per PIC timer
-    if (hour == 11 && seconds == 1800)
+    //adjustment = (12 * 10) - solarnoon;           //Difference between solar noon and noon as per PIC timer
+    if (hour == 23 && seconds == 5  && adjustment_of_day == 1)
+    {   
         seconds += adjustment;                      //adjust time at 23:30 every day
+        adjustment_of_day = 0;
+    }
+    SN = solarnoon;
+    AD = adjustment;
+    
 }
 
 //Perform daylight savings time adjustment on the last Sunday of March and October

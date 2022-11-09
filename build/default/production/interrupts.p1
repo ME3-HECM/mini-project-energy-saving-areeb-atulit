@@ -2146,6 +2146,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
+"16
+[; ;./Global Variables.h: 16:     int prevState;
+[; ;./Global Variables.h: 16:     int prevState;
+[v _prevState `i ~T0 @X0 1 e ]
+"17
+[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 17:     int SR;
+[v _SR `i ~T0 @X0 1 e ]
+"18
+[; ;./Global Variables.h: 18:     int SS;
+[; ;./Global Variables.h: 18:     int SS;
+[v _SS `i ~T0 @X0 1 e ]
+"19
+[; ;./Global Variables.h: 19:     int AD;
+[; ;./Global Variables.h: 19:     int AD;
+[v _AD `i ~T0 @X0 1 e ]
+"20
+[; ;./Global Variables.h: 20:     int SN;
+[; ;./Global Variables.h: 20:     int SN;
+[v _SN `i ~T0 @X0 1 e ]
+"21
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[v _adjustment_of_day `i ~T0 @X0 1 e ]
 "7
 [; ;./Global Variables.h: 7:     int seconds;
 [; ;./Global Variables.h: 7:     int seconds;
@@ -2182,6 +2206,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
+"16
+[; ;./Global Variables.h: 16:     int prevState;
+[; ;./Global Variables.h: 16:     int prevState;
+[v _prevState `i ~T0 @X0 1 e ]
+"17
+[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 17:     int SR;
+[v _SR `i ~T0 @X0 1 e ]
+"18
+[; ;./Global Variables.h: 18:     int SS;
+[; ;./Global Variables.h: 18:     int SS;
+[v _SS `i ~T0 @X0 1 e ]
+"19
+[; ;./Global Variables.h: 19:     int AD;
+[; ;./Global Variables.h: 19:     int AD;
+[v _AD `i ~T0 @X0 1 e ]
+"20
+[; ;./Global Variables.h: 20:     int SN;
+[; ;./Global Variables.h: 20:     int SN;
+[v _SN `i ~T0 @X0 1 e ]
+"21
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[v _adjustment_of_day `i ~T0 @X0 1 e ]
 "10 interrupts.c
 [; ;interrupts.c: 10: void Interrupts_init(void)
 [v _Interrupts_init `(v ~T0 @X0 1 ef ]
@@ -2232,59 +2280,85 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;interrupts.c: 31:         LATHbits.LATH3 = !LATHbits.LATH3;
 [e = . . _LATHbits 0 3 -> -> ! != -> . . _LATHbits 0 3 `i -> 0 `i `i `uc ]
 "32
-[; ;interrupts.c: 32:         PIR2bits.C1IF=0;
-[e = . . _PIR2bits 0 0 -> -> 0 `i `uc ]
+[; ;interrupts.c: 32:         if (LATHbits.LATH3==0)
+[e $ ! == -> . . _LATHbits 0 3 `i -> 0 `i 2018  ]
 "33
-[; ;interrupts.c: 33:     }
+[; ;interrupts.c: 33:         {
+{
+"34
+[; ;interrupts.c: 34:             SR = seconds + (hour*10);
+[e = _SR + _seconds * _hour -> 10 `i ]
+"35
+[; ;interrupts.c: 35:         }
+}
+[e :U 2018 ]
+"36
+[; ;interrupts.c: 36:         if (LATHbits.LATH3 == 1)
+[e $ ! == -> . . _LATHbits 0 3 `i -> 1 `i 2019  ]
+"37
+[; ;interrupts.c: 37:         {
+{
+"38
+[; ;interrupts.c: 38:             SS = seconds + (hour*10);
+[e = _SS + _seconds * _hour -> 10 `i ]
+"39
+[; ;interrupts.c: 39:         }
+}
+[e :U 2019 ]
+"40
+[; ;interrupts.c: 40:         PIR2bits.C1IF=0;
+[e = . . _PIR2bits 0 0 -> -> 0 `i `uc ]
+"41
+[; ;interrupts.c: 41:     }
 }
 [e :U 2017 ]
-"35
-[; ;interrupts.c: 35: }
+"43
+[; ;interrupts.c: 43: }
 [e :UE 2016 ]
 }
 [v $root$_LowISR `(v ~T0 @X0 0 e ]
-"37
-[; ;interrupts.c: 37: void __attribute__((picinterrupt(("low_priority")))) LowISR()
+"45
+[; ;interrupts.c: 45: void __attribute__((picinterrupt(("low_priority")))) LowISR()
 [v _LowISR `(v ~T3 @X0 1 ef ]
-"38
-[; ;interrupts.c: 38: {
+"46
+[; ;interrupts.c: 46: {
 {
 [e :U _LowISR ]
 [f ]
-"39
-[; ;interrupts.c: 39:     if(PIR0bits.TMR0IF){
-[e $ ! != -> . . _PIR0bits 0 5 `i -> 0 `i 2019  ]
-{
-"40
-[; ;interrupts.c: 40:         seconds++;
-[e ++ _seconds -> 1 `i ]
-"41
-[; ;interrupts.c: 41:         TMR0H=00001011;
-[e = _TMR0H -> -> 521 `i `uc ]
-"42
-[; ;interrupts.c: 42:         TMR0L=11011011;
-[e = _TMR0L -> -> 11011011 `l `uc ]
-"43
-[; ;interrupts.c: 43:         PIR0bits.TMR0IF = 0;
-[e = . . _PIR0bits 0 5 -> -> 0 `i `uc ]
-"44
-[; ;interrupts.c: 44:     }
-}
-[e :U 2019 ]
-"46
-[; ;interrupts.c: 46:     if (hour==5)
-[e $ ! == _hour -> 5 `i 2020  ]
 "47
-[; ;interrupts.c: 47:     {
+[; ;interrupts.c: 47:     if(PIR0bits.TMR0IF){
+[e $ ! != -> . . _PIR0bits 0 5 `i -> 0 `i 2021  ]
 {
 "48
-[; ;interrupts.c: 48:         LATHbits.LATH3 = 1;
-[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+[; ;interrupts.c: 48:         seconds++;
+[e ++ _seconds -> 1 `i ]
 "49
-[; ;interrupts.c: 49:     }
-}
-[e :U 2020 ]
+[; ;interrupts.c: 49:         TMR0H=00001011;
+[e = _TMR0H -> -> 521 `i `uc ]
 "50
-[; ;interrupts.c: 50: }
-[e :UE 2018 ]
+[; ;interrupts.c: 50:         TMR0L=11011011;
+[e = _TMR0L -> -> 11011011 `l `uc ]
+"51
+[; ;interrupts.c: 51:         PIR0bits.TMR0IF = 0;
+[e = . . _PIR0bits 0 5 -> -> 0 `i `uc ]
+"52
+[; ;interrupts.c: 52:     }
+}
+[e :U 2021 ]
+"54
+[; ;interrupts.c: 54:     if (hour==5)
+[e $ ! == _hour -> 5 `i 2022  ]
+"55
+[; ;interrupts.c: 55:     {
+{
+"56
+[; ;interrupts.c: 56:         LATHbits.LATH3 = 1;
+[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+"57
+[; ;interrupts.c: 57:     }
+}
+[e :U 2022 ]
+"58
+[; ;interrupts.c: 58: }
+[e :UE 2020 ]
 }

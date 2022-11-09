@@ -2054,6 +2054,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
+"16
+[; ;./Global Variables.h: 16:     int prevState;
+[; ;./Global Variables.h: 16:     int prevState;
+[v _prevState `i ~T0 @X0 1 e ]
+"17
+[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 17:     int SR;
+[v _SR `i ~T0 @X0 1 e ]
+"18
+[; ;./Global Variables.h: 18:     int SS;
+[; ;./Global Variables.h: 18:     int SS;
+[v _SS `i ~T0 @X0 1 e ]
+"19
+[; ;./Global Variables.h: 19:     int AD;
+[; ;./Global Variables.h: 19:     int AD;
+[v _AD `i ~T0 @X0 1 e ]
+"20
+[; ;./Global Variables.h: 20:     int SN;
+[; ;./Global Variables.h: 20:     int SN;
+[v _SN `i ~T0 @X0 1 e ]
+"21
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[v _adjustment_of_day `i ~T0 @X0 1 e ]
 "7
 [; ;./Global Variables.h: 7:     int seconds;
 [; ;./Global Variables.h: 7:     int seconds;
@@ -2090,6 +2114,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
+"16
+[; ;./Global Variables.h: 16:     int prevState;
+[; ;./Global Variables.h: 16:     int prevState;
+[v _prevState `i ~T0 @X0 1 e ]
+"17
+[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 17:     int SR;
+[v _SR `i ~T0 @X0 1 e ]
+"18
+[; ;./Global Variables.h: 18:     int SS;
+[; ;./Global Variables.h: 18:     int SS;
+[v _SS `i ~T0 @X0 1 e ]
+"19
+[; ;./Global Variables.h: 19:     int AD;
+[; ;./Global Variables.h: 19:     int AD;
+[v _AD `i ~T0 @X0 1 e ]
+"20
+[; ;./Global Variables.h: 20:     int SN;
+[; ;./Global Variables.h: 20:     int SN;
+[v _SN `i ~T0 @X0 1 e ]
+"21
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[v _adjustment_of_day `i ~T0 @X0 1 e ]
 "12 Functions.c
 [; ;Functions.c: 12: int month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 [v _month `i ~T0 @X0 -> 12 `i e ]
@@ -2109,323 +2157,270 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 31 `i
 ..
 ]
-"16
-[; ;Functions.c: 16: void streetLightInit(void) {
+"13
+[; ;Functions.c: 13: int adjustment_of_day = 1;
+[v _adjustment_of_day `i ~T0 @X0 1 e ]
+[i _adjustment_of_day
+-> 1 `i
+]
+"17
+[; ;Functions.c: 17: void streetLightInit(void) {
 [v _streetLightInit `(v ~T0 @X0 1 ef ]
 {
 [e :U _streetLightInit ]
 [f ]
-"17
-[; ;Functions.c: 17:     LATHbits.LATH3 = 0;
-[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
 "18
-[; ;Functions.c: 18:     TRISHbits.TRISH3 = 0;
-[e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
+[; ;Functions.c: 18:     LATHbits.LATH3 = 0;
+[e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
 "19
-[; ;Functions.c: 19: }
+[; ;Functions.c: 19:     TRISHbits.TRISH3 = 0;
+[e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
+"20
+[; ;Functions.c: 20: }
 [e :UE 2015 ]
 }
-"23
-[; ;Functions.c: 23: void test_day() {
+"24
+[; ;Functions.c: 24: void test_day() {
 [v _test_day `(v ~T0 @X0 1 ef ]
 {
 [e :U _test_day ]
 [f ]
-"24
-[; ;Functions.c: 24:     seconds_in_hour = 1;
-[e = _seconds_in_hour -> 1 `i ]
 "25
-[; ;Functions.c: 25:     hours_in_day = 24;
-[e = _hours_in_day -> 24 `i ]
+[; ;Functions.c: 25:     seconds_in_hour = 10;
+[e = _seconds_in_hour -> 10 `i ]
 "26
-[; ;Functions.c: 26: }
+[; ;Functions.c: 26:     hours_in_day = 24;
+[e = _hours_in_day -> 24 `i ]
+"27
+[; ;Functions.c: 27: }
 [e :UE 2016 ]
 }
-"30
-[; ;Functions.c: 30: void real_day() {
+"31
+[; ;Functions.c: 31: void real_day() {
 [v _real_day `(v ~T0 @X0 1 ef ]
 {
 [e :U _real_day ]
 [f ]
-"31
-[; ;Functions.c: 31:     seconds_in_hour = 3600;
-[e = _seconds_in_hour -> 3600 `i ]
 "32
-[; ;Functions.c: 32:     hours_in_day = 24;
-[e = _hours_in_day -> 24 `i ]
+[; ;Functions.c: 32:     seconds_in_hour = 3600;
+[e = _seconds_in_hour -> 3600 `i ]
 "33
-[; ;Functions.c: 33: }
+[; ;Functions.c: 33:     hours_in_day = 24;
+[e = _hours_in_day -> 24 `i ]
+"34
+[; ;Functions.c: 34: }
 [e :UE 2017 ]
 }
-"36
-[; ;Functions.c: 36: void increment() {
+"37
+[; ;Functions.c: 37: void increment() {
 [v _increment `(v ~T0 @X0 1 ef ]
 {
 [e :U _increment ]
 [f ]
-"38
-[; ;Functions.c: 38:     if (year % 4 == 0) month[1] = 29;
+"39
+[; ;Functions.c: 39:     if (year % 4 == 0) month[1] = 29;
 [e $ ! == % _year -> 4 `i -> 0 `i 2019  ]
 [e = *U + &U _month * -> -> -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux -> 29 `i ]
 [e :U 2019 ]
-"39
-[; ;Functions.c: 39:     if (year % 4 != 0) month[1] = 28;
+"40
+[; ;Functions.c: 40:     if (year % 4 != 0) month[1] = 28;
 [e $ ! != % _year -> 4 `i -> 0 `i 2020  ]
 [e = *U + &U _month * -> -> -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux -> 28 `i ]
 [e :U 2020 ]
-"42
-[; ;Functions.c: 42:     if (seconds == seconds_in_hour) {
+"43
+[; ;Functions.c: 43:     if (seconds == seconds_in_hour) {
 [e $ ! == _seconds _seconds_in_hour 2021  ]
 {
-"43
-[; ;Functions.c: 43:         hour++;
-[e ++ _hour -> 1 `i ]
 "44
-[; ;Functions.c: 44:         LEDarray_disp_bin(hour);
-[e ( _LEDarray_disp_bin (1 -> _hour `ui ]
+[; ;Functions.c: 44:         hour++;
+[e ++ _hour -> 1 `i ]
 "45
-[; ;Functions.c: 45:         seconds = 0;
-[e = _seconds -> 0 `i ]
+[; ;Functions.c: 45:         LEDarray_disp_bin(hour);
+[e ( _LEDarray_disp_bin (1 -> _hour `ui ]
 "46
-[; ;Functions.c: 46:     }
+[; ;Functions.c: 46:         seconds = 0;
+[e = _seconds -> 0 `i ]
+"47
+[; ;Functions.c: 47:     }
 }
 [e :U 2021 ]
-"49
-[; ;Functions.c: 49:     if (hour == hours_in_day) {
+"50
+[; ;Functions.c: 50:     if (hour == hours_in_day) {
 [e $ ! == _hour _hours_in_day 2022  ]
 {
-"50
-[; ;Functions.c: 50:         day_of_year++;
-[e ++ _day_of_year -> 1 `i ]
 "51
-[; ;Functions.c: 51:         day_of_week++;
-[e ++ _day_of_week -> 1 `i ]
+[; ;Functions.c: 51:         day_of_year++;
+[e ++ _day_of_year -> 1 `i ]
 "52
-[; ;Functions.c: 52:         day_of_month++;
-[e ++ _day_of_month -> 1 `i ]
+[; ;Functions.c: 52:         day_of_week++;
+[e ++ _day_of_week -> 1 `i ]
 "53
-[; ;Functions.c: 53:         hour = 0;
-[e = _hour -> 0 `i ]
+[; ;Functions.c: 53:         day_of_month++;
+[e ++ _day_of_month -> 1 `i ]
 "54
-[; ;Functions.c: 54:     }
+[; ;Functions.c: 54:         hour = 0;
+[e = _hour -> 0 `i ]
+"55
+[; ;Functions.c: 55:         adjustment_of_day = 1;
+[e = _adjustment_of_day -> 1 `i ]
+"56
+[; ;Functions.c: 56:     }
 }
 [e :U 2022 ]
-"57
-[; ;Functions.c: 57:     if (day_of_week == 8)
+"59
+[; ;Functions.c: 59:     if (day_of_week == 8)
 [e $ ! == _day_of_week -> 8 `i 2023  ]
-"58
-[; ;Functions.c: 58:         day_of_week = 1;
+"60
+[; ;Functions.c: 60:         day_of_week = 1;
 [e = _day_of_week -> 1 `i ]
 [e :U 2023 ]
-"61
-[; ;Functions.c: 61:     if (day_of_month == month[month_num - 1] + 1) {
+"63
+[; ;Functions.c: 63:     if (day_of_month == month[month_num - 1] + 1) {
 [e $ ! == _day_of_month + *U + &U _month * -> -> - _month_num -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux -> 1 `i 2024  ]
 {
-"62
-[; ;Functions.c: 62:         day_of_month = 1;
-[e = _day_of_month -> 1 `i ]
-"63
-[; ;Functions.c: 63:         month_num++;
-[e ++ _month_num -> 1 `i ]
 "64
-[; ;Functions.c: 64:     }
+[; ;Functions.c: 64:         day_of_month = 1;
+[e = _day_of_month -> 1 `i ]
+"65
+[; ;Functions.c: 65:         month_num++;
+[e ++ _month_num -> 1 `i ]
+"66
+[; ;Functions.c: 66:     }
 }
 [e :U 2024 ]
-"65
-[; ;Functions.c: 65:     if (month_num == 13) {
+"67
+[; ;Functions.c: 67:     if (month_num == 13) {
 [e $ ! == _month_num -> 13 `i 2025  ]
 {
-"66
-[; ;Functions.c: 66:         month_num = 1;
-[e = _month_num -> 1 `i ]
-"67
-[; ;Functions.c: 67:         year++;
-[e ++ _year -> 1 `i ]
 "68
-[; ;Functions.c: 68:     }
+[; ;Functions.c: 68:         month_num = 1;
+[e = _month_num -> 1 `i ]
+"69
+[; ;Functions.c: 69:         year++;
+[e ++ _year -> 1 `i ]
+"70
+[; ;Functions.c: 70:     }
 }
 [e :U 2025 ]
-"69
-[; ;Functions.c: 69: }
+"71
+[; ;Functions.c: 71: }
 [e :UE 2018 ]
 }
-"73
-[; ;Functions.c: 73: void poweroff() {
+"75
+[; ;Functions.c: 75: void poweroff() {
 [v _poweroff `(v ~T0 @X0 1 ef ]
 {
 [e :U _poweroff ]
 [f ]
-"74
-[; ;Functions.c: 74:     if (1 <= hour && hour < 5) LATHbits.LATH3 = 0;
+"76
+[; ;Functions.c: 76:     if (1 <= hour && hour < 5) LATHbits.LATH3 = 0;
 [e $ ! && <= -> 1 `i _hour < _hour -> 5 `i 2027  ]
 [e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
 [e :U 2027 ]
-"75
-[; ;Functions.c: 75: }
+"77
+[; ;Functions.c: 77: }
 [e :UE 2026 ]
 }
-"77
-[; ;Functions.c: 77: void day1_init() {
+"79
+[; ;Functions.c: 79: void day1_init() {
 [v _day1_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _day1_init ]
 [f ]
-"78
-[; ;Functions.c: 78:     seconds = 0;
-[e = _seconds -> 0 `i ]
-"79
-[; ;Functions.c: 79:     hour = 0;
-[e = _hour -> 0 `i ]
 "80
-[; ;Functions.c: 80:     day_of_year = 1;
-[e = _day_of_year -> 1 `i ]
+[; ;Functions.c: 80:     seconds = 0;
+[e = _seconds -> 0 `i ]
 "81
-[; ;Functions.c: 81:     day_of_month = 1;
-[e = _day_of_month -> 1 `i ]
+[; ;Functions.c: 81:     hour = 23;
+[e = _hour -> 23 `i ]
 "82
-[; ;Functions.c: 82:     day_of_week = 1;
-[e = _day_of_week -> 1 `i ]
+[; ;Functions.c: 82:     day_of_year = 1;
+[e = _day_of_year -> 1 `i ]
 "83
-[; ;Functions.c: 83:     year = 2022;
-[e = _year -> 2022 `i ]
+[; ;Functions.c: 83:     day_of_month = 1;
+[e = _day_of_month -> 1 `i ]
 "84
-[; ;Functions.c: 84:     month_num = 1;
-[e = _month_num -> 1 `i ]
+[; ;Functions.c: 84:     day_of_week = 1;
+[e = _day_of_week -> 1 `i ]
 "85
-[; ;Functions.c: 85:     LATHbits.LATH3 = 1;
-[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+[; ;Functions.c: 85:     year = 2022;
+[e = _year -> 2022 `i ]
 "86
-[; ;Functions.c: 86: }
+[; ;Functions.c: 86:     month_num = 1;
+[e = _month_num -> 1 `i ]
+"87
+[; ;Functions.c: 87:     LATHbits.LATH3 = 1;
+[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+"88
+[; ;Functions.c: 88: }
 [e :UE 2028 ]
 }
-"90
-[; ;Functions.c: 90: int sunrise() {
-[v _sunrise `(i ~T0 @X0 1 ef ]
-{
-[e :U _sunrise ]
-[f ]
-"91
-[; ;Functions.c: 91:     int prevState = LATHbits.LATH3;
-[v _prevState `i ~T0 @X0 1 a ]
-[e = _prevState -> . . _LATHbits 0 3 `i ]
-"92
-[; ;Functions.c: 92:     int sunrise_time = 0;
-[v _sunrise_time `i ~T0 @X0 1 a ]
-[e = _sunrise_time -> 0 `i ]
-"94
-[; ;Functions.c: 94:     if (5 <= hour <= 8) {
-[e $ ! <= -> <= -> 5 `i _hour `i -> 8 `i 2030  ]
-{
-"95
-[; ;Functions.c: 95:         if (prevState == 1 && LATHbits.LATH3 == 0)
-[e $ ! && == _prevState -> 1 `i == -> . . _LATHbits 0 3 `i -> 0 `i 2031  ]
-"96
-[; ;Functions.c: 96:             sunrise_time = seconds + (hour * 3600);
-[e = _sunrise_time + _seconds * _hour -> 3600 `i ]
-[e :U 2031 ]
-"97
-[; ;Functions.c: 97:     }
-}
-[e :U 2030 ]
-"98
-[; ;Functions.c: 98:     return sunrise_time;
-[e ) _sunrise_time ]
-[e $UE 2029  ]
-"99
-[; ;Functions.c: 99: }
-[e :UE 2029 ]
-}
-"103
-[; ;Functions.c: 103: int sunset() {
-[v _sunset `(i ~T0 @X0 1 ef ]
-{
-[e :U _sunset ]
-[f ]
-"104
-[; ;Functions.c: 104:     int prevState = LATHbits.LATH3;
-[v _prevState `i ~T0 @X0 1 a ]
-[e = _prevState -> . . _LATHbits 0 3 `i ]
-"105
-[; ;Functions.c: 105:     int sunset_time = 0;
-[v _sunset_time `i ~T0 @X0 1 a ]
-[e = _sunset_time -> 0 `i ]
-"107
-[; ;Functions.c: 107:     if (16 <= hour <= 20) {
-[e $ ! <= -> <= -> 16 `i _hour `i -> 20 `i 2033  ]
-{
-"108
-[; ;Functions.c: 108:         if (prevState == 0 && LATHbits.LATH3 == 1)
-[e $ ! && == _prevState -> 0 `i == -> . . _LATHbits 0 3 `i -> 1 `i 2034  ]
-"109
-[; ;Functions.c: 109:             sunset_time = seconds + (hour * 3600);
-[e = _sunset_time + _seconds * _hour -> 3600 `i ]
-[e :U 2034 ]
-"110
-[; ;Functions.c: 110:     }
-}
-[e :U 2033 ]
-"111
-[; ;Functions.c: 111:     return sunset_time;
-[e ) _sunset_time ]
-[e $UE 2032  ]
-"112
-[; ;Functions.c: 112: }
-[e :UE 2032 ]
-}
-"116
-[; ;Functions.c: 116: void time_adjuster(int sunrise_time, int sunset_time) {
+"126
+[; ;Functions.c: 126: void time_adjuster(int sunrise_time, int sunset_time) {
 [v _time_adjuster `(v ~T0 @X0 1 ef2`i`i ]
 {
 [e :U _time_adjuster ]
 [v _sunrise_time `i ~T0 @X0 1 r1 ]
 [v _sunset_time `i ~T0 @X0 1 r2 ]
 [f ]
-"117
-[; ;Functions.c: 117:     int solarnoon = 0;
+"128
+[; ;Functions.c: 128:     int solarnoon = 0;
 [v _solarnoon `i ~T0 @X0 1 a ]
 [e = _solarnoon -> 0 `i ]
-"118
-[; ;Functions.c: 118:     int adjustment = 0;
+"129
+[; ;Functions.c: 129:     int adjustment = -2;
 [v _adjustment `i ~T0 @X0 1 a ]
-[e = _adjustment -> 0 `i ]
-"119
-[; ;Functions.c: 119:     solarnoon = (sunrise_time + sunset_time) / 2;
+[e = _adjustment -U -> 2 `i ]
+"130
+[; ;Functions.c: 130:     solarnoon = (sunrise_time + sunset_time) / 2;
 [e = _solarnoon / + _sunrise_time _sunset_time -> 2 `i ]
-"120
-[; ;Functions.c: 120:     adjustment = (12 * 3600) - solarnoon;
-[e = _adjustment - * -> 12 `i -> 3600 `i _solarnoon ]
-"121
-[; ;Functions.c: 121:     if (hour == 11 && seconds == 1800)
-[e $ ! && == _hour -> 11 `i == _seconds -> 1800 `i 2036  ]
-"122
-[; ;Functions.c: 122:         seconds += adjustment;
+"132
+[; ;Functions.c: 132:     if (hour == 23 && seconds == 5 && adjustment_of_day == 1)
+[e $ ! && && == _hour -> 23 `i == _seconds -> 5 `i == _adjustment_of_day -> 1 `i 2030  ]
+"133
+[; ;Functions.c: 133:     {
+{
+"134
+[; ;Functions.c: 134:         seconds += adjustment;
 [e =+ _seconds _adjustment ]
-[e :U 2036 ]
-"123
-[; ;Functions.c: 123: }
-[e :UE 2035 ]
+"135
+[; ;Functions.c: 135:         adjustment_of_day = 0;
+[e = _adjustment_of_day -> 0 `i ]
+"136
+[; ;Functions.c: 136:     }
 }
-"127
-[; ;Functions.c: 127: void daylightsavings() {
+[e :U 2030 ]
+"137
+[; ;Functions.c: 137:     SN = solarnoon;
+[e = _SN _solarnoon ]
+"138
+[; ;Functions.c: 138:     AD = adjustment;
+[e = _AD _adjustment ]
+"140
+[; ;Functions.c: 140: }
+[e :UE 2029 ]
+}
+"144
+[; ;Functions.c: 144: void daylightsavings() {
 [v _daylightsavings `(v ~T0 @X0 1 ef ]
 {
 [e :U _daylightsavings ]
 [f ]
-"128
-[; ;Functions.c: 128:     if (month_num == 3 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 1)
-[e $ ! && && && == _month_num -> 3 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 1 `i 2038  ]
-"129
-[; ;Functions.c: 129:         hour++;
+"145
+[; ;Functions.c: 145:     if (month_num == 3 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 1)
+[e $ ! && && && == _month_num -> 3 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 1 `i 2032  ]
+"146
+[; ;Functions.c: 146:         hour++;
 [e ++ _hour -> 1 `i ]
-[e :U 2038 ]
-"131
-[; ;Functions.c: 131:     if (month_num == 10 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 2)
-[e $ ! && && && == _month_num -> 10 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 2 `i 2039  ]
-"132
-[; ;Functions.c: 132:         hour--;
+[e :U 2032 ]
+"148
+[; ;Functions.c: 148:     if (month_num == 10 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 2)
+[e $ ! && && && == _month_num -> 10 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 2 `i 2033  ]
+"149
+[; ;Functions.c: 149:         hour--;
 [e -- _hour -> 1 `i ]
-[e :U 2039 ]
-"133
-[; ;Functions.c: 133: }
-[e :UE 2037 ]
+[e :U 2033 ]
+"150
+[; ;Functions.c: 150: }
+[e :UE 2031 ]
 }

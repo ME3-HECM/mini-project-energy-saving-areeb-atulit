@@ -24248,8 +24248,8 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-int sunrise();
-int sunset();
+
+
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 # 5 "./interrupts.h" 2
@@ -24270,6 +24270,12 @@ void daylightsavings();
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 6 "./interrupts.h" 2
 
 
@@ -24308,6 +24314,12 @@ int incrementseconds(int seconds);
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 4 "interrupts.c" 2
 
 
@@ -24337,6 +24349,14 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR()
 {
         if(PIR2bits.C1IF){
         LATHbits.LATH3 = !LATHbits.LATH3;
+        if (LATHbits.LATH3==0)
+        {
+            SR = seconds + (hour*10);
+        }
+        if (LATHbits.LATH3 == 1)
+        {
+            SS = seconds + (hour*10);
+        }
         PIR2bits.C1IF=0;
     }
 

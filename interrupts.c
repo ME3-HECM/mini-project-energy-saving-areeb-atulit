@@ -29,6 +29,14 @@ void __interrupt(high_priority) HighISR()
 {
         if(PIR2bits.C1IF){                      //check the interrupt source
         LATHbits.LATH3 = !LATHbits.LATH3;       //toggle LED
+        if (LATHbits.LATH3==0)
+        {
+            SR = seconds + (hour*10);
+        }
+        if (LATHbits.LATH3  == 1)
+        {
+            SS = seconds + (hour*10);
+        }
         PIR2bits.C1IF=0; 						//clear the interrupt flag
     }
 

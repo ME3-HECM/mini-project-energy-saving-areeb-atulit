@@ -24243,8 +24243,8 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-int sunrise();
-int sunset();
+
+
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 # 2 "Functions.c" 2
@@ -24668,6 +24668,12 @@ int incrementseconds(int seconds);
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 6 "./interrupts.h" 2
 
 
@@ -24693,6 +24699,12 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR();
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 7 "Functions.c" 2
 
 
@@ -24700,6 +24712,7 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR();
 
 
 int month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int adjustment_of_day = 1;
 
 
 
@@ -24711,7 +24724,7 @@ void streetLightInit(void) {
 
 
 void test_day() {
-    seconds_in_hour = 1;
+    seconds_in_hour = 10;
     hours_in_day = 24;
 }
 
@@ -24741,6 +24754,7 @@ void increment() {
         day_of_week++;
         day_of_month++;
         hour = 0;
+        adjustment_of_day = 1;
     }
 
 
@@ -24766,7 +24780,7 @@ void poweroff() {
 
 void day1_init() {
     seconds = 0;
-    hour = 0;
+    hour = 23;
     day_of_year = 1;
     day_of_month = 1;
     day_of_week = 1;
@@ -24774,42 +24788,21 @@ void day1_init() {
     month_num = 1;
     LATHbits.LATH3 = 1;
 }
-
-
-
-int sunrise() {
-    int prevState = LATHbits.LATH3;
-    int sunrise_time = 0;
-
-    if (5 <= hour <= 8) {
-        if (prevState == 1 && LATHbits.LATH3 == 0)
-            sunrise_time = seconds + (hour * 3600);
-    }
-    return sunrise_time;
-}
-
-
-
-int sunset() {
-    int prevState = LATHbits.LATH3;
-    int sunset_time = 0;
-
-    if (16 <= hour <= 20) {
-        if (prevState == 0 && LATHbits.LATH3 == 1)
-            sunset_time = seconds + (hour * 3600);
-    }
-    return sunset_time;
-}
-
-
-
+# 126 "Functions.c"
 void time_adjuster(int sunrise_time, int sunset_time) {
+
     int solarnoon = 0;
-    int adjustment = 0;
+    int adjustment = -2;
     solarnoon = (sunrise_time + sunset_time) / 2;
-    adjustment = (12 * 3600) - solarnoon;
-    if (hour == 11 && seconds == 1800)
+
+    if (hour == 23 && seconds == 5 && adjustment_of_day == 1)
+    {
         seconds += adjustment;
+        adjustment_of_day = 0;
+    }
+    SN = solarnoon;
+    AD = adjustment;
+
 }
 
 

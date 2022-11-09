@@ -24390,6 +24390,30 @@ char *ctermid(char *);
 char *tempnam(const char *, const char *);
 # 3 "LCD.c" 2
 
+# 1 "./Global Variables.h" 1
+
+
+
+
+
+
+    int seconds;
+    int hour;
+    int month_num;
+    int day_of_year;
+    int day_of_week;
+    int day_of_month;
+    int year;
+    int seconds_in_hour;
+    int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
+# 4 "LCD.c" 2
+
 
 
 
@@ -24524,11 +24548,9 @@ void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigne
 
 
 
-    sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
 
+    sprintf(buf,"%d %d %d %d %d",h,s,d,m,y);
     LCD_sendstring(buf);
     _delay((unsigned long)((1000)*(64000000/4000.0)));
-
-
 
 }

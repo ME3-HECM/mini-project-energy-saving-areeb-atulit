@@ -24260,6 +24260,12 @@ void Comp1_init_falling_edge(void);
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 3 "comparator.c" 2
 
 

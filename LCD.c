@@ -1,6 +1,7 @@
 #include <xc.h>
 #include "LCD.h"
 #include <stdio.h>
+#include "Global Variables.h"
 /************************************
  * Function to toggle LCD enable bit on then off
  * when this function is called the LCD screen reads the data lines
@@ -135,13 +136,11 @@ void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigne
 //    int int_part=ADC_val/77; // i.e. 255 / 5V = 51
 //    int frac_part=(ADC_val*100)/77 - int_part*100;
    
-    sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
-    //sprintf(buf,"%d %d ",SS, SR);
+    //sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
+    sprintf(buf,"%d %d %d %d %d",h,s,d,m,y);
     LCD_sendstring(buf);
     __delay_ms(1000);
     
-//    LCD_sendbyte(0b00000001,0);
-//    __delay_ms(50);
 }
 //void date2String(char *str, unsigned int d, unsigned int m,unsigned int y)
 //{

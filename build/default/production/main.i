@@ -24269,8 +24269,8 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-int sunrise();
-int sunset();
+
+
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 # 5 "./interrupts.h" 2
@@ -24291,6 +24291,12 @@ void daylightsavings();
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 6 "./interrupts.h" 2
 
 
@@ -24342,6 +24348,12 @@ unsigned int get16bitTMR0val(void);
     int year;
     int seconds_in_hour;
     int hours_in_day;
+    int prevState;
+    int SR;
+    int SS;
+    int AD;
+    int SN;
+    int adjustment_of_day;
 # 14 "main.c" 2
 
 # 1 "./ADC.h" 1
@@ -24389,13 +24401,16 @@ void main(void) {
 
     while (1) {
         LCD_setline(1);
-        time2String(strdate,hour,seconds,day_of_month, month_num,year);
+
+
+
+
         increment();
         poweroff();
-        SR = sunrise();
-        SS = sunset();
-        time_adjuster(sunrise(),sunset());
+
+        time_adjuster(SR,SS);
         daylightsavings();
+        time2String(strdate,SS,SR,adjustment_of_day,AD,seconds);
 
         }
     }

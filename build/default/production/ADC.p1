@@ -2074,6 +2074,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
+"16
+[; ;./Global Variables.h: 16:     int prevState;
+[v _prevState `i ~T0 @X0 1 e ]
+"17
+[; ;./Global Variables.h: 17:     int SR;
+[v _SR `i ~T0 @X0 1 e ]
+"18
+[; ;./Global Variables.h: 18:     int SS;
+[v _SS `i ~T0 @X0 1 e ]
+"19
+[; ;./Global Variables.h: 19:     int AD;
+[v _AD `i ~T0 @X0 1 e ]
+"20
+[; ;./Global Variables.h: 20:     int SN;
+[v _SN `i ~T0 @X0 1 e ]
+"21
+[; ;./Global Variables.h: 21:     int adjustment_of_day;
+[v _adjustment_of_day `i ~T0 @X0 1 e ]
 "11 ADC.c
 [; ;ADC.c: 11: void ADC_init(void)
 [v _ADC_init `(v ~T0 @X0 1 ef ]
