@@ -24242,6 +24242,7 @@ void LCD_sendstring(char *string);
 void LCD_scroll(void);
 void LCD_clear(void);
 void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y);
+void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s);
 # 2 "LCD.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 1 3
@@ -24406,7 +24407,6 @@ char *tempnam(const char *, const char *);
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;
@@ -24542,14 +24542,16 @@ void LCD_scroll(void) {
 
 
 
-void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y) {
+void time2String(char *buf,unsigned int s, unsigned int h,unsigned int d,unsigned int m,unsigned int y)
+{
+    sprintf(buf,"%d:%d:%d %d-%d-%d ",h,s/60,s,d,m,y);
+    LCD_sendstring(buf);
+    _delay((unsigned long)((1000)*(64000000/4000.0)));
 
-
-
-
-
-
-    sprintf(buf,"%d %d %d %d %d",h,s,d,m,y);
+}
+void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s)
+{
+    sprintf(buf,"%d %d %d %d %02d",sunrise,sunset,solarnoon,adjust,s);
     LCD_sendstring(buf);
     _delay((unsigned long)((1000)*(64000000/4000.0)));
 

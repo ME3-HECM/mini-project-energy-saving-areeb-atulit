@@ -23,27 +23,23 @@ void main(void) {
     Timer0_init();                       
     Comp1_init_rising_edge();            //initialise comparator to detect rising edge (LDR reads dark to light)
     Comp1_init_falling_edge();           //initialise comparator to detect falling edge (LDR reads light to dark)
-    Interrupts_init();                   
-    ADC_init();                          
-    day1_init();
+    Interrupts_init();                   //initialise interrupts                        
+    day1_init();                         //initialise day 1
     LCD_Init();
-    char strtime[100];
-    char strdate[100];
-    test_day(); //shorten duration of hours and days for test mode
-    //real_day();//set duration of hours and days to reflect real world
+    char strdate[100];                   //String for LCD display
+    test_day();                          //shorten duration of hours and days for test mode
+    //real_day();                        //set duration of hours and days to reflect real world
     while (1) {
-        LCD_setline(1); //Set Line 1
-//        prevState=sunrise();
-        //sunrise();                      //check for sunrise and record time of event when it occurs
-        //sunset(); 
-        
         increment();                    //update counters of all units of time
-        poweroff();                     //check if time is between 1 and 5 AM and power light off if so
-                              //check for sunrise and record time of event when it occurs
-        time_adjuster(SR,SS);//Daily time adjustment to remain synchronous with sun
-        daylightsavings();               
-        time2String(strdate,SS,SR,adjustment_of_day,AD,seconds);
-
+        LEDarray_disp_bin(hour);        //Display hours on LED strip
+        poweroff();                     //check if time is between 1 and 5 AM and power light off if so    //check for sunrise and record time of event when it occurs
+        time_adjuster(SR,SS);           //Daily time adjustment to remain synchronous with sun
+        daylightsavings(); 
+        
+        //LCD Display
+        LCD_setline(1);
+        time2String(strdate,seconds,hour,day_of_month,month_num,year); //Display time and date
+        //timeadj2String(strdate,SS,SR,adjustment_of_day,AD,seconds); //display time adjustment 
         }
     }
 

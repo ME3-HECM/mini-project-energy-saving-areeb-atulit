@@ -24248,8 +24248,6 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-
-
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 # 5 "./interrupts.h" 2
@@ -24270,7 +24268,6 @@ void daylightsavings();
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;
@@ -24314,7 +24311,6 @@ int incrementseconds(int seconds);
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;

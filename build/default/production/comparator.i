@@ -24260,7 +24260,6 @@ void Comp1_init_falling_edge(void);
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;

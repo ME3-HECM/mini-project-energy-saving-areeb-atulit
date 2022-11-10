@@ -18,9 +18,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10 ./interrupts.h
 [; ;./interrupts.h: 10: void Interrupts_init(void);
 [v _Interrupts_init `(v ~T0 @X0 0 ef ]
-"8 ./ADC.h
-[; ;./ADC.h: 8: void ADC_init(void);
-[v _ADC_init `(v ~T0 @X0 0 ef ]
 "11 ./Functions.h
 [; ;./Functions.h: 11: void day1_init();
 [v _day1_init `(v ~T0 @X0 0 e? ]
@@ -30,24 +27,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7 ./Functions.h
 [; ;./Functions.h: 7: void test_day();
 [v _test_day `(v ~T0 @X0 0 e? ]
+"9
+[; ;./Functions.h: 9: void increment();
+[v _increment `(v ~T0 @X0 0 e? ]
+"7 ./LEDarray.h
+[; ;./LEDarray.h: 7: void LEDarray_disp_bin(unsigned int number);
+[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
+"10 ./Functions.h
+[; ;./Functions.h: 10: void poweroff();
+[v _poweroff `(v ~T0 @X0 0 e? ]
+"12
+[; ;./Functions.h: 12: void time_adjuster(int sunrise_time,int sunset_time);
+[v _time_adjuster `(v ~T0 @X0 0 ef2`i`i ]
+"13
+[; ;./Functions.h: 13: void daylightsavings();
+[v _daylightsavings `(v ~T0 @X0 0 e? ]
 "21 ./LCD.h
 [; ;./LCD.h: 21: void LCD_setline (char line);
 [v _LCD_setline `(v ~T0 @X0 0 ef1`uc ]
-"9 ./Functions.h
-[; ;./Functions.h: 9: void increment();
-[v _increment `(v ~T0 @X0 0 e? ]
-"10
-[; ;./Functions.h: 10: void poweroff();
-[v _poweroff `(v ~T0 @X0 0 e? ]
-"14
-[; ;./Functions.h: 14: void time_adjuster(int sunrise_time,int sunset_time);
-[v _time_adjuster `(v ~T0 @X0 0 ef2`i`i ]
-"15
-[; ;./Functions.h: 15: void daylightsavings();
-[v _daylightsavings `(v ~T0 @X0 0 e? ]
-"25 ./LCD.h
-[; ;./LCD.h: 25: void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y);
-[v _time2String `(v ~T0 @X0 0 ef6`*uc`ui`ui`ui`ui`ui ]
+"26
+[; ;./LCD.h: 26: void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s);
+[v _timeadj2String `(v ~T0 @X0 0 ef6`*uc`ui`ui`ui`ui`ui ]
 "2 main.c
 [p x FEXTOSC  =  HS      ]
 "3
@@ -2065,28 +2065,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
 "16
-[; ;./Global Variables.h: 16:     int prevState;
-[; ;./Global Variables.h: 16:     int prevState;
-[v _prevState `i ~T0 @X0 1 e ]
-"17
-[; ;./Global Variables.h: 17:     int SR;
-[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
 [v _SR `i ~T0 @X0 1 e ]
-"18
-[; ;./Global Variables.h: 18:     int SS;
-[; ;./Global Variables.h: 18:     int SS;
+"17
+[; ;./Global Variables.h: 17:     int SS;
+[; ;./Global Variables.h: 17:     int SS;
 [v _SS `i ~T0 @X0 1 e ]
-"19
-[; ;./Global Variables.h: 19:     int AD;
-[; ;./Global Variables.h: 19:     int AD;
+"18
+[; ;./Global Variables.h: 18:     int AD;
+[; ;./Global Variables.h: 18:     int AD;
 [v _AD `i ~T0 @X0 1 e ]
-"20
-[; ;./Global Variables.h: 20:     int SN;
-[; ;./Global Variables.h: 20:     int SN;
+"19
+[; ;./Global Variables.h: 19:     int SN;
+[; ;./Global Variables.h: 19:     int SN;
 [v _SN `i ~T0 @X0 1 e ]
-"21
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
+"20
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 "7
 [; ;./Global Variables.h: 7:     int seconds;
@@ -2125,28 +2121,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
 "16
-[; ;./Global Variables.h: 16:     int prevState;
-[; ;./Global Variables.h: 16:     int prevState;
-[v _prevState `i ~T0 @X0 1 e ]
-"17
-[; ;./Global Variables.h: 17:     int SR;
-[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
 [v _SR `i ~T0 @X0 1 e ]
-"18
-[; ;./Global Variables.h: 18:     int SS;
-[; ;./Global Variables.h: 18:     int SS;
+"17
+[; ;./Global Variables.h: 17:     int SS;
+[; ;./Global Variables.h: 17:     int SS;
 [v _SS `i ~T0 @X0 1 e ]
-"19
-[; ;./Global Variables.h: 19:     int AD;
-[; ;./Global Variables.h: 19:     int AD;
+"18
+[; ;./Global Variables.h: 18:     int AD;
+[; ;./Global Variables.h: 18:     int AD;
 [v _AD `i ~T0 @X0 1 e ]
-"20
-[; ;./Global Variables.h: 20:     int SN;
-[; ;./Global Variables.h: 20:     int SN;
+"19
+[; ;./Global Variables.h: 19:     int SN;
+[; ;./Global Variables.h: 19:     int SN;
 [v _SN `i ~T0 @X0 1 e ]
-"21
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
+"20
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "19 main.c
@@ -2174,52 +2166,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 26:     Interrupts_init();
 [e ( _Interrupts_init ..  ]
 "27
-[; ;main.c: 27:     ADC_init();
-[e ( _ADC_init ..  ]
-"28
-[; ;main.c: 28:     day1_init();
+[; ;main.c: 27:     day1_init();
 [e ( _day1_init ..  ]
-"29
-[; ;main.c: 29:     LCD_Init();
+"28
+[; ;main.c: 28:     LCD_Init();
 [e ( _LCD_Init ..  ]
-"30
-[; ;main.c: 30:     char strtime[100];
-[v _strtime `uc ~T0 @X0 -> 100 `i a ]
-"31
-[; ;main.c: 31:     char strdate[100];
+"29
+[; ;main.c: 29:     char strdate[100];
 [v _strdate `uc ~T0 @X0 -> 100 `i a ]
-"32
-[; ;main.c: 32:     test_day();
+"30
+[; ;main.c: 30:     test_day();
 [e ( _test_day ..  ]
-"34
-[; ;main.c: 34:     while (1) {
+"32
+[; ;main.c: 32:     while (1) {
 [e :U 2017 ]
 {
-"35
-[; ;main.c: 35:         LCD_setline(1);
-[e ( _LCD_setline (1 -> -> 1 `i `uc ]
-"40
-[; ;main.c: 40:         increment();
+"33
+[; ;main.c: 33:         increment();
 [e ( _increment ..  ]
-"41
-[; ;main.c: 41:         poweroff();
+"34
+[; ;main.c: 34:         LEDarray_disp_bin(hour);
+[e ( _LEDarray_disp_bin (1 -> _hour `ui ]
+"35
+[; ;main.c: 35:         poweroff();
 [e ( _poweroff ..  ]
-"43
-[; ;main.c: 43:         time_adjuster(SR,SS);
+"36
+[; ;main.c: 36:         time_adjuster(SR,SS);
 [e ( _time_adjuster (2 , _SR _SS ]
-"44
-[; ;main.c: 44:         daylightsavings();
+"37
+[; ;main.c: 37:         daylightsavings();
 [e ( _daylightsavings ..  ]
-"45
-[; ;main.c: 45:         time2String(strdate,SS,SR,adjustment_of_day,AD,seconds);
-[e ( _time2String (4 , , , , , &U _strdate -> _SS `ui -> _SR `ui -> _adjustment_of_day `ui -> _AD `ui -> _seconds `ui ]
-"47
-[; ;main.c: 47:         }
+"39
+[; ;main.c: 39:         LCD_setline(1);
+[e ( _LCD_setline (1 -> -> 1 `i `uc ]
+"41
+[; ;main.c: 41:         timeadj2String(strdate,SS,SR,adjustment_of_day,AD,seconds);
+[e ( _timeadj2String (4 , , , , , &U _strdate -> _SS `ui -> _SR `ui -> _adjustment_of_day `ui -> _AD `ui -> _seconds `ui ]
+"42
+[; ;main.c: 42:         }
 }
 [e :U 2016 ]
 [e $U 2017  ]
 [e :U 2018 ]
-"48
-[; ;main.c: 48:     }
+"43
+[; ;main.c: 43:     }
 [e :UE 2015 ]
 }

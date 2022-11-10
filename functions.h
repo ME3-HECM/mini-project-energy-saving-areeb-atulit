@@ -9,8 +9,6 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-//int sunrise();
-//int sunset();
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 #endif

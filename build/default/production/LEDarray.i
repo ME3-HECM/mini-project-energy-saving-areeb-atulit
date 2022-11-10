@@ -24644,7 +24644,6 @@ void ADC_lightMeter(int val, int range);
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;

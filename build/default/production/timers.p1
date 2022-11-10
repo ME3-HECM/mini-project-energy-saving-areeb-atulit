@@ -2045,22 +2045,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
 "16
-[; ;./Global Variables.h: 16:     int prevState;
-[v _prevState `i ~T0 @X0 1 e ]
-"17
-[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
 [v _SR `i ~T0 @X0 1 e ]
-"18
-[; ;./Global Variables.h: 18:     int SS;
+"17
+[; ;./Global Variables.h: 17:     int SS;
 [v _SS `i ~T0 @X0 1 e ]
-"19
-[; ;./Global Variables.h: 19:     int AD;
+"18
+[; ;./Global Variables.h: 18:     int AD;
 [v _AD `i ~T0 @X0 1 e ]
-"20
-[; ;./Global Variables.h: 20:     int SN;
+"19
+[; ;./Global Variables.h: 19:     int SN;
 [v _SN `i ~T0 @X0 1 e ]
-"21
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
+"20
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 "7 timers.c
 [; ;timers.c: 7: void Timer0_init(void)

@@ -24269,8 +24269,6 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-
-
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 # 5 "./interrupts.h" 2
@@ -24291,7 +24289,6 @@ void daylightsavings();
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;
@@ -24348,7 +24345,6 @@ unsigned int get16bitTMR0val(void);
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;
@@ -24380,6 +24376,7 @@ void LCD_sendstring(char *string);
 void LCD_scroll(void);
 void LCD_clear(void);
 void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y);
+void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s);
 # 16 "main.c" 2
 
 
@@ -24392,25 +24389,20 @@ void main(void) {
     Comp1_init_rising_edge();
     Comp1_init_falling_edge();
     Interrupts_init();
-    ADC_init();
     day1_init();
     LCD_Init();
-    char strtime[100];
     char strdate[100];
     test_day();
 
     while (1) {
-        LCD_setline(1);
-
-
-
-
         increment();
+        LEDarray_disp_bin(hour);
         poweroff();
-
         time_adjuster(SR,SS);
         daylightsavings();
-        time2String(strdate,SS,SR,adjustment_of_day,AD,seconds);
 
+        LCD_setline(1);
+
+        timeadj2String(strdate,SS,SR,adjustment_of_day,AD,seconds);
         }
     }

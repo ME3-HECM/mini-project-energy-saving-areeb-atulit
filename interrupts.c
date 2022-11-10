@@ -29,13 +29,13 @@ void __interrupt(high_priority) HighISR()
 {
         if(PIR2bits.C1IF){                      //check the interrupt source
         LATHbits.LATH3 = !LATHbits.LATH3;       //toggle LED
-        if (LATHbits.LATH3==0)
+        if (LATHbits.LATH3==0)                  //Check State of LED immidiately after
         {
-            SR = seconds + (hour*10);
+            SR = seconds + (hour*3600);         //If LED is off, update sunrise (SR)
         }
         if (LATHbits.LATH3  == 1)
         {
-            SS = seconds + (hour*10);
+            SS = seconds + (hour*3600);         //if LED is on, update sunset (SS)
         }
         PIR2bits.C1IF=0; 						//clear the interrupt flag
     }
@@ -53,7 +53,7 @@ void __interrupt(low_priority) LowISR()
     
     if (hour==5)
     {
-        LATHbits.LATH3 = 1;
+        LATHbits.LATH3 = 1;                     //Turn on LED when its 5am
     }
 }
 

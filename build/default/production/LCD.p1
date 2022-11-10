@@ -2086,22 +2086,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
 "16
-[; ;./Global Variables.h: 16:     int prevState;
-[v _prevState `i ~T0 @X0 1 e ]
-"17
-[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
 [v _SR `i ~T0 @X0 1 e ]
-"18
-[; ;./Global Variables.h: 18:     int SS;
+"17
+[; ;./Global Variables.h: 17:     int SS;
 [v _SS `i ~T0 @X0 1 e ]
-"19
-[; ;./Global Variables.h: 19:     int AD;
+"18
+[; ;./Global Variables.h: 18:     int AD;
 [v _AD `i ~T0 @X0 1 e ]
-"20
-[; ;./Global Variables.h: 20:     int SN;
+"19
+[; ;./Global Variables.h: 19:     int SN;
 [v _SN `i ~T0 @X0 1 e ]
-"21
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
+"20
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 "9 LCD.c
 [; ;LCD.c: 9: void LCD_E_TOG(void) {
@@ -2398,29 +2395,67 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 2038 ]
 }
 "133
-[; ;LCD.c: 133: void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y) {
+[; ;LCD.c: 133: void time2String(char *buf,unsigned int s, unsigned int h,unsigned int d,unsigned int m,unsigned int y)
 [v _time2String `(v ~T0 @X0 1 ef6`*uc`ui`ui`ui`ui`ui ]
+"134
+[; ;LCD.c: 134: {
 {
 [e :U _time2String ]
+"133
+[; ;LCD.c: 133: void time2String(char *buf,unsigned int s, unsigned int h,unsigned int d,unsigned int m,unsigned int y)
 [v _buf `*uc ~T0 @X0 1 r1 ]
-[v _h `ui ~T0 @X0 1 r2 ]
-[v _s `ui ~T0 @X0 1 r3 ]
+[v _s `ui ~T0 @X0 1 r2 ]
+[v _h `ui ~T0 @X0 1 r3 ]
 [v _d `ui ~T0 @X0 1 r4 ]
 [v _m `ui ~T0 @X0 1 r5 ]
 [v _y `ui ~T0 @X0 1 r6 ]
+"134
+[; ;LCD.c: 134: {
 [f ]
-"140
-[; ;LCD.c: 140:     sprintf(buf,"%d %d %d %d %d",h,s,d,m,y);
-[e ( _sprintf (1 , , , , , (. , _buf :s 1C _h _s _d _m _y ]
-"141
-[; ;LCD.c: 141:     LCD_sendstring(buf);
+"135
+[; ;LCD.c: 135:     sprintf(buf,"%d:%d:%d %d-%d-%d ",h,s/60,s,d,m,y);
+[e ( _sprintf (1 , , , , , , (. , _buf :s 1C _h / _s -> -> 60 `i `ui _s _d _m _y ]
+"136
+[; ;LCD.c: 136:     LCD_sendstring(buf);
 [e ( _LCD_sendstring (1 _buf ]
-"142
-[; ;LCD.c: 142:     _delay((unsigned long)((1000)*(64000000/4000.0)));
+"137
+[; ;LCD.c: 137:     _delay((unsigned long)((1000)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"144
-[; ;LCD.c: 144: }
+"139
+[; ;LCD.c: 139: }
 [e :UE 2039 ]
 }
-[p f _sprintf 8388736 ]
-[a 1C 37 100 32 37 100 32 37 100 32 37 100 32 37 100 0 ]
+"140
+[; ;LCD.c: 140: void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s)
+[v _timeadj2String `(v ~T0 @X0 1 ef6`*uc`ui`ui`ui`ui`ui ]
+"141
+[; ;LCD.c: 141: {
+{
+[e :U _timeadj2String ]
+"140
+[; ;LCD.c: 140: void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s)
+[v _buf `*uc ~T0 @X0 1 r1 ]
+[v _sunrise `ui ~T0 @X0 1 r2 ]
+[v _sunset `ui ~T0 @X0 1 r3 ]
+[v _solarnoon `ui ~T0 @X0 1 r4 ]
+[v _adjust `ui ~T0 @X0 1 r5 ]
+[v _s `ui ~T0 @X0 1 r6 ]
+"141
+[; ;LCD.c: 141: {
+[f ]
+"142
+[; ;LCD.c: 142:     sprintf(buf,"%d %d %d %d %02d",sunrise,sunset,solarnoon,adjust,s);
+[e ( _sprintf (1 , , , , , (. , _buf :s 2C _sunrise _sunset _solarnoon _adjust _s ]
+"143
+[; ;LCD.c: 143:     LCD_sendstring(buf);
+[e ( _LCD_sendstring (1 _buf ]
+"144
+[; ;LCD.c: 144:     _delay((unsigned long)((1000)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"146
+[; ;LCD.c: 146: }
+[e :UE 2040 ]
+}
+[p f _sprintf 8421508 ]
+[a 2C 37 100 32 37 100 32 37 100 32 37 100 32 37 48 50 100 0 ]
+[a 1C 37 100 58 37 100 58 37 100 32 37 100 45 37 100 45 37 100 32 0 ]

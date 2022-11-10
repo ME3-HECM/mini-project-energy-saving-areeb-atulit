@@ -23,5 +23,5 @@ void LCD_sendstring(char *string);
 void LCD_scroll(void);
 void LCD_clear(void);
 void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y);
-//void date2String(char *buf, unsigned int d, unsigned int m,unsigned int y);
+void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s);
 #endif

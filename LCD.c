@@ -130,24 +130,17 @@ void LCD_scroll(void) {
  * the result is stored in buf as ascii text ready for display on LCD
  * Note result is stored in a buffer using pointers, it is not sent to the LCD
  ************************************/
-void time2String(char *buf,unsigned int h, unsigned int s,unsigned int d,unsigned int m,unsigned int y) {
-    //code to calculate the inegeter and fractions part of a ADC value
-    // and format as a string using sprintf (see GitHub readme)
-//    int int_part=ADC_val/77; // i.e. 255 / 5V = 51
-//    int frac_part=(ADC_val*100)/77 - int_part*100;
-   
-    //sprintf(buf,"%d:%d:%d %d-%d-%d ",h, s/60, s,d,m,y);
-    sprintf(buf,"%d %d %d %d %d",h,s,d,m,y);
+void time2String(char *buf,unsigned int s, unsigned int h,unsigned int d,unsigned int m,unsigned int y) 
+{   
+    sprintf(buf,"%d:%d:%d %d-%d-%d ",h,s/60,s,d,m,y);
     LCD_sendstring(buf);
     __delay_ms(1000);
     
 }
-//void date2String(char *str, unsigned int d, unsigned int m,unsigned int y)
-//{
-//    sprintf(str,"%d-%02d-%03d",d,m,y);
-//    LCD_sendstring(str);
-//    __delay_ms(1000);
-//    
-////    LCD_sendbyte(0b00000001,0);
-////    __delay_ms(500);
-//}
+void timeadj2String(char *buf,unsigned int sunrise, unsigned int sunset,unsigned int solarnoon,unsigned int adjust,unsigned int s) 
+{   
+    sprintf(buf,"%d %d %d %d %02d",sunrise,sunset,solarnoon,adjust,s);
+    LCD_sendstring(buf);
+    __delay_ms(1000);
+    
+}

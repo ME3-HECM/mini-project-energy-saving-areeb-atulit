@@ -41,9 +41,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30071
 [; ;C:/Users/44756/.mchp_packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f67k40.h: 30071: extern volatile TRISHbits_t TRISHbits __attribute__((address(0xF88)));
 [v _TRISHbits `VS1391 ~T0 @X0 0 e@3976 ]
-"7 ./LEDarray.h
-[; ;./LEDarray.h: 7: void LEDarray_disp_bin(unsigned int number);
-[v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
 "54 C:/Users/44756/.mchp_packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f67k40.h
 [; ;C:/Users/44756/.mchp_packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f67k40.h: 54: __asm("PPSLOCK equ 0DEFh");
 [; <" PPSLOCK equ 0DEFh ;# ">
@@ -2055,28 +2052,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
 "16
-[; ;./Global Variables.h: 16:     int prevState;
-[; ;./Global Variables.h: 16:     int prevState;
-[v _prevState `i ~T0 @X0 1 e ]
-"17
-[; ;./Global Variables.h: 17:     int SR;
-[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
 [v _SR `i ~T0 @X0 1 e ]
-"18
-[; ;./Global Variables.h: 18:     int SS;
-[; ;./Global Variables.h: 18:     int SS;
+"17
+[; ;./Global Variables.h: 17:     int SS;
+[; ;./Global Variables.h: 17:     int SS;
 [v _SS `i ~T0 @X0 1 e ]
-"19
-[; ;./Global Variables.h: 19:     int AD;
-[; ;./Global Variables.h: 19:     int AD;
+"18
+[; ;./Global Variables.h: 18:     int AD;
+[; ;./Global Variables.h: 18:     int AD;
 [v _AD `i ~T0 @X0 1 e ]
-"20
-[; ;./Global Variables.h: 20:     int SN;
-[; ;./Global Variables.h: 20:     int SN;
+"19
+[; ;./Global Variables.h: 19:     int SN;
+[; ;./Global Variables.h: 19:     int SN;
 [v _SN `i ~T0 @X0 1 e ]
-"21
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
+"20
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 "7
 [; ;./Global Variables.h: 7:     int seconds;
@@ -2115,28 +2108,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Global Variables.h: 15:     int hours_in_day;
 [v _hours_in_day `i ~T0 @X0 1 e ]
 "16
-[; ;./Global Variables.h: 16:     int prevState;
-[; ;./Global Variables.h: 16:     int prevState;
-[v _prevState `i ~T0 @X0 1 e ]
-"17
-[; ;./Global Variables.h: 17:     int SR;
-[; ;./Global Variables.h: 17:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
+[; ;./Global Variables.h: 16:     int SR;
 [v _SR `i ~T0 @X0 1 e ]
-"18
-[; ;./Global Variables.h: 18:     int SS;
-[; ;./Global Variables.h: 18:     int SS;
+"17
+[; ;./Global Variables.h: 17:     int SS;
+[; ;./Global Variables.h: 17:     int SS;
 [v _SS `i ~T0 @X0 1 e ]
-"19
-[; ;./Global Variables.h: 19:     int AD;
-[; ;./Global Variables.h: 19:     int AD;
+"18
+[; ;./Global Variables.h: 18:     int AD;
+[; ;./Global Variables.h: 18:     int AD;
 [v _AD `i ~T0 @X0 1 e ]
-"20
-[; ;./Global Variables.h: 20:     int SN;
-[; ;./Global Variables.h: 20:     int SN;
+"19
+[; ;./Global Variables.h: 19:     int SN;
+[; ;./Global Variables.h: 19:     int SN;
 [v _SN `i ~T0 @X0 1 e ]
-"21
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
-[; ;./Global Variables.h: 21:     int adjustment_of_day;
+"20
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
+[; ;./Global Variables.h: 20:     int adjustment_of_day;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 "12 Functions.c
 [; ;Functions.c: 12: int month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -2161,6 +2150,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Functions.c: 13: int adjustment_of_day = 1;
 [v _adjustment_of_day `i ~T0 @X0 1 e ]
 [i _adjustment_of_day
+-> 1 `i
+]
+"14
+[; ;Functions.c: 14: int oct_daylight_adjust = 1;
+[v _oct_daylight_adjust `i ~T0 @X0 1 e ]
+[i _oct_daylight_adjust
 -> 1 `i
 ]
 "17
@@ -2234,9 +2229,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;Functions.c: 44:         hour++;
 [e ++ _hour -> 1 `i ]
-"45
-[; ;Functions.c: 45:         LEDarray_disp_bin(hour);
-[e ( _LEDarray_disp_bin (1 -> _hour `ui ]
 "46
 [; ;Functions.c: 46:         seconds = 0;
 [e = _seconds -> 0 `i ]
@@ -2264,163 +2256,175 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Functions.c: 55:         adjustment_of_day = 1;
 [e = _adjustment_of_day -> 1 `i ]
 "56
-[; ;Functions.c: 56:     }
+[; ;Functions.c: 56:         oct_daylight_adjust = 1;
+[e = _oct_daylight_adjust -> 1 `i ]
+"57
+[; ;Functions.c: 57:     }
 }
 [e :U 2022 ]
-"59
-[; ;Functions.c: 59:     if (day_of_week == 8)
-[e $ ! == _day_of_week -> 8 `i 2023  ]
 "60
-[; ;Functions.c: 60:         day_of_week = 1;
+[; ;Functions.c: 60:     if (day_of_week == 8)
+[e $ ! == _day_of_week -> 8 `i 2023  ]
+"61
+[; ;Functions.c: 61:         day_of_week = 1;
 [e = _day_of_week -> 1 `i ]
 [e :U 2023 ]
-"63
-[; ;Functions.c: 63:     if (day_of_month == month[month_num - 1] + 1) {
+"64
+[; ;Functions.c: 64:     if (day_of_month == month[month_num - 1] + 1) {
 [e $ ! == _day_of_month + *U + &U _month * -> -> - _month_num -> 1 `i `ui `ux -> -> # *U &U _month `ui `ux -> 1 `i 2024  ]
 {
-"64
-[; ;Functions.c: 64:         day_of_month = 1;
-[e = _day_of_month -> 1 `i ]
 "65
-[; ;Functions.c: 65:         month_num++;
-[e ++ _month_num -> 1 `i ]
+[; ;Functions.c: 65:         day_of_month = 1;
+[e = _day_of_month -> 1 `i ]
 "66
-[; ;Functions.c: 66:     }
+[; ;Functions.c: 66:         month_num++;
+[e ++ _month_num -> 1 `i ]
+"67
+[; ;Functions.c: 67:     }
 }
 [e :U 2024 ]
-"67
-[; ;Functions.c: 67:     if (month_num == 13) {
+"68
+[; ;Functions.c: 68:     if (month_num == 13) {
 [e $ ! == _month_num -> 13 `i 2025  ]
 {
-"68
-[; ;Functions.c: 68:         month_num = 1;
-[e = _month_num -> 1 `i ]
 "69
-[; ;Functions.c: 69:         year++;
-[e ++ _year -> 1 `i ]
+[; ;Functions.c: 69:         month_num = 1;
+[e = _month_num -> 1 `i ]
 "70
-[; ;Functions.c: 70:     }
+[; ;Functions.c: 70:         year++;
+[e ++ _year -> 1 `i ]
+"71
+[; ;Functions.c: 71:     }
 }
 [e :U 2025 ]
-"71
-[; ;Functions.c: 71: }
+"72
+[; ;Functions.c: 72: }
 [e :UE 2018 ]
 }
-"75
-[; ;Functions.c: 75: void poweroff() {
+"76
+[; ;Functions.c: 76: void poweroff() {
 [v _poweroff `(v ~T0 @X0 1 ef ]
 {
 [e :U _poweroff ]
 [f ]
-"76
-[; ;Functions.c: 76:     if (1 <= hour && hour < 5) LATHbits.LATH3 = 0;
+"77
+[; ;Functions.c: 77:     if (1 <= hour && hour < 5) LATHbits.LATH3 = 0;
 [e $ ! && <= -> 1 `i _hour < _hour -> 5 `i 2027  ]
 [e = . . _LATHbits 0 3 -> -> 0 `i `uc ]
 [e :U 2027 ]
-"77
-[; ;Functions.c: 77: }
+"78
+[; ;Functions.c: 78: }
 [e :UE 2026 ]
 }
-"79
-[; ;Functions.c: 79: void day1_init() {
+"80
+[; ;Functions.c: 80: void day1_init() {
 [v _day1_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _day1_init ]
 [f ]
-"80
-[; ;Functions.c: 80:     seconds = 0;
-[e = _seconds -> 0 `i ]
 "81
-[; ;Functions.c: 81:     hour = 23;
-[e = _hour -> 23 `i ]
+[; ;Functions.c: 81:     seconds = 0;
+[e = _seconds -> 0 `i ]
 "82
-[; ;Functions.c: 82:     day_of_year = 1;
-[e = _day_of_year -> 1 `i ]
+[; ;Functions.c: 82:     hour = 0;
+[e = _hour -> 0 `i ]
 "83
-[; ;Functions.c: 83:     day_of_month = 1;
-[e = _day_of_month -> 1 `i ]
+[; ;Functions.c: 83:     day_of_year = 1;
+[e = _day_of_year -> 1 `i ]
 "84
-[; ;Functions.c: 84:     day_of_week = 1;
-[e = _day_of_week -> 1 `i ]
+[; ;Functions.c: 84:     day_of_month = 29;
+[e = _day_of_month -> 29 `i ]
 "85
-[; ;Functions.c: 85:     year = 2022;
-[e = _year -> 2022 `i ]
+[; ;Functions.c: 85:     day_of_week = 6;
+[e = _day_of_week -> 6 `i ]
 "86
-[; ;Functions.c: 86:     month_num = 1;
-[e = _month_num -> 1 `i ]
+[; ;Functions.c: 86:     year = 2022;
+[e = _year -> 2022 `i ]
 "87
-[; ;Functions.c: 87:     LATHbits.LATH3 = 1;
-[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+[; ;Functions.c: 87:     month_num = 10;
+[e = _month_num -> 10 `i ]
 "88
-[; ;Functions.c: 88: }
+[; ;Functions.c: 88:     LATHbits.LATH3 = 1;
+[e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
+"89
+[; ;Functions.c: 89: }
 [e :UE 2028 ]
 }
-"126
-[; ;Functions.c: 126: void time_adjuster(int sunrise_time, int sunset_time) {
+"93
+[; ;Functions.c: 93: void time_adjuster(int sunrise_time, int sunset_time) {
 [v _time_adjuster `(v ~T0 @X0 1 ef2`i`i ]
 {
 [e :U _time_adjuster ]
 [v _sunrise_time `i ~T0 @X0 1 r1 ]
 [v _sunset_time `i ~T0 @X0 1 r2 ]
 [f ]
-"128
-[; ;Functions.c: 128:     int solarnoon = 0;
+"95
+[; ;Functions.c: 95:     int solarnoon = 0;
 [v _solarnoon `i ~T0 @X0 1 a ]
 [e = _solarnoon -> 0 `i ]
-"129
-[; ;Functions.c: 129:     int adjustment = -2;
+"96
+[; ;Functions.c: 96:     int adjustment = 0;
 [v _adjustment `i ~T0 @X0 1 a ]
-[e = _adjustment -U -> 2 `i ]
-"130
-[; ;Functions.c: 130:     solarnoon = (sunrise_time + sunset_time) / 2;
+[e = _adjustment -> 0 `i ]
+"97
+[; ;Functions.c: 97:     solarnoon = (sunrise_time + sunset_time) / 2;
 [e = _solarnoon / + _sunrise_time _sunset_time -> 2 `i ]
-"132
-[; ;Functions.c: 132:     if (hour == 23 && seconds == 5 && adjustment_of_day == 1)
+"98
+[; ;Functions.c: 98:     adjustment = (12 * 10) - solarnoon;
+[e = _adjustment - * -> 12 `i -> 10 `i _solarnoon ]
+"99
+[; ;Functions.c: 99:     if (hour == 23 && seconds == 5 && adjustment_of_day == 1)
 [e $ ! && && == _hour -> 23 `i == _seconds -> 5 `i == _adjustment_of_day -> 1 `i 2030  ]
-"133
-[; ;Functions.c: 133:     {
+"100
+[; ;Functions.c: 100:     {
 {
-"134
-[; ;Functions.c: 134:         seconds += adjustment;
+"101
+[; ;Functions.c: 101:         seconds += adjustment;
 [e =+ _seconds _adjustment ]
-"135
-[; ;Functions.c: 135:         adjustment_of_day = 0;
+"102
+[; ;Functions.c: 102:         adjustment_of_day = 0;
 [e = _adjustment_of_day -> 0 `i ]
-"136
-[; ;Functions.c: 136:     }
+"103
+[; ;Functions.c: 103:     }
 }
 [e :U 2030 ]
-"137
-[; ;Functions.c: 137:     SN = solarnoon;
-[e = _SN _solarnoon ]
-"138
-[; ;Functions.c: 138:     AD = adjustment;
+"104
+[; ;Functions.c: 104:     AD = adjustment;
 [e = _AD _adjustment ]
-"140
-[; ;Functions.c: 140: }
+"105
+[; ;Functions.c: 105: }
 [e :UE 2029 ]
 }
-"144
-[; ;Functions.c: 144: void daylightsavings() {
+"109
+[; ;Functions.c: 109: void daylightsavings() {
 [v _daylightsavings `(v ~T0 @X0 1 ef ]
 {
 [e :U _daylightsavings ]
 [f ]
-"145
-[; ;Functions.c: 145:     if (month_num == 3 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 1)
+"110
+[; ;Functions.c: 110:     if (month_num == 3 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 1)
 [e $ ! && && && == _month_num -> 3 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 1 `i 2032  ]
-"146
-[; ;Functions.c: 146:         hour++;
+"111
+[; ;Functions.c: 111:         hour++;
 [e ++ _hour -> 1 `i ]
 [e :U 2032 ]
-"148
-[; ;Functions.c: 148:     if (month_num == 10 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 2)
-[e $ ! && && && == _month_num -> 10 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 2 `i 2033  ]
-"149
-[; ;Functions.c: 149:         hour--;
+"113
+[; ;Functions.c: 113:     if (month_num == 10 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 2 && oct_daylight_adjust == 1)
+[e $ ! && && && && == _month_num -> 10 `i == _day_of_week -> 7 `i <= -> <= -> 25 `i _day_of_month `i -> 31 `i == _hour -> 2 `i == _oct_daylight_adjust -> 1 `i 2033  ]
+"114
+[; ;Functions.c: 114:     {
+{
+"115
+[; ;Functions.c: 115:         hour--;
 [e -- _hour -> 1 `i ]
+"116
+[; ;Functions.c: 116:         oct_daylight_adjust = 0;
+[e = _oct_daylight_adjust -> 0 `i ]
+"117
+[; ;Functions.c: 117:     }
+}
 [e :U 2033 ]
-"150
-[; ;Functions.c: 150: }
+"118
+[; ;Functions.c: 118: }
 [e :UE 2031 ]
 }

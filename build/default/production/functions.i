@@ -24243,8 +24243,6 @@ void real_day();
 void increment();
 void poweroff();
 void day1_init();
-
-
 void time_adjuster(int sunrise_time,int sunset_time);
 void daylightsavings();
 # 2 "Functions.c" 2
@@ -24668,7 +24666,6 @@ int incrementseconds(int seconds);
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;
@@ -24699,7 +24696,6 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR();
     int year;
     int seconds_in_hour;
     int hours_in_day;
-    int prevState;
     int SR;
     int SS;
     int AD;
@@ -24713,7 +24709,7 @@ void __attribute__((picinterrupt(("high_priority")))) HighISR();
 
 int month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 int adjustment_of_day = 1;
-
+int oct_daylight_adjust = 1;
 
 
 void streetLightInit(void) {
@@ -24744,7 +24740,7 @@ void increment() {
 
     if (seconds == seconds_in_hour) {
         hour++;
-        LEDarray_disp_bin(hour);
+
         seconds = 0;
     }
 
@@ -24755,6 +24751,7 @@ void increment() {
         day_of_month++;
         hour = 0;
         adjustment_of_day = 1;
+        oct_daylight_adjust = 1;
     }
 
 
@@ -24780,29 +24777,29 @@ void poweroff() {
 
 void day1_init() {
     seconds = 0;
-    hour = 23;
+    hour = 0;
     day_of_year = 1;
-    day_of_month = 1;
-    day_of_week = 1;
+    day_of_month = 29;
+    day_of_week = 6;
     year = 2022;
-    month_num = 1;
+    month_num = 10;
     LATHbits.LATH3 = 1;
 }
-# 126 "Functions.c"
+
+
+
 void time_adjuster(int sunrise_time, int sunset_time) {
 
     int solarnoon = 0;
-    int adjustment = -2;
+    int adjustment = 0;
     solarnoon = (sunrise_time + sunset_time) / 2;
-
+    adjustment = (12 * 10) - solarnoon;
     if (hour == 23 && seconds == 5 && adjustment_of_day == 1)
     {
         seconds += adjustment;
         adjustment_of_day = 0;
     }
-    SN = solarnoon;
     AD = adjustment;
-
 }
 
 
@@ -24811,6 +24808,9 @@ void daylightsavings() {
     if (month_num == 3 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 1)
         hour++;
 
-    if (month_num == 10 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 2)
+    if (month_num == 10 && day_of_week == 7 && 25 <= day_of_month <= 31 && hour == 2 && oct_daylight_adjust == 1)
+    {
         hour--;
+        oct_daylight_adjust = 0;
+    }
 }

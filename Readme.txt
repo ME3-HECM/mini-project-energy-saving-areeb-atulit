@@ -1,5 +1,13 @@
 Read Me file for project which will go through our code:
 
+VIDEO LINKS: 
+ONEDRIVE LINK: https://imperiallondon-my.sharepoint.com/:f:/g/personal/anh18_ic_ac_uk/ErYnmwK7_VpCluDPmeuz8ToBdIcgF88_7-019x2fQ-PI0Q?e=KVk4PY
+Part 1 (Toggling LEDs on sunrise and sunset and switching LEDs off at 1am-5am)
+Part 2 (Daylight Savings in March)
+Part 3 (Daylight Savings in October)
+Part 4 (Explanation of daily time adjustment based on calculated solar noon)
+Part 5 (Demo of time adjustment at 11:30pm(starts from 12:00am))
+
 Syntax information: 
 We are going to be using human notation for days and months. This means that our week 
 goes from 1 to 7, rather than 0 to 6, with 1 being Monday and 7 being Sunday. 
@@ -18,7 +26,7 @@ First of all, the toggling of the LED is triggered using interrupts, with the to
 placed in the high priority interrupt (more explanation in the interrupts section). 
 
 The toggling is due to the comparator sensing a rising or falling edge via comp_rise() and comp_fall()
-We do not use the readings from the LDR (ADC_getval()) as it was unessassary, the comparator does its job properly. 
+We do not use the readings from the LDR (ADC_getval()) as it was unnecessary, the comparator does its job properly. 
 
 The code is hard wired to turn the LED on at 00:00am, as it is when we start the entire case off
 (and to ensure the comparator falling and rising toggle does not get reversed). 
@@ -65,13 +73,20 @@ Daylight Savings:
 
 Time Adjustment: 
     As the microcontroller will end up having errors in the time increments, an adjustment has to be made.  
-    Our adjustment happens everyday, at 23:30 (11:30pm). 
+    Our adjustment happens everyday, at 23:30 (11:30pm). The times for the change in state of the LED due to 
+    sunrise and sunset is done in the high priority interrupt function.
 
     The logic behind the adjustment is as follows: 
-    The sunrise time is recorded in seconds, via the sunrise_time() function, 
-    which has an if statement to check between 5am to 8am and see if the LED has been toggled (using previous state and current state of LED pin)
+    The sunrise time is recorded in seconds, and is recorded when the LED is toggled due to the comparator being flagged.
+    At sunrise, when the LED toggles off, there is an if statement which checks the state of LED immidiately after the toggle occurs and if the LED toggles
+    off, then the sunrise time variable (SR) is equal to the current second. Same with the sunset variable (SS) but in reverse, now the if statement checks
+    for the LED to be on. 
     
-    The same is done for the sunset time, and noon is calculated by taking the average of sunrise and sunset time.
+    Noon is calculated by taking the average of sunrise and sunset time.
     The actual noon is assumed to be at 12:00 (12pm) exactly, so any deviation, from that is our error. 
     The error is stored in the variable adjustment, which gets added to the seconds at 11:30pm. The assumption there is that the error is not bigger than 30mins. 
+
+    The if statement for adjusting the time involves declaring the time in hours and seconds (11:30pm is 23 hours 1800s) 
+    and it also has a adjustment_of_day checker variable which changes to 0 when the adjustment has been done, to prevent it   
+    from reentering the loop until the next day (it gets set back to 1 when the day increments).
 
